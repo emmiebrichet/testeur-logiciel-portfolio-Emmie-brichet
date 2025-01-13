@@ -127,6 +127,14 @@ handleNavbarCollapse();
 createSkillsFromJSON();
 createPortfolioFromJSON();
 
+// Fonction pour télécharger un fichier Excel
+function downloadFile(fileName) {
+    const link = document.createElement('a');
+    link.href = 'document/' + fileName; // Le fichier Excel doit être dans le dossier "document"
+    link.download = fileName;
+    link.click();
+}
+
 
 const githubUser = 'emmiebrichet'; // Ton nom d'utilisateur GitHub
 const apiUrl = `https://api.github.com/users/${githubUser}/repos`;

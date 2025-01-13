@@ -1,0 +1,1920 @@
+
+<!-- saved from url=(0048)file:///C:/Users/brich/Downloads/Jira%20(4).html -->
+<html xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Jira</title>
+<style type="text/css">
+table {
+    mso-displayed-decimal-separator:"\.";
+    mso-displayed-thousand-separator:"\,";
+}
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color:black;
+}
+
+</style>
+
+<!-- JRA-7598 - ensure fields (e.g. description) occupy only one cell - even fields containing newlines. -->
+<!--
+Vertical align all cells to the top, in order to align all issue rows of issuetable to the top,
+since Excel does not use or save the css files it is hardcoded here.
+-->
+<style>
+@page
+{
+mso-page-orientation:landscape;
+margin:.25in .25in .5in .25in;
+mso-header-margin:.5in;
+mso-footer-margin:.25in;
+mso-footer-data:"&R&P of &N";
+mso-horizontal-page-align:center;
+mso-vertical-page-align:center;
+}
+
+td.issuekey,
+td.issuetype,
+td.status {
+    mso-style-parent: "";
+    mso-number-format: \@;
+    text-align: left;
+}
+br
+{
+    mso-data-placement:same-cell;
+}
+
+td
+{
+    vertical-align: top;
+}
+</style>
+
+<!--[if gte mso 9]><xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>general_report</x:Name>
+<x:WorksheetOptions>
+<x:Print>
+<x:ValidPrinterInfo/>
+</x:Print>
+</x:WorksheetOptions>
+</x:ExcelWorksheet>
+</x:ExcelWorksheets>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+<body>
+
+<table border="1">
+    <tbody><tr bgcolor="#205081" height="30">
+        <td colspan="75">
+            <img src="./brichet_Emmie_3_anomalies_072024_files/icon-jira-family-logo.png" width="57" height="30" border="0" alt="Jira">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="75">
+            <a href="https://brichetemmie.atlassian.net/issues/?jql=project+%3D+%22P724E%22+ORDER+BY+created+DESC">Jira</a>
+        </td>
+    </tr>
+    <tr>
+                <td colspan="75">
+            Displaying <strong>12</strong> issues at <strong>05/Aug/24 1:32 PM</strong>.
+        </td>
+    </tr>
+</tbody></table>
+
+
+
+
+                                        <table id="issuetable" class="aui " border="1" cellpadding="3" cellspacing="1" width="100%">
+                        <thead>
+        <tr class="rowHeader">
+            
+                                                            <th class="colHeaderLink headerrow-project" data-id="project">
+                                                        Project
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-issuekey" data-id="issuekey">
+                                                        Key
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-summary" data-id="summary">
+                                                        Summary
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-issuetype" data-id="issuetype">
+                                                        Issue Type
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-status" data-id="status">
+                                                        Status
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-priority" data-id="priority">
+                                                        Priority
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-resolution" data-id="resolution">
+                                                        Resolution
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-assignee" data-id="assignee">
+                                                        Assignee
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-reporter" data-id="reporter">
+                                                        Reporter
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-creator" data-id="creator">
+                                                        Creator
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-created" data-id="created">
+                                                        Created
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-lastViewed" data-id="lastViewed">
+                                                        Last Viewed
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-updated" data-id="updated">
+                                                        Updated
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-resolutiondate" data-id="resolutiondate">
+                                                        Resolved
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-versions" data-id="versions">
+                                                        Affects versions
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-fixVersions" data-id="fixVersions">
+                                                        Fix versions
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-components" data-id="components">
+                                                        Components
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-duedate" data-id="duedate">
+                                                        Due date
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-votes" data-id="votes">
+                                                        Votes
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-watches" data-id="watches">
+                                                        Watchers
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-thumbnail" data-id="thumbnail">
+                                                        Images
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-timeoriginalestimate" data-id="timeoriginalestimate">
+                                                        Original estimate
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-timeestimate" data-id="timeestimate">
+                                                        Remaining Estimate
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-timespent" data-id="timespent">
+                                                        Time Spent
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-workratio" data-id="workratio">
+                                                        Work Ratio
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-subtasks" data-id="subtasks">
+                                                        Sub-tasks
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-issuelinks" data-id="issuelinks">
+                                                        Linked Issues
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-environment" data-id="environment">
+                                                        Environment
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-description" data-id="description">
+                                                        Description
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-security" data-id="security">
+                                                        Security Level
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-progress" data-id="progress">
+                                                        Progress
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-aggregateprogress" data-id="aggregateprogress">
+                                                        Σ Progress
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-aggregatetimespent" data-id="aggregatetimespent">
+                                                        Σ Time Spent
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-aggregatetimeestimate" data-id="aggregatetimeestimate">
+                                                        Σ Remaining Estimate
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-aggregatetimeoriginalestimate" data-id="aggregatetimeoriginalestimate">
+                                                        Σ Original Estimate
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-labels" data-id="labels">
+                                                        Labels
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-statuscategorychangedate" data-id="statuscategorychangedate">
+                                                        Status Category Changed
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-statusCategory" data-id="statusCategory">
+                                                        Status Category
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-parent" data-id="parent">
+                                                        Parent
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10009" data-id="customfield_10009">
+                                                        Actual end
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10008" data-id="customfield_10008">
+                                                        Actual start
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10003" data-id="customfield_10003">
+                                                        Approvers
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10007" data-id="customfield_10007">
+                                                        Change reason
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10006" data-id="customfield_10006">
+                                                        Change risk
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10005" data-id="customfield_10005">
+                                                        Change type
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10013" data-id="customfield_10013">
+                                                        Epic Color
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10014" data-id="customfield_10014">
+                                                            <span class="deprecated-searcher-icon" title="">
+                                    <div class="deprecated-tooltip table-deprecated-tooltip" role="tooltip" title="">
+                                        <p class="deprecated-tooltip-text table-deprecated-tooltip-text">
+                                            Epic Link will soon be replaced with Parent.
+                                        </p>
+                                    </div>
+                                </span>
+                                                        Epic Link
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10011" data-id="customfield_10011">
+                                                        Epic Name
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10012" data-id="customfield_10012">
+                                                        Epic Status
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10021" data-id="customfield_10021">
+                                                        Flagged
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10004" data-id="customfield_10004">
+                                                        Impact
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10017" data-id="customfield_10017">
+                                                        Issue color
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10026" data-id="customfield_10026">
+                                                        Locked forms
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10027" data-id="customfield_10027">
+                                                        Open forms
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10002" data-id="customfield_10002">
+                                                        Organizations
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10018" data-id="customfield_10018">
+                                                            <span class="deprecated-searcher-icon" title="">
+                                    <div class="deprecated-tooltip table-deprecated-tooltip" role="tooltip" title="">
+                                        <p class="deprecated-tooltip-text table-deprecated-tooltip-text">
+                                            Parent Link will soon be replaced with Parent.
+                                        </p>
+                                    </div>
+                                </span>
+                                                        Parent Link
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10039" data-id="customfield_10039">
+                                                        Project overview key
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10040" data-id="customfield_10040">
+                                                        Project overview status
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10019" data-id="customfield_10019">
+                                                        Rank
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10010" data-id="customfield_10010">
+                                                        Request Type
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10033" data-id="customfield_10033">
+                                                        Request participants
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10034" data-id="customfield_10034">
+                                                        Satisfaction
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10038" data-id="customfield_10038">
+                                                        Sentiment
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10020" data-id="customfield_10020">
+                                                        Sprint
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10015" data-id="customfield_10015">
+                                                        Start date
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10037" data-id="customfield_10037">
+                                                        Story Points
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10016" data-id="customfield_10016">
+                                                        Story point estimate
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10028" data-id="customfield_10028">
+                                                        Submitted forms
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10023" data-id="customfield_10023">
+                                                        Target end
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10022" data-id="customfield_10022">
+                                                        Target start
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10001" data-id="customfield_10001">
+                                                        Team
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10029" data-id="customfield_10029">
+                                                        Total forms
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10032" data-id="customfield_10032">
+                                                        Work category
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10024" data-id="customfield_10024">
+                                                        [CHART] Date of First Response
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10000" data-id="customfield_10000">
+                                                        Development
+                                                    </th>
+                                                                    </tr>
+    </thead>
+    <tbody>
+                    
+
+                <tr id="issuerow10029" rel="10029" data-issuekey="P724E-13" class="issuerow">
+                                            <td class="project">    P5 724EVENTS
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="P724E-13" href="https://brichetemmie.atlassian.net/browse/P724E-13">P724E-13</a>
+</td>
+                                            <td class="summary"><p>
+                carte dans nos évènement passé
+    </p>
+</td>
+                                            <td class="issuetype">    Improvement
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="priority">           Low
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Emmie Brichet
+    </td>
+                                            <td class="creator">            Emmie Brichet
+    </td>
+                                            <td class="created"> 05/Aug/24 12:54 PM </td>
+                                            <td class="lastViewed"> 05/Aug/24 12:58 PM </td>
+                                            <td class="updated"> 05/Aug/24 12:54 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">0</td>
+                                            <td class="thumbnail"></td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks"></td>
+                                            <td class="environment"></td>
+                                            <td class="description">            *● Étapes pour reproduire l’anomalie:*<br>
+<br>
+-On est dans sur la page d’accueil<br>
+<br>
+-On vas sur nos réalisation<br>
+<br>
+-On  clique sur une photo d’un des élément<br>
+<br>
+-On se retrouve sur une page d'évènement<br>
+<br>
+● *Résultat attendu:*<br>
+<br>
+<br>
+<br>
+*● Résultat obtenu :*<br>
+<br>
+La carte indique que l’évènement s’est dérouler à San Francisco alors que l’entreprise est en France  
+    </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels">    carte, erreur, evenement, nos-réalisations, passe, réalisations</td>
+                                            <td class="statuscategorychangedate"> 05/Aug/24 12:54 PM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">To Do</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10013"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10011"></td>
+                                            <td class="customfield_10012"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10026"></td>
+                                            <td class="customfield_10027"></td>
+                                            <td class="customfield_10002"><div class="shorten" id="customfield_10002-field">
+    </div>
+</td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10039"></td>
+                                            <td class="customfield_10040"></td>
+                                            <td class="customfield_10019">      0|i0006f:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10034"><div class="sd-feedback-rating-column"></div></td>
+                                            <td class="customfield_10038"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10037"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001">    None
+</td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10032"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+
+
+                <tr id="issuerow10027" rel="10027" data-issuekey="P724E-11" class="issuerow">
+                                            <td class="project">    P5 724EVENTS
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="P724E-11" href="https://brichetemmie.atlassian.net/browse/P724E-11">P724E-11</a>
+</td>
+                                            <td class="summary"><p>
+                Bug sur le site après avoir colle deux codes ID événement 
+    </p>
+</td>
+                                            <td class="issuetype">    Bug
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Emmie Brichet
+    </td>
+                                            <td class="creator">            Emmie Brichet
+    </td>
+                                            <td class="created"> 02/Aug/24 5:05 PM </td>
+                                            <td class="lastViewed"> 05/Aug/24 12:55 PM </td>
+                                            <td class="updated"> 02/Aug/24 5:05 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">0</td>
+                                            <td class="thumbnail">            <a aria-label="Select to download the image for P724E-11" href="https://brichetemmie.atlassian.net/secure/attachment/10030/Capture+d%E2%80%99%C3%A9cran+2024-07-17+123011.png">
+            Capture d’écran 2024-07-17 123011.png
+        </a>
+    </td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks"></td>
+                                            <td class="environment"></td>
+                                            <td class="description">            *● Étapes pour reproduire l’anomalie*: <br>
+<br>
+-Copie le code id des évènement.<br>
+<br>
+-Entre deux codes ID d’affilée sur swagger par accident <br>
+<br>
+-Enlève l’ID en sélectionnant le code id.<br>
+<br>
+-Retape le code ID.<br>
+<br>
+-Reviens sur la page du site.<br>
+<br>
+<br>
+<br>
+● *Résultat attendu :*  <br>
+<br>
+Il ne devrait rien se passer. Le site dois marcher normalement. On devrait pouvoir mettre le code id qu’on a copier.<br>
+<br>
+<br>
+<br>
+*● Résultat obtenu :* <br>
+<br>
+Lorsqu’on rentre le code id celui-ci note qu’il y a un bug. puis on retourne sur le site internet celui-ci bug, les slides et les images de nos réalisations ont disparu . Il ne marche pas. On éteint les container qui étaient en running et le remettre en mache et le code id déjà copié ne marche plus.
+    </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels">    bug, copier-id, disparition, nos-realisation, page, site, slide</td>
+                                            <td class="statuscategorychangedate"> 02/Aug/24 5:05 PM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">To Do</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10013"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10011"></td>
+                                            <td class="customfield_10012"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10026"></td>
+                                            <td class="customfield_10027"></td>
+                                            <td class="customfield_10002"><div class="shorten" id="customfield_10002-field">
+    </div>
+</td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10039"></td>
+                                            <td class="customfield_10040"></td>
+                                            <td class="customfield_10019">      0|i0005z:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10034"><div class="sd-feedback-rating-column"></div></td>
+                                            <td class="customfield_10038"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10037"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001">    None
+</td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10032"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+
+
+                <tr id="issuerow10026" rel="10026" data-issuekey="P724E-10" class="issuerow">
+                                            <td class="project">    P5 724EVENTS
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="P724E-10" href="https://brichetemmie.atlassian.net/browse/P724E-10">P724E-10</a>
+</td>
+                                            <td class="summary"><p>
+                le Formulaire de contact lorsqu’on diminue la page
+    </p>
+</td>
+                                            <td class="issuetype">    Improvement
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="priority">           Low
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Emmie Brichet
+    </td>
+                                            <td class="creator">            Emmie Brichet
+    </td>
+                                            <td class="created"> 02/Aug/24 5:01 PM </td>
+                                            <td class="lastViewed"> &nbsp; </td>
+                                            <td class="updated"> 02/Aug/24 5:01 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">1</td>
+                                            <td class="thumbnail">            <a aria-label="Select to download the image for P724E-10" href="https://brichetemmie.atlassian.net/secure/attachment/10029/Capture+d%E2%80%99%C3%A9cran+2024-07-19+113553.png">
+            Capture d’écran 2024-07-19 113553.png
+        </a>
+    </td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks"></td>
+                                            <td class="environment"></td>
+                                            <td class="description">            ●*Étapes pour reproduire l’anomalie:* <br>
+<br>
+-Diminue la page du site vers la gauche.<br>
+<br>
+-Descend la page jusqu' à nos contacts.<br>
+<br>
+<br>
+<br>
+*●Résultat attendu :* <br>
+<br>
+On devrait pouvoir lire ce qu’on doit mettre dans le formulaire afin le remplir.<br>
+<br>
+<br>
+<br>
+*●&nbsp; Résultat obtenu :* <br>
+<br>
+Le texte est tout à fait à gauche et on ne peut pas lire ce qui est écrit et l’on ne peut pas compléter le formulaire.
+    </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels">    contact, diminu, formulaire</td>
+                                            <td class="statuscategorychangedate"> 02/Aug/24 5:01 PM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">To Do</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10013"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10011"></td>
+                                            <td class="customfield_10012"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10026"></td>
+                                            <td class="customfield_10027"></td>
+                                            <td class="customfield_10002"><div class="shorten" id="customfield_10002-field">
+    </div>
+</td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10039"></td>
+                                            <td class="customfield_10040"></td>
+                                            <td class="customfield_10019">      0|i0005r:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10034"><div class="sd-feedback-rating-column"></div></td>
+                                            <td class="customfield_10038"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10037"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001">    None
+</td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10032"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+
+
+                <tr id="issuerow10025" rel="10025" data-issuekey="P724E-9" class="issuerow">
+                                            <td class="project">    P5 724EVENTS
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="P724E-9" href="https://brichetemmie.atlassian.net/browse/P724E-9">P724E-9</a>
+</td>
+                                            <td class="summary"><p>
+                Largeur des slides
+    </p>
+</td>
+                                            <td class="issuetype">    Improvement
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="priority">           Low
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Emmie Brichet
+    </td>
+                                            <td class="creator">            Emmie Brichet
+    </td>
+                                            <td class="created"> 02/Aug/24 4:58 PM </td>
+                                            <td class="lastViewed"> &nbsp; </td>
+                                            <td class="updated"> 02/Aug/24 4:58 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">1</td>
+                                            <td class="thumbnail"></td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks"></td>
+                                            <td class="environment"></td>
+                                            <td class="description">            ● *Étapes pour reproduire l’anomalie:* <br>
+<br>
+-Regarde les slide sur l'interface du site défiler.<br>
+<br>
+<br>
+<br>
+● *Résultat attendu :* <br>
+<br>
+ <br>
+<br>
+<br>
+<br>
+*● Résultat obtenu :* <br>
+<br>
+Le slide sur la page d’accueil est trop grand et dépasse sur le côté droit.
+    </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels">    large, slide, taille</td>
+                                            <td class="statuscategorychangedate"> 02/Aug/24 4:58 PM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">To Do</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10013"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10011"></td>
+                                            <td class="customfield_10012"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10026"></td>
+                                            <td class="customfield_10027"></td>
+                                            <td class="customfield_10002"><div class="shorten" id="customfield_10002-field">
+    </div>
+</td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10039"></td>
+                                            <td class="customfield_10040"></td>
+                                            <td class="customfield_10019">      0|i0005j:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10034"><div class="sd-feedback-rating-column"></div></td>
+                                            <td class="customfield_10038"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10037"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001">    None
+</td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10032"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+
+
+                <tr id="issuerow10024" rel="10024" data-issuekey="P724E-8" class="issuerow">
+                                            <td class="project">    P5 724EVENTS
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="P724E-8" href="https://brichetemmie.atlassian.net/browse/P724E-8">P724E-8</a>
+</td>
+                                            <td class="summary"><p>
+                Taille de l'image dans notre prestation passe
+    </p>
+</td>
+                                            <td class="issuetype">    Improvement
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="priority">           Low
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Emmie Brichet
+    </td>
+                                            <td class="creator">            Emmie Brichet
+    </td>
+                                            <td class="created"> 02/Aug/24 4:55 PM </td>
+                                            <td class="lastViewed"> &nbsp; </td>
+                                            <td class="updated"> 02/Aug/24 4:55 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">1</td>
+                                            <td class="thumbnail">            <a aria-label="Select to download the image for P724E-8" href="https://brichetemmie.atlassian.net/secure/attachment/10028/Capture+d%E2%80%99%C3%A9cran+2024-07-19+113616.png">
+            Capture d’écran 2024-07-19 113616.png
+        </a>
+    </td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks"></td>
+                                            <td class="environment"></td>
+                                            <td class="description">            *● Étapes pour reproduire l’anomalie:* <br>
+<br>
+-On diminue la page du site.<br>
+<br>
+-On descend jusqu'au footer.<br>
+<br>
+-On regarde le footer.<br>
+<br>
+<br>
+<br>
+● *Résultat attendu:*<br>
+<br>
+La photo de nos prestations passée devrait être à sa place&nbsp;et diminuer&nbsp; l'interface de la page.<br>
+<br>
+<br>
+<br>
+*● Résultat obtenu :* <br>
+<br>
+ L’image ne reste pas à sa place et déborde sur la partie contactez nous.
+    </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels">    diminu, footer, prestation-passe, réalisations, taille</td>
+                                            <td class="statuscategorychangedate"> 02/Aug/24 4:55 PM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">To Do</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10013"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10011"></td>
+                                            <td class="customfield_10012"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10026"></td>
+                                            <td class="customfield_10027"></td>
+                                            <td class="customfield_10002"><div class="shorten" id="customfield_10002-field">
+    </div>
+</td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10039"></td>
+                                            <td class="customfield_10040"></td>
+                                            <td class="customfield_10019">      0|i0005b:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10034"><div class="sd-feedback-rating-column"></div></td>
+                                            <td class="customfield_10038"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10037"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001">    None
+</td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10032"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+
+
+                <tr id="issuerow10023" rel="10023" data-issuekey="P724E-7" class="issuerow">
+                                            <td class="project">    P5 724EVENTS
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="P724E-7" href="https://brichetemmie.atlassian.net/browse/P724E-7">P724E-7</a>
+</td>
+                                            <td class="summary"><p>
+                Les deux boutons dans le slide restent vide
+    </p>
+</td>
+                                            <td class="issuetype">    New Feature
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="priority">           Low
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Emmie Brichet
+    </td>
+                                            <td class="creator">            Emmie Brichet
+    </td>
+                                            <td class="created"> 02/Aug/24 4:51 PM </td>
+                                            <td class="lastViewed"> &nbsp; </td>
+                                            <td class="updated"> 02/Aug/24 4:51 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">1</td>
+                                            <td class="thumbnail">            <a aria-label="Select to download the image for P724E-7" href="https://brichetemmie.atlassian.net/secure/attachment/10025/Capture+d%E2%80%99%C3%A9cran+2024-07-19+113218.png">
+            Capture d’écran 2024-07-19 113218.png
+        </a>
+    </td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks"></td>
+                                            <td class="environment"></td>
+                                            <td class="description">            ●*Etapes pour reproduire l’anomalie:* <br>
+<br>
+-Regarde les slides<br>
+<br>
+-Laisse  défile .<br>
+<br>
+*●Résultat attendu :* <br>
+<br>
+ Les bouton devrait avoir un point bleu lorsqu’on  est sur le slide<br>
+<br>
+*●Résultat obtenu :* <br>
+<br>
+Les deux premier bouton reste blanc au lieu d’avoir un point bleu dedans.
+    </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels"></td>
+                                            <td class="statuscategorychangedate"> 02/Aug/24 4:51 PM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">To Do</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10013"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10011"></td>
+                                            <td class="customfield_10012"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10026"></td>
+                                            <td class="customfield_10027"></td>
+                                            <td class="customfield_10002"><div class="shorten" id="customfield_10002-field">
+    </div>
+</td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10039"></td>
+                                            <td class="customfield_10040"></td>
+                                            <td class="customfield_10019">      0|i00053:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10034"><div class="sd-feedback-rating-column"></div></td>
+                                            <td class="customfield_10038"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10037"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001">    None
+</td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10032"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+
+
+                <tr id="issuerow10022" rel="10022" data-issuekey="P724E-6" class="issuerow">
+                                            <td class="project">    P5 724EVENTS
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="P724E-6" href="https://brichetemmie.atlassian.net/browse/P724E-6">P724E-6</a>
+</td>
+                                            <td class="summary"><p>
+                Choix des slides  
+    </p>
+</td>
+                                            <td class="issuetype">    Improvement
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="priority">           Low
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Emmie Brichet
+    </td>
+                                            <td class="creator">            Emmie Brichet
+    </td>
+                                            <td class="created"> 02/Aug/24 4:49 PM </td>
+                                            <td class="lastViewed"> &nbsp; </td>
+                                            <td class="updated"> 02/Aug/24 4:50 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">1</td>
+                                            <td class="thumbnail"></td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks"></td>
+                                            <td class="environment"></td>
+                                            <td class="description">            ●*Étapes pour reproduire l’anomalie:* <br>
+<br>
+-On est sur la page d'accueil <br>
+<br>
+-On veut choisir le slide <br>
+<br>
+-On  sur les boutons blancs.<br>
+<br>
+<br>
+<br>
+*●Résultat attendu :*<br>
+<br>
+On devrait arriver à choisir le slide qu’on veut voir avec le bouton blanc.<br>
+<br>
+<br>
+<br>
+●*Résultat obtenu :*  <br>
+<br>
+Lorsqu’on clique dessus on va arrive sur la page du slide de l'évènement au lieu du slide précédent ou d'après.
+    </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels">    bouton, choix, erreur, slide</td>
+                                            <td class="statuscategorychangedate"> 02/Aug/24 4:49 PM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">To Do</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10013"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10011"></td>
+                                            <td class="customfield_10012"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10026"></td>
+                                            <td class="customfield_10027"></td>
+                                            <td class="customfield_10002"><div class="shorten" id="customfield_10002-field">
+    </div>
+</td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10039"></td>
+                                            <td class="customfield_10040"></td>
+                                            <td class="customfield_10019">      0|i0004v:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10034"><div class="sd-feedback-rating-column"></div></td>
+                                            <td class="customfield_10038"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10037"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001">    None
+</td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10032"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+
+
+                <tr id="issuerow10021" rel="10021" data-issuekey="P724E-5" class="issuerow">
+                                            <td class="project">    P5 724EVENTS
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="P724E-5" href="https://brichetemmie.atlassian.net/browse/P724E-5">P724E-5</a>
+</td>
+                                            <td class="summary"><p>
+                Erreur du nom entreperise 
+    </p>
+</td>
+                                            <td class="issuetype">    Improvement
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="priority">           Low
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Emmie Brichet
+    </td>
+                                            <td class="creator">            Emmie Brichet
+    </td>
+                                            <td class="created"> 02/Aug/24 4:46 PM </td>
+                                            <td class="lastViewed"> &nbsp; </td>
+                                            <td class="updated"> 02/Aug/24 4:46 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">0</td>
+                                            <td class="thumbnail">            <a aria-label="Select to download the image for P724E-5" href="https://brichetemmie.atlassian.net/secure/attachment/10024/Capture+d%E2%80%99%C3%A9cran+2024-07-19+113352.png">
+            Capture d’écran 2024-07-19 113352.png
+        </a>
+    </td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks"></td>
+                                            <td class="environment"></td>
+                                            <td class="description">            *●Étapes pour reproduire l’anomalie :* <br>
+<br>
+ -On lit la description des Conférences.<br>
+<br>
+-On décent dans le footer<br>
+<br>
+-On lit l’email dans la partie Contactez-nous<br>
+<br>
+<br>
+<br>
+●*Résultat attendu :*<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+●*Résultat obtenu :* <br>
+<br>
+ Il y est écrit 77 events à la place du nom de l’entreprise 724 events.
+    </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels">    Conférences, erreur, footer, mail, nom-entreprise</td>
+                                            <td class="statuscategorychangedate"> 02/Aug/24 4:46 PM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">To Do</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10013"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10011"></td>
+                                            <td class="customfield_10012"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10026"></td>
+                                            <td class="customfield_10027"></td>
+                                            <td class="customfield_10002"><div class="shorten" id="customfield_10002-field">
+    </div>
+</td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10039"></td>
+                                            <td class="customfield_10040"></td>
+                                            <td class="customfield_10019">      0|i0004n:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10034"><div class="sd-feedback-rating-column"></div></td>
+                                            <td class="customfield_10038"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10037"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001">    None
+</td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10032"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+
+
+                <tr id="issuerow10020" rel="10020" data-issuekey="P724E-4" class="issuerow">
+                                            <td class="project">    P5 724EVENTS
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="P724E-4" href="https://brichetemmie.atlassian.net/browse/P724E-4">P724E-4</a>
+</td>
+                                            <td class="summary"><p>
+                Bug dans les photos dans les réalisations
+    </p>
+</td>
+                                            <td class="issuetype">    Bug
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="priority">           Low
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Emmie Brichet
+    </td>
+                                            <td class="creator">            Emmie Brichet
+    </td>
+                                            <td class="created"> 02/Aug/24 4:40 PM </td>
+                                            <td class="lastViewed"> &nbsp; </td>
+                                            <td class="updated"> 02/Aug/24 4:40 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">1</td>
+                                            <td class="thumbnail">            <a aria-label="Select to download the image for P724E-4" href="https://brichetemmie.atlassian.net/secure/attachment/10022/Capture+d%E2%80%99%C3%A9cran+2024-07-19+114058.png">
+            Capture d’écran 2024-07-19 114058.png
+        </a>
+    </td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks"></td>
+                                            <td class="environment"></td>
+                                            <td class="description">            h2. Description<br>
+<br>
+● *Étapes pour reproduire l’anomalie :*<br>
+<br>
+-Dans les slides ou les événements.<br>
+<br>
+-Retourne sur la page d’accueil<br>
+<br>
+-Va dans la partie nos réalisations<br>
+<br>
+● *Résultat attendu:*<br>
+<br>
+&nbsp;<br>
+<br>
+*●&nbsp;Résultat obtenu :*<br>
+<br>
+Parfois, les photos n’apparaissent pas et une image floue de plusieurs couleurs apparait à sa place.
+    </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels">    bug, disparition, image, réalisations</td>
+                                            <td class="statuscategorychangedate"> 02/Aug/24 4:40 PM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">To Do</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10013"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10011"></td>
+                                            <td class="customfield_10012"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10026"></td>
+                                            <td class="customfield_10027"></td>
+                                            <td class="customfield_10002"><div class="shorten" id="customfield_10002-field">
+    </div>
+</td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10039"></td>
+                                            <td class="customfield_10040"></td>
+                                            <td class="customfield_10019">      0|i0004f:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10034"><div class="sd-feedback-rating-column"></div></td>
+                                            <td class="customfield_10038"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10037"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001">    None
+</td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10032"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+
+
+                <tr id="issuerow10019" rel="10019" data-issuekey="P724E-3" class="issuerow">
+                                            <td class="project">    P5 724EVENTS
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="P724E-3" href="https://brichetemmie.atlassian.net/browse/P724E-3">P724E-3</a>
+</td>
+                                            <td class="summary"><p>
+                Carre blanc dans le slide
+    </p>
+</td>
+                                            <td class="issuetype">    Improvement
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="priority">           Low
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Emmie Brichet
+    </td>
+                                            <td class="creator">            Emmie Brichet
+    </td>
+                                            <td class="created"> 02/Aug/24 4:33 PM </td>
+                                            <td class="lastViewed"> &nbsp; </td>
+                                            <td class="updated"> 02/Aug/24 4:33 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">1</td>
+                                            <td class="thumbnail"></td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks"></td>
+                                            <td class="environment"></td>
+                                            <td class="description">            *● Étapes pour reproduire l’anomalie :*  <br>
+<br>
+-On regarde le slide sur la page d’accueil <br>
+<br>
+-On les laisse défiler.<br>
+<br>
+<br>
+<br>
+*● Résultat attendu :* <br>
+<br>
+<br>
+<br>
+*●&nbsp;Résultat obtenu :* <br>
+<br>
+ Il y a un grand carré blanc qui apparait avant le premier slide.
+    </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels">    carre-blanc, image, slide</td>
+                                            <td class="statuscategorychangedate"> 02/Aug/24 4:33 PM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">To Do</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10013"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10011"></td>
+                                            <td class="customfield_10012"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10026"></td>
+                                            <td class="customfield_10027"></td>
+                                            <td class="customfield_10002"><div class="shorten" id="customfield_10002-field">
+    </div>
+</td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10039"></td>
+                                            <td class="customfield_10040"></td>
+                                            <td class="customfield_10019">      0|i00047:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10034"><div class="sd-feedback-rating-column"></div></td>
+                                            <td class="customfield_10038"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10037"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001">    None
+</td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10032"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+
+
+                <tr id="issuerow10018" rel="10018" data-issuekey="P724E-2" class="issuerow">
+                                            <td class="project">    P5 724EVENTS
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="P724E-2" href="https://brichetemmie.atlassian.net/browse/P724E-2">P724E-2</a>
+</td>
+                                            <td class="summary"><p>
+                Message d'erreur dernier prestation
+    </p>
+</td>
+                                            <td class="issuetype">    Bug
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Emmie Brichet
+    </td>
+                                            <td class="creator">            Emmie Brichet
+    </td>
+                                            <td class="created"> 02/Aug/24 4:28 PM </td>
+                                            <td class="lastViewed"> 02/Aug/24 4:28 PM </td>
+                                            <td class="updated"> 02/Aug/24 4:30 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">1</td>
+                                            <td class="thumbnail">            <a aria-label="Select to download the image for P724E-2" href="https://brichetemmie.atlassian.net/secure/attachment/10020/Capture+d%E2%80%99%C3%A9cran+2024-07-03+173601+%281%29.png">
+            Capture d’écran 2024-07-03 173601 (1).png
+        </a>
+    </td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks"></td>
+                                            <td class="environment"></td>
+                                            <td class="description">            *● Étapes pour reproduire l’anomalie :* <br>
+<br>
+-Page d’accueil<br>
+<br>
+-Voir les derniers évènements de l'entreprise<br>
+<br>
+-Descends tout en bas dans le footer <br>
+<br>
+* Clique sur l’image du dernier événement.<br>
+<br>
+<br>
+<br>
+*● Résultat attendu:*<br>
+<br>
+ Je devrais pouvoir aller sur le dernier évènement de l'entreprise.<br>
+<br>
+<br>
+<br>
+*●&nbsp;&nbsp;&nbsp;&nbsp; Résultat obtenu :*<br>
+<br>
+ Un message d’erreur apparait à sa place.
+    </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels">    dernier-prestation, erreur, message-erreur, modifier-UX, réalisations, ux</td>
+                                            <td class="statuscategorychangedate"> 02/Aug/24 4:28 PM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">To Do</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10013"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10011"></td>
+                                            <td class="customfield_10012"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10026"></td>
+                                            <td class="customfield_10027"></td>
+                                            <td class="customfield_10002"><div class="shorten" id="customfield_10002-field">
+    </div>
+</td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10039"></td>
+                                            <td class="customfield_10040"></td>
+                                            <td class="customfield_10019">      0|i0003z:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10034"><div class="sd-feedback-rating-column"></div></td>
+                                            <td class="customfield_10038"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10037"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001">    None
+</td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10032"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+
+
+                <tr id="issuerow10017" rel="10017" data-issuekey="P724E-1" class="issuerow">
+                                            <td class="project">    P5 724EVENTS
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="P724E-1" href="https://brichetemmie.atlassian.net/browse/P724E-1">P724E-1</a>
+</td>
+                                            <td class="summary"><p>
+                Menu, ne fonctionne pas dans la partie évènement
+    </p>
+</td>
+                                            <td class="issuetype">    Improvement
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="priority">           Low
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Emmie Brichet
+    </td>
+                                            <td class="creator">            Emmie Brichet
+    </td>
+                                            <td class="created"> 02/Aug/24 4:25 PM </td>
+                                            <td class="lastViewed"> &nbsp; </td>
+                                            <td class="updated"> 02/Aug/24 4:25 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">0</td>
+                                            <td class="thumbnail"></td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks"></td>
+                                            <td class="environment"></td>
+                                            <td class="description">            ●&nbsp;*Étapes pour reproduire l’anomalie*: <br>
+<br>
+-Dans une carte évènement. <br>
+<br>
+-Aller, soit dans&nbsp; nos services, nos réalisations, notre équipe ou contact<br>
+<br>
+-Clique les différentes parties du menu.<br>
+<br>
+<br>
+<br>
+●&nbsp;*Résultat attendu:* <br>
+<br>
+Je devrais pouvoir  aller dans l’une des&nbsp;différent partie du menu.<br>
+<br>
+<br>
+<br>
+●&nbsp;*Résultat obtenu :* <br>
+<br>
+Il ne se passe rien. Je reste&nbsp; à la même page événement. Si je veux aller dans les différentes&nbsp; parties du menu, je dois retourner à la page d’accueil soit en cliquant sur le retour&nbsp; ou le logo et décembre manuellement ou en allant dans le menu&nbsp; .
+    </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels">    menue, nos-réalisations, réalisations</td>
+                                            <td class="statuscategorychangedate"> 02/Aug/24 4:25 PM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">To Do</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10013"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10011"></td>
+                                            <td class="customfield_10012"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10026"></td>
+                                            <td class="customfield_10027"></td>
+                                            <td class="customfield_10002"><div class="shorten" id="customfield_10002-field">
+    </div>
+</td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10039"></td>
+                                            <td class="customfield_10040"></td>
+                                            <td class="customfield_10019">      0|i0003r:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10034"><div class="sd-feedback-rating-column"></div></td>
+                                            <td class="customfield_10038"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10037"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001">    None
+</td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10032"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+        </tbody>
+    </table>
+    <div class="end-of-stable-message"></div>
+            <table border="1">
+<tbody><tr>
+    <td bgcolor="#dddddd" colspan="75"><font size="1">
+        Generated at Mon Aug 05 11:32:56 UTC 2024 by Emmie Brichet using Jira 1001.0.0-SNAPSHOT#100261-rev:8642fb61276b58d7c33ef2a47b1566af95aa0a24.
+    </font></td>
+</tr>
+</tbody></table>
+
+
+</body></html>
