@@ -1,0 +1,212 @@
+/******* GENERAL *******/
+/* spacing on all sections */
+/* Changer la couleur par défaut des liens */
+/* Par défaut : Couleur des liens de navigation */
+.nav-link {
+    color: #be2361  !important; /* Forcer la couleur */
+    transition: color 0.3s ease; /* Transition fluide */
+    font-weight: bold;
+}
+
+/* Couleur des liens au survol */
+.nav-link:hover {
+    color: #d89fb5 !important; /* Forcer la couleur au survol */
+    font-weight: bold;
+}
+
+
+/* Couleur du texte pour le logo de la marque */
+.navbar-brand {
+    color: #be2361 !important; /* Forcer la couleur personnalisée */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+
+
+#about,
+#skills,
+#portfolio,
+#contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+    color: #6d213f;
+}
+#about h2,
+#skills h2,
+#portfolio h2,
+#contact h2 {
+    margin-bottom: 3rem;
+    color: #be2361;
+}
+#contact {
+    padding-bottom: 4rem;
+}
+
+/* display background dark color on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: #301520;
+    ;
+}
+
+/* hero background image */
+.bgimage {
+    height: 500px;
+    max-height: 900px;
+    background: url("images/goldengate.jpg");
+    background-size: cover;
+    position: relative;
+}
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #d89fb5;
+}
+
+/* about */
+.imageAboutPage {
+    width: 100%;
+}
+.imageAboutPage {
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* skills */
+.skillsText.card {
+    height: 350px;
+    cursor: pointer;
+}
+.skillsText img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+#skills p {
+    text-align: center;
+}
+.skillsIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .skillsIcon {
+    color: #813554;
+}
+.skillsText:hover {
+    border: 1px solid;
+    
+}
+
+
+.compétences {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes de tailles égales */
+    gap: 20px; /* Espacement entre les items */
+    justify-items: center; /* Centre les éléments dans chaque colonne */
+    align-items: start; /* Aligne le contenu en haut de chaque item */
+}
+
+.competence-item {
+    display: flex;
+    flex-direction: column; /* Place le texte sous l'image */
+    align-items: center; /* Centre les éléments horizontalement */
+    text-align: center;
+    width: 100%; /* Les items prennent toute la largeur de leur colonne */
+}
+
+.competence-item img {
+    width: 300px; /* Largeur uniforme */
+    height: 300px; /* Hauteur uniforme */
+    object-fit: cover; /* Découpe l'image pour remplir les dimensions */
+    border-radius: 10px; /* Coins arrondis (facultatif) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+
+.competence-item p {
+    margin-top: 10px; /* Espacement entre l'image et le texte */
+    margin-bottom: 50px;
+    font-size: 20px; /* Taille de la police */
+    color:#be2361 ;
+    font-style: italic;
+}
+
+
+.react img{
+    width: 500px; /* Largeur uniforme */
+    height: 200px; /
+
+}
+
+
+.outils img{
+    width: 500px; /* Largeur uniforme */
+    height: 200px; /
+
+
+}
+
+.ecrire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* portfolio */
+#portfolio p {
+    text-align: center;
+
+   
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.project-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.project-item h3 a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.project-item h3 a:hover {
+    text-decoration: underline;
+}
+
+.project-item p {
+    color: #555;
+}
+
+/* contact */
+.contactColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactColumn i {
+    color: #be2361 
+}
+
+/* footer */
+
