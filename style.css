@@ -171,31 +171,49 @@
 
    
 }
+/* Grille des projets */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Colonnes responsives */
+    gap: 20px; /* Espace entre les projets */
+    margin-top: 20px;
 }
 
-.project-item {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 1rem;
-    background-color: #f9f9f9;
-    text-align: center;
+/* Style de chaque projet */
+.project {
+    background-color: #f4f4f4; /* Couleur de fond claire */
+    padding: 20px; /* Espacement interne */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère autour des projets */
+    transition: transform 0.3s ease-in-out; /* Animation de survol */
 }
 
-.project-item h3 a {
-    color: #007bff;
+.project:hover {
+    transform: translateY(-5px); /* Effet d'élévation au survol */
+}
+
+/* Style du titre du projet */
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Style de la description du projet */
+.project p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Style du lien vers GitHub */
+.project a {
+   
     text-decoration: none;
+    font-weight: bold;
 }
 
-.project-item h3 a:hover {
+.project a:hover {
     text-decoration: underline;
-}
-
-.project-item p {
-    color: #555;
 }
 
 /* contact */
