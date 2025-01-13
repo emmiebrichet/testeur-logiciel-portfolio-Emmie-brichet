@@ -22,7 +22,25 @@
     transition: color 0.3s ease;
 }
 
+/* Menu fixe en haut */
+.navbar.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Assurez-vous que le menu est au-dessus du reste du contenu */
+}
 
+/* Espace sous le menu pour éviter le chevauchement avec le contenu */
+body {
+    padding-top: 0px; /* Ajustez la valeur en fonction de la hauteur de votre menu */
+}
+
+/* Style spécifique si vous souhaitez un effet de transparence ou d'ombre */
+.navbarScroll {
+    background-color:#301520; /* Exemple d'effet de fond transparent */
+    box-shadow: 0 4px 2px -2px ;
+}
 
 #about,
 #skills,
@@ -46,7 +64,7 @@
 /* display background dark color on navbar scroll */
 .navbarScroll.navbarDark {
     background-color: #301520;
-    ;
+    
 }
 
 /* hero background image */
@@ -82,6 +100,7 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
+/* skills */
 /* skills */
 .skillsText.card {
     height: 350px;
@@ -152,19 +171,32 @@
 
 }
 
-
-.outils img{
-    width: 500px; /* Largeur uniforme */
-    height: 200px; /
-
-
+.html img {
+    width: 550px; /* Largeur uniforme */
+    height: 350px; /* Hauteur uniforme */
 }
 
-.ecrire{
+.js img {
+    width: 200px; /* Largeur uniforme */
+    height: 300px; /* Hauteur uniforme */
+}
+
+.outils {
+    margin: 200px;
+}
+
+.outils img {
+    width: 500px; /* Largeur uniforme */
+    height: 200px; /* Hauteur uniforme */
+}
+
+.ecrire {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+
 /* portfolio */
 #portfolio p {
     text-align: center;
@@ -184,7 +216,7 @@
     background-color: #f4f4f4; /* Couleur de fond claire */
     padding: 20px; /* Espacement interne */
     border-radius: 8px; /* Coins arrondis */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère autour des projets */
+    box-shadow: 0 4px 8px #6d213f; /* Ombre légère autour des projets */
     transition: transform 0.3s ease-in-out; /* Animation de survol */
 }
 
@@ -201,7 +233,7 @@
 /* Style de la description du projet */
 .project p {
     font-size: 1rem;
-    color: #666;
+    color: #6d213f;
     margin-bottom: 15px;
 }
 
@@ -228,3 +260,13 @@
 
 /* footer */
 
+
+
+/* Si vous voulez que le footer ait un effet de fond plus foncé ou un ombrage */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #301520; /* Couleur de fond (vous pouvez ajuster cette couleur) */
+    padding: 20px 0; /* Espacement autour du contenu */
+    position: relative;
+}
