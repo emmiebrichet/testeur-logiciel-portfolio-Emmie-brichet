@@ -206,9 +206,38 @@ body {
 
 
 /* portfolio */
+
+/* Fichier CSS */
+#table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+#table-container th, #table-container td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+#table-container th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+
+
+#portfolio h4 {
+    margin-top: 50px;
+
+}
+
+
 #portfolio p {
     text-align: center;
-
    
 }
 /* Grille des projets */
@@ -255,6 +284,63 @@ body {
 .project a:hover {
     text-decoration: underline;
 }
+
+#projets {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#projets h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #be2361;
+}
+
+.projets-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.projet {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px #6d213f;
+    background-color: #fff;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #be2361;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6d213f;
+    margin-bottom: 20px;
+}
+
+a.btn.btn-primary {
+    color: #fff;
+    background-color: #be2361;
+    border-color: #be2361;
+}
+
+
 
 /* contact */
 .contactColumn {

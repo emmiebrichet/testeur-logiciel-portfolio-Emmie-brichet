@@ -135,30 +135,3 @@ function downloadFile(fileName) {
     link.click();
 }
 
-
-const githubUser = 'emmiebrichet'; // Ton nom d'utilisateur GitHub
-const apiUrl = `https://api.github.com/users/${githubUser}/repos`;
-
-async function loadProjects() {
-    try {
-        const response = await fetch(apiUrl);
-        const projects = await response.json();
-        
-        const projectGrid = document.querySelector('.project-grid');
-        
-        projects.forEach(project => {
-            const projectElement = document.createElement('div');
-            projectElement.classList.add('project');
-            projectElement.innerHTML = `
-                <h3>${project.name}</h3>
-                <p>${project.description || 'Aucune description disponible'}</p>
-                <a href="${project.html_url}" target="_blank">Voir sur GitHub</a>
-            `;
-            projectGrid.appendChild(projectElement);
-        });
-    } catch (error) {
-        console.error('Erreur lors du chargement des projets GitHub:', error);
-    }
-}
-
-document.addEventListener('DOMContentLoaded', loadProjects);
