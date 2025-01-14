@@ -340,7 +340,10 @@ a.btn.btn-primary {
     border-color: #be2361;
 }
 
-
+a.btn.btn-primary :hover {
+    color: #94118d;
+    
+}
 
 /* contact */
 .contactColumn {
