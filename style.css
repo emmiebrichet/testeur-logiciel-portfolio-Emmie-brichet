@@ -26,6 +26,12 @@
     transition: color 0.3s ease;
 }
 
+.navbar-hidden {
+    transform: translateY(-100%); /* Cache le menu en le faisant sortir de l'écran */
+    transition: transform 0.3s ease; /* Transition fluide pour l'apparition/disparition */
+}
+
+
 /* Menu fixe en haut */
 .navbar.fixed-top {
     position: fixed;
