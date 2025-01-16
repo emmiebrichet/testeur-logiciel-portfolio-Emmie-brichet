@@ -69,6 +69,7 @@ function createSkillsFromJSON() {
             });
         })
         .catch((error) => console.error(error));
+        
 }
 
 // Call the functions to execute the code

@@ -4,7 +4,7 @@
 /* Par défaut : Couleur des liens de navigation */
 .nav-link {
     font-family: Arial, Helvetica, sans-serif;;
-    color: #be2361  !important; /* Forcer la couleur */
+    color: #d89fb5  !important; /* Forcer la couleur */
     transition: color 0.3s ease; /* Transition fluide */
     font-weight: bold;
 }
@@ -20,7 +20,7 @@
 .navbar-brand {
     font-family: 'Times New Roman', Times,sans-serif ;
     font-style: italic;
-    color: #be2361 !important; /* Forcer la couleur personnalisée */
+    color: #d89fb5 !important; /* Forcer la couleur personnalisée */
     font-weight: bold;
     font-style: italic;
     transition: color 0.3s ease;
@@ -110,32 +110,55 @@ body {
 }
 
 /* skills */
-.skillsText.card {
-    height: 350px;
-    cursor: pointer;
-}
-.skillsText img {
+.card img {
     width: 100%;
-    height: 150px;
-    object-fit: contain;
+    height: auto;
+    border-radius: 5px;
 }
-#skills p {
-    text-align: center;
+
+.card h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
-.skillsIcon {
-    font-size: 36px;
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.skill-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card img {
     width: 100%;
+    height: auto;
 }
-.card-title {
-    text-align: center;
+
+.skill-card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
 }
-.card:hover .skillsIcon {
-    color: #813554;
-}
-.skillsText:hover {
-    border: 1px solid;
-    
+
+.skill-card p {
+    padding: 10px;
+    font-size: 1em;
+    line-height: 1.5;
 }
 
 
@@ -204,146 +227,90 @@ body {
     align-items: center;
 }
 
-
-/* portfolio */
-
-/* Fichier CSS */
-#table-container table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 1em;
-    font-family: Arial, sans-serif;
-    text-align: left;
-}
-
-#table-container th, #table-container td {
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-}
-
-#table-container th {
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-
-
-
-#portfolio h4 {
-    margin-top: 50px;
-
-}
-
-
-#portfolio p {
+.projets-title {
     text-align: center;
-   
-}
-/* Grille des projets */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Colonnes responsives */
-    gap: 20px; /* Espace entre les projets */
-    margin-top: 20px;
-}
-
-/* Style de chaque projet */
-.project {
-    background-color: #f4f4f4; /* Couleur de fond claire */
-    padding: 20px; /* Espacement interne */
-    border-radius: 8px; /* Coins arrondis */
-    box-shadow: 0 4px 8px #6d213f; /* Ombre légère autour des projets */
-    transition: transform 0.3s ease-in-out; /* Animation de survol */
-}
-
-.project:hover {
-    transform: translateY(-5px); /* Effet d'élévation au survol */
-}
-
-/* Style du titre du projet */
-.project h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-/* Style de la description du projet */
-.project p {
-    font-size: 1rem;
-    color: #6d213f;
-    margin-bottom: 15px;
-}
-
-/* Style du lien vers GitHub */
-.project a {
-    color: #6d213f;
-    text-decoration: none;
+    color: #be2361;
     font-weight: bold;
 }
 
-.project a:hover {
-    text-decoration: underline;
-}
-
-#projets {
-    text-align: center;
-    padding: 50px 0;
-}
-
-#projets h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: #be2361;
-}
-
+/* Style général pour aligner les cartes */
 .projets-container {
     display: flex;
-    justify-content: center;
-    gap: 20px;
     flex-wrap: wrap;
+    gap: 20px; /* Espacement entre les cartes */
+    justify-content: center; /* Centre les cartes */
+    margin-top: 30px;
 }
 
-.projet {
-    width: 300px;
+/* Style des cartes */
+.projet.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px; /* Largeur fixe des cartes */
+    height: 450px; /* Hauteur uniforme des cartes */
     border: 1px solid #ddd;
     border-radius: 8px;
+    box-shadow: 0 4px 8px #be2361;
     overflow: hidden;
-    box-shadow: 0 4px 8px #6d213f;
     background-color: #fff;
+    transition: transform 0.3s ease-in-out;
 }
 
+.projet.card:hover {
+    transform: translateY(-5px); /* Animation au survol */
+}
+
+/* Image des cartes */
 .card-img-top {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: 150px; /* Hauteur fixe pour les images */
+    object-fit: cover; /* Ajuste l'image sans déformation */
+    border-bottom: 1px solid #dddddd;
 }
 
+/* Contenu de la carte */
 .card-body {
     padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
+/* Titres des cartes */
 .card-title {
     font-size: 1.25rem;
-    margin-bottom: 10px;
     color: #be2361;
+    margin-bottom: 15px;
 }
 
+/* Description des cartes */
 .card-text {
     font-size: 1rem;
     color: #6d213f;
     margin-bottom: 20px;
 }
 
-a.btn.btn-primary {
+/* Bouton des cartes */
+.btn.btn-primary {
     color: #fff;
     background-color: #be2361;
     border-color: #be2361;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
 }
 
-a.btn.btn-primary :hover {
-    color: #94118d;
-    
+.btn.btn-primary:hover {
+    background-color: #be2361;
+    color: #fff;
 }
+
 
 /* contact */
 .contactColumn {
@@ -364,7 +331,7 @@ footer {
     width: 100%;
     height: 100px;
     background-color: #301520; /* Couleur de fond (vous pouvez ajuster cette couleur) */
-    padding: 20px 0; /* Espacement autour du contenu */
+    padding: 20px 0; 
     position: relative;
 }
 
@@ -375,4 +342,5 @@ footer p{
     font-size: 24px;
 
 }
+
 
