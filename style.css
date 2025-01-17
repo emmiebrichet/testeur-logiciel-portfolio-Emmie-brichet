@@ -4,7 +4,7 @@
 /* Par défaut : Couleur des liens de navigation */
 .nav-link {
     font-family: Arial, Helvetica, sans-serif;;
-    color: #d89fb5  !important; /* Forcer la couleur */
+    color: #be2361  !important; /* Forcer la couleur */
     transition: color 0.3s ease; /* Transition fluide */
     font-weight: bold;
 }
@@ -29,7 +29,7 @@
 /* Lien de navigation */
 .nav-link {
     font-family: Arial, Helvetica, sans-serif;
-    color: #d89fb5 !important; /* Forcer la couleur */
+    color: #c25a83 !important; /* Forcer la couleur */
     transition: color 0.3s ease;
     font-weight: bold;
 }
@@ -43,7 +43,7 @@
 .navbar-brand {
     font-family: 'Times New Roman', Times, sans-serif;
     font-style: italic;
-    color: #d89fb5 !important;
+    color: #be2361 !important;
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -131,7 +131,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #d89fb5;
+    color: #c25a83;
 }
 
 /* about */
@@ -214,6 +214,10 @@ header {
     margin: 5px 0; /* Ajoute un espacement entre les éléments de la liste */
 }
 
+#Projets h2{
+
+    margin-bottom: 48px;
+}
 
 /* Titre principal */
 .projets-title {
