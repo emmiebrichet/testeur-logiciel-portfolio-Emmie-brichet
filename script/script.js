@@ -40,13 +40,19 @@ function handleNavbarCollapse() {
     });
 }
 
+
+
 // Call the functions to execute the code
 handleNavbarVisibility();
 handleNavbarScroll();
 handleNavbarCollapse();
 
+document.addEventListener("DOMContentLoaded", () => {
+    // Gestion du bouton hamburger
+    const navbarToggler = document.querySelector(".navbar-toggler");
+    const navbarCollapse = document.querySelector("#navbarSupportedContent");
 
-
-
-
-
+    navbarToggler.addEventListener("click", () => {
+        navbarCollapse.classList.toggle("show");
+    });
+});

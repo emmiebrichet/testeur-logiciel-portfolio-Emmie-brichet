@@ -16,21 +16,43 @@
 }
 
 
+/* Navbar styles */
+.navbar {
+    transition: all 0.3s ease;
+}
 
-.navbar-brand {
-    font-family: 'Times New Roman', Times,sans-serif ;
-    font-style: italic;
-    color: #d89fb5 !important; /* Forcer la couleur personnalisée */
+/* Style du bouton hamburger */
+.navbar-toggler {
+    border: none;
+}
+
+/* Lien de navigation */
+.nav-link {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #d89fb5 !important; /* Forcer la couleur */
+    transition: color 0.3s ease;
     font-weight: bold;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Brand styles */
+.navbar-brand {
+    font-family: 'Times New Roman', Times, sans-serif;
     font-style: italic;
+    color: #d89fb5 !important;
+    font-weight: bold;
     transition: color 0.3s ease;
 }
 
+/* Navbar hidden state */
 .navbar-hidden {
-    transform: translateY(-100%); /* Cache le menu en le faisant sortir de l'écran */
-    transition: transform 0.3s ease; /* Transition fluide pour l'apparition/disparition */
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
 }
-
 
 /* Menu fixe en haut */
 .navbar.fixed-top {
@@ -38,8 +60,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* Assurez-vous que le menu est au-dessus du reste du contenu */
+    z-index: 1000;
 }
+
 
 /* Espace sous le menu pour éviter le chevauchement avec le contenu */
 body {
@@ -79,15 +102,23 @@ body {
 
 /* hero background image */
 .bgimage {
-    height: 500px;
-    max-height: 900px;
-    background: url("images/goldengate.jpg");
-    background-size: cover;
+    width: 100%; /* 100% de la largeur de la fenêtre */
+    height: 500px; /* Hauteur spécifique de 500px */
+    background: url("images/goldengate.jpg") no-repeat center center;
+    background-size: cover; /* L'image couvre toute la zone */
     position: relative;
 }
+
+header {
+    width: 100%; /* Assure que le header prend toute la largeur */
+    margin: 0; /* Élimine les marges par défaut */
+    padding: 0; /* Élimine les espacements internes si besoin */
+}
+
+
 /* text css above hero image*/
 .hero_title {
-    font-size: 4.5rem;
+    font-size: 50px;
 }
 .hero_desc {
     font-size: 2rem;
@@ -116,167 +147,122 @@ body {
 }
 
 /* skills */
-.card img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+#skills{
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-.card h4 {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.card p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-
-
-.skills {
+/* Structure générale des compétences */
+.compétences {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
-    margin: 40px 0;
-}
-
-.skill-card {
-    width: 300px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.skill-card img {
-    width: 100%;
-    height: auto;
-}
-
-.skill-card h3 {
-    font-size: 1.5em;
-    margin: 10px 0;
-}
-
-.skill-card p {
-    padding: 10px;
-    font-size: 1em;
-    line-height: 1.5;
-}
-
-
-.compétences {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Deux colonnes de tailles égales */
-    gap: 20px; /* Espacement entre les items */
-    justify-items: center; /* Centre les éléments dans chaque colonne */
-    align-items: start; /* Aligne le contenu en haut de chaque item */
 }
 
 .competence-item {
-    display: flex;
-    flex-direction: column; /* Place le texte sous l'image */
-    align-items: center; /* Centre les éléments horizontalement */
     text-align: center;
-    width: 100%; /* Les items prennent toute la largeur de leur colonne */
+    width: 30%;
 }
 
 .competence-item img {
-    width: 300px; /* Largeur uniforme */
-    height: 300px; /* Hauteur uniforme */
-    object-fit: cover; /* Découpe l'image pour remplir les dimensions */
-    border-radius: 10px; /* Coins arrondis (facultatif) */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    width: 100%; /* Réduit la taille des images à 100% de la largeur du conteneur */
+    max-width: 150px; /* Limite la taille des images à une largeur de 150px */
+    margin-bottom: 10px;
 }
 
-
-.competence-item p {
-    margin-top: 10px; /* Espacement entre l'image et le texte */
-    margin-bottom: 50px;
-    font-size: 20px; /* Taille de la police */
-    color:#be2361 ;
-    font-style: italic;
-}
-
-
-.react img{
-    width: 500px; /* Largeur uniforme */
-    height: 200px;
-
-}
-
-.html img {
-    width: 550px; /* Largeur uniforme */
-    height: 350px; /* Hauteur uniforme */
-}
-
-.js img {
-    width: 200px; /* Largeur uniforme */
-    height: 300px; /* Hauteur uniforme */
-}
-
+/* Pour les outils */
+/* Section "Je sais utiliser..." */
 .outils {
-    margin: 200px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .outils img {
-    width: 500px; /* Largeur uniforme */
-    height: 200px; /* Hauteur uniforme */
+    width: 200px; /* Diminue la taille des images */
+    height: auto;
+    margin: 10px; /* Ajoute un espacement entre les images */
 }
 
-.ecrire {
+.outils .images-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap; /* Permet aux images de passer à la ligne si elles ne tiennent pas */
+    justify-content: center; /* Centre les images horizontalement */
+    gap: 10px; /* Ajoute de l'espace entre les images */
 }
 
+
+/* Section "Je sais..." */
+.ecrire {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.ecrire img {
+    width: 80%; /* Limite la taille de l'image */
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+/* Section "Je sais..." */
+.ecrire ul {
+    list-style: none; /* Supprime les points de la liste */
+    padding: 0; /* Retire le retrait par défaut de la liste */
+}
+
+.ecrire ul li {
+    margin: 5px 0; /* Ajoute un espacement entre les éléments de la liste */
+}
+
+
+/* Titre principal */
 .projets-title {
     text-align: center;
     color: #be2361;
     font-weight: bold;
 }
 
-/* Style général pour aligner les cartes */
+/* Conteneur général des cartes */
 .projets-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Espacement entre les cartes */
-    justify-content: center; /* Centre les cartes */
+    gap: 30px; /* Espace de 20px entre les cartes */
+    justify-content: center; /* Centre les cartes horizontalement */
     margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0 15px; /* Ajout d'un padding pour éviter les bords */
 }
 
-/* Style des cartes */
+/* Cartes individuelles */
 .projet.card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 300px; /* Largeur fixe des cartes */
-    height: 450px; /* Hauteur uniforme des cartes */
+    width: 300px; /* Largeur uniforme des cartes */
+    height: 450px; /* Hauteur fixe des cartes */
     border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 4px 8px #be2361;
-    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(190, 35, 97, 0.2);
     background-color: #fff;
-    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .projet.card:hover {
     transform: translateY(-5px); /* Animation au survol */
+    box-shadow: 0 6px 12px rgba(190, 35, 97, 0.3);
 }
 
-/* Image des cartes */
+/* Images dans les cartes */
 .card-img-top {
     width: 100%;
-    height: 150px; /* Hauteur fixe pour les images */
-    object-fit: cover; /* Ajuste l'image sans déformation */
-    border-bottom: 1px solid #dddddd;
+    height: 150px; /* Hauteur fixe */
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
 }
 
-/* Contenu de la carte */
+/* Corps des cartes */
 .card-body {
     padding: 20px;
     text-align: center;
@@ -293,28 +279,45 @@ body {
     margin-bottom: 15px;
 }
 
-/* Description des cartes */
+/* Texte descriptif des cartes */
 .card-text {
     font-size: 1rem;
     color: #6d213f;
     margin-bottom: 20px;
 }
 
-/* Bouton des cartes */
+/* Boutons d'action */
+/* Boutons d'action - Couleur uniforme */
+/* Boutons d'action - Couleur uniforme */
 .btn.btn-primary {
     color: #fff;
     background-color: #be2361;
+    border-color: #be2361;
     padding: 10px 15px;
     font-size: 1rem;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
+/* État au survol */
 .btn.btn-primary:hover {
     background-color: #be2361;
-    color: #fff;
+    border-color: #be2361;
+    transform: scale(1.05); /* Animation au survol */
 }
+
+/* État actif ou au focus - Sans ombre */
+.btn.btn-primary:active,
+.btn.btn-primary:focus {
+    background-color: #be2361;
+    border-color: #be2361;
+    transform: scale(1); /* Pas d'effet de zoom */
+    box-shadow: none; /* Retirer l'ombre */
+}
+
+
+
 
 
 /* contact */
@@ -335,17 +338,28 @@ body {
 footer {
     width: 100%;
     height: 100px;
-    background-color: #301520; /* Couleur de fond (vous pouvez ajuster cette couleur) */
-    padding: 20px 0; 
+    background-color: #301520; /* Couleur de fond */
+    padding: 20px 0;
     position: relative;
+    display: flex;
+    justify-content: center; /* Centre horizontalement le texte */
+    align-items: center; /* Centre verticalement le texte */
 }
 
-
-footer p{
+footer p {
     color: #be2361;
-    margin-left: 650px;
     font-size: 24px;
-
 }
 
 
+
+@media (max-width: 768px) {
+    .hero_title {
+        font-size: 30px;
+    }
+
+    .projet.card {
+        width: 100%; /* Les cartes prennent la largeur entière */
+        max-width: 350px; /* Limite pour une meilleure apparence */
+    }
+}

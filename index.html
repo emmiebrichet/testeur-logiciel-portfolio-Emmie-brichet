@@ -8,30 +8,39 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
             integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-       <link rel="stylesheet" href="./css/style.css">
-        <!-- linking css file -->
-        <link rel="stylesheet" href="style.css">
-        <!-- bootstrap CDN -->
+       <link rel="stylesheet" href="style.css">
+       <script src="script/script.js" defer></script>
+       
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" >
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     </head> 
     <body>
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll navbar-hidden">
             <div class="container">
                 <a class="navbar-brand" href="#">Emmie Brichet</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="#home">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">A propos</a>
+                            <a class="nav-link" href="#about">À propos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#skills">Compétences</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projets">Mes projets</a>
+                            <a class="nav-link" href="#Projets">Mes projets</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contactez-moi</a>
@@ -41,16 +50,19 @@
             </div>
         </nav>
         
-        <section class="bgimage" id="home">
+        
+        <header class="bgimage" id="home">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text text-center">
                         <h1 class="hero_title">Bienvenue sur le portfolio d'Emmie</h1>
                         <p class="hero_desc">Testeuse logiciel</p>
                     </div>
                 </div>    
             </div>
-        </section>
+        </header>
+        
+        
         <section id="about">
             <div class="container mt-4 pt-4">
                 <h2 class="text-center">A propos</h2>
@@ -68,59 +80,73 @@
                             </div>
                         </div>
                         <div class="row mt-3">
-                          <p>Je m'appelle Emmie Brichet et j'ai eu la chance de vivre 5 ans à San Francisco, une expérience qui m'a appris l'adaptabilité et l'ouverture d'esprit. Après avoir obtenu un bac pro gestion-administration, j'ai travaillé dans divers domaines, notamment dans la restauration et comme magasinier en librairie suite à une formation de libraire. Ces expériences ont développé chez moi une forte capacité d'organisation, un sens des priorités et une grande rigueur. En 2024, j'ai décidé de me reconvertir dans l'informatique, un domaine qui m'a toujours intriguée et qui offre de nombreuses opportunités. J'ai récemment terminé une formation de 11 mois chez OpenClassroom en tant que Testeuse logiciel, où j'ai acquis des compétences en méthodologies de test, en détection de bugs, et en réalisation de sites web. Je suis une personne efficace, autonome et j'apprends rapidement. Mon esprit d’initiative, ma polyvalence et ma curiosité me permettent de m'adapter facilement à tout projet. Bien que je continue à renforcer mes compétences, je suis déterminée et prête à relever tous les défis pour réussir et m'épanouir pleinement en tant que Testeuse logiciel.</p>
-                        </div>
-                    </div>
+                            <p>Je m'appelle <strong>Emmie Brichet</strong>. Après avoir vécu 5 ans à San Francisco, où j'ai développé une grande <strong>adaptabilité</strong> et une <strong>ouverture d'esprit</strong>, j'ai poursuivi un <strong>bac pro Gestion-Administration</strong> et travaillé dans divers domaines, notamment en <strong>restauration</strong> et en tant que <strong>magasinier en librairie</strong>. Ces expériences m'ont permis de développer un <strong>sens de l'organisation</strong>, une <strong>gestion des priorités</strong> et une <strong>rigueur</strong> essentielles dans mon parcours professionnel.</p>
+  
+                            <p>En 2024, j'ai décidé de me reconvertir dans l'informatique en suivant une formation de <strong>Testeuse Logiciel</strong> chez OpenClassrooms, où j'ai acquis des compétences solides en <strong>tests manuels et automatisés</strong>, <strong>détection de bugs</strong> et <strong>création de sites web</strong> (HTML, CSS, JavaScript, API).</p>
+                          
+                            <h3>Mes points forts :</h3>
+                            <ul>
+                              <li><strong>Polyvalence</strong> grâce à un parcours varié.</li>
+                              <li><strong>Esprit d'initiative</strong> et <strong>autonomie</strong>.</li>
+                              <li><strong>Curiosité</strong> et <strong>capacité d'apprentissage rapide</strong>.</li>
+                              <li><strong>Adaptabilité</strong> et <strong>rigueur</strong> développées au fil de mes expériences professionnelles.</li>
+                            </ul>
+                          
+                         <p>Je suis prête à relever de nouveaux défis et à contribuer activement à la qualité des projets en tant que Testeuse Logiciel.</p>
+                         </div>  
+                    </div>       
                 </div>
             </div>
         </section>
-         <!-- skills section-->
         <section id="skills">
             <h2 class="text-center">Compétences</h2>
             <div class="compétences">
-                <div class="react">
-                    <div class="competence-item">
-                        <img src="images/react.jpg" alt="React">
-                        <p>React</p>
-                    </div>
-                </div>
-                <div class="html">    
-                    <div class="competence-item">
-                        <img src="images/html-css.jpg" alt="HTML et CSS">
-                        <p>HTML et CSS</p>
-                    </div>
-                </div>
-                <div class="js">   
-                    <div class="competence-item">
-                        <img src="images/js.jpg" alt="JavaScript">
-                        <p>JavaScript</p>
-                    </div>
+                <div class="competence-item">
+                    <img src="images/react.jpg" alt="React" class="img-fluid">
+                    <h3>React</h3>
+                    <p>"Création d’applications React, création de composants et manipulation de leur état"</p>
                 </div>
                 <div class="competence-item">
-                    <img src="images/test.png" alt="Tests">
-                    <p>Tests (Tests Fonctionnels, Tests Exploratoires et Automatisés)</p>
+                    <img src="images/html-css.jpg" alt="HTML et CSS" class="img-fluid">
+                    <h3>HTML et CSS</h3>
+                    <p>"Intégration d’interfaces responsives et accessibles, utilisation de maquettes Figma, développement d’animations CSS"</p>
                 </div>
                 <div class="competence-item">
-                    <img src="images/optimisation-et-debug.png" alt="Optimisation et Debug">
-                    <p>Optimisation et Debug</p>
+                    <img src="images/js.jpg" alt="JavaScript" class="img-fluid">
+                    <h3>JavaScript</h3>
+                    <p>"Manipulation du DOM, création d’éléments dynamiques, gestion de données de formulaires"</p>
                 </div>
                 <div class="competence-item">
-                    <img src="images/gestion-de-projet.png" alt="Gestion de projet">
-                    <p>Gestion de projet</p>
+                    <img src="images/test.png" alt="Tests" class="img-fluid">
+                    <h3>Tests</h3>
+                    <p>"Tests exploratoires, unitaires et d’intégration, définition d’une stratégie de test et d’un rédaction d’un cahier de recette, automatisation de tests E2E et d’API"</p>
                 </div>
-
+                <div class="competence-item">
+                    <img src="images/optimisation-et-debug.png" alt="Optimisation et Debug" class="img-fluid">
+                    <h3>Optimisation et Debug</h3>
+                    <p>"Identification des anomalies et correction d’un site existant, optimisation SEO et performance et publication d’un site en ligne"</p>
+                </div>
+                <div class="competence-item">
+                    <img src="images/gestion-de-projet.png" alt="Gestion de projet" class="img-fluid">
+                    <h3>Gestion de projet</h3>
+                    <p>"Analyse des besoins d’un client, définition d’une solution technique répondant aux besoins fonctionnels, planification du projet"</p>
+                </div>
             </div>
-            <div class="outils ">
-                <h2 class="text-center"> Je sais utiliser...</h2>
-                <img src="images/GitHub-logo.png" alt="GitHub">
-                <img src="images/Docker-Logo-2017-present.jpg" alt="docker">
-                <img src="images/logo-jira-653x321.gif" alt="jira">
-                <img src="images/images.png" alt=" vs code">
-
+            
+            <div class="outils">
+                <h2 class="text-center">Je sais utiliser...</h2>
+                <div class="images-container">
+                    <img src="images/GitHub-logo.png" alt="GitHub">
+                    <img src="images/Docker-Logo-2017-present.jpg" alt="Docker">
+                    <img src="images/logo-jira-653x321.gif" alt="Jira">
+                    <img src="images/images.png" alt="VS Code">
+                </div>
             </div>
-            <div class="ecrire ">
-                <h2 class="text-center"> Je sais...</h2>
-                <img src="images/istockphoto-1368011030-612x612.jpg"  alt="personne qui ecrit">
+            
+            
+            <div class="ecrire">
+                <h2 class="text-center">Je sais...</h2>
+                <img src="images/istockphoto-1368011030-612x612.jpg" alt="personne qui ecrit" class="img-fluid">
                 <ul>
                     <li>Rédiger un rapport de test</li>
                     <li>Réaliser un bilan de la campagne de tests</li>
@@ -130,81 +156,101 @@
                 </ul>
             </div>
         </section>
-        <section id="projets">
-            <div class="container mt-3">
-                <h2 class="projets-title">Mes Projets</h2>
+        
+        
+        <section id="Projets">
+            <div class="container mt-3">            
                 <div class="projets-container row">
-                    <div class="projet card col-lg-4 col-md-6">
-                        <img src="images/Capture%20d'%C3%A9cran%202025-01-13%20194521.png" alt="Cahier de recette JSE Avocats" class="card-img-top">
-                        <div class="card-body">
-                         <h3 class="card-title">Cahier de recette JSE Avocats</h3><a href="document/Brichet_Emmie_1_cahier_de_recette_122024%20_fichiers/sheet001.htm" target="_blank" class="btn btn-primary">Voir le Cahier de recette</a>
+                    <div class="container mt-3">
+                            <h2 class="projets-title">Mes Projets</h2>
+                            <div class="projets-container row">
+                                <div class="projet card col-lg-4 col-md-6">
+                                    <img src="images/Capture%20d'%C3%A9cran%202025-01-13%20194521.png" alt="Cahier de recette JSE Avocats" class="card-img-top">
+                                    <div class="card-body">
+                                     <h3 class="card-title">Cahier de recette JSE Avocats</h3><a href="document/Brichet_Emmie_1_cahier_de_recette_122024%20_fichiers/sheet001.htm" target="_blank" class="btn btn-primary">Voir le Cahier de recette</a>
+                                    </div>
+                                </div>
+                                 <div class="projet card col-lg-4 col-md-6">
+                                    <img src="images/Capture%20d'%C3%A9cran%202025-01-13%20194712.png" alt="Cahier de recette 724events" class="card-img-top">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Cahier de recette 724events</h3><a href="document/brichet_Emmie_2_cahier_de_recette_072024_fichiers/sheet001.htm" target="_blank" class="btn btn-primary">Voir le Cahier de recette</a>
+                                    </div>
+                                </div>
+                            <!-- Présentation Menu Maker -->
+                            <div class="projet card col-lg-4 col-md-6">
+                                <iframe src="document/Brichet_Emmie_4_presentation_122024.pdf"></iframe>
+                                <div class="card-body">
+                                    <h3 class="card-title">Présentation Menu Maker</h3>
+                                    <a href="document/Brichet_Emmie_4_presentation_122024.pdf" target="_blank" class="btn btn-primary">Voir le document</a>
+                                    
+                                </div>
+                            </div>
+                            <!-- Tableau Jira d'anomalies -->
+                            <div class="projet card col-lg-4 col-md-6">
+                                <iframe src="document/brichet_Emmie_3_anomalies_072024.html"></iframe>
+                                <div class="card-body">
+                                    <h3 class="card-title">Tableau Jira d'anomalies 724events</h3>
+                                    <a href="document/brichet_Emmie_3_anomalies_072024.html" target="_blank" class="btn btn-primary">Voir le document</a>
+                                    
+                                </div>
+                            </div>
+                            <!-- Bilan de campagne de test -->
+                            <div class="projet card col-lg-4 col-md-6">
+                                <iframe src="document/brichet_Emmie_1_bilan_de_campagne_de_test_072024.pdf"></iframe>
+                                <div class="card-body">
+                                    <h3 class="card-title">Bilan de campagne de test 724events</h3>
+                                    <a href="document/brichet_Emmie_1_bilan_de_campagne_de_test_072024.pdf" target="_blank" class="btn btn-primary">Voir le document</a>
+                                </div>
+                            </div>
+                            <!-- Spécifications techniques -->
+                            <div class="projet card col-lg-4 col-md-6">
+                                <iframe src="document/Bricher_EMMIE_1_specifications_techniques_122024.docxv.pdf"></iframe>
+                                <div class="card-body">
+                                    <h3 class="card-title">Spécifications techniques Menu Maker</h3>
+                                    <a href="document/Bricher_EMMIE_1_specifications_techniques_122024.docxv.pdf" target="_blank" class="btn btn-primary">Voir le document</a>
+                                </div>
+                            </div>
+                            <div class="projet card col-lg-4 col-md-6">
+                                <img src="images/Capture%20d'%C3%A9cran%202025-01-14%20211648.png" alt="Print It" class="card-img-top">
+                                <div class="card-body">
+                                    <h3 class="card-title">Print It</h3>
+                                    <p class="card-text">Un projet pour imprimer des fichiers de manière interactive.</p><a href="https://emmiebrichet.github.io/p6-print-it/" target="_blank" class="btn btn-primary">Accéder au projet</a>
+                                </div>
+                            </div>
+                            <div class="projet card col-lg-4 col-md-6">
+                                <img src="images/Capture%20d'%C3%A9cran%202025-01-14%20211614.png" alt="Projet Booki" class="card-img-top">
+                                <div class="card-body">
+                                    <h3 class="card-title">Booki</h3>
+                                    <p class="card-text">Projet HTML et CSS pour une agence de voyage.</p><a href="https://emmiebrichet.github.io/projet-3/" target="_blank" class="btn btn-primary">Accéder au projet</a>
+                                </div>
+                            </div>
+                            <div class="projet card col-lg-4 col-md-6">
+                                <img src="images/Capture%20d'%C3%A9cran%202025-01-14%20211731.png" alt="Riding City" class="card-img-top">
+                                <div class="card-body">
+                                    <h3 class="card-title">Riding City</h3>
+                                    <p class="card-text">Projet HTML pour une plateforme de location de vélos.</p><a href="https://emmiebrichet.github.io/projet-2/" target="_blank" class="btn btn-primary">Accéder au projet</a>
+                                </div>
+                            </div>
+                            <div class="projet card col-lg-4 col-md-6">
+                                <img src="images/2024-05-03 (1).png" alt="Sophie  " class="card-img-top">
+                                <div class="card-body">
+                                    <h3 class="card-title">Portfolio Architecte</h3>
+                                    <p class="card-text">Portfolio pour une architecte, avec gestion de projets et API.</p><a href="https://github.com/emmiebrichet/Portfolio-architecte-sophie-bluel-master" target="_blank" class="btn btn-primary">Accéder à mon code sur GitHub</a>
+                                </div>
+                            </div>
+                            <div class="projet card col-lg-4 col-md-6">
+                                <div class="card-body">
+                                    <h3 class="card-title">Kasa</h3>
+                                    <p class="card-text">Application React pour une plateforme de location d'appartements, avec gestion des routes.</p><a href="https://github.com/emmiebrichet/kasa-master" target="_blank" class="btn btn-primary">Accéder à mon code sur GitHub</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                <div class="projet card col-lg-4 col-md-6">
-                    <img src="images/Capture%20d'%C3%A9cran%202025-01-13%20194712.png" alt="Cahier de recette 724events" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">Cahier de recette 724events</h3><a href="document/brichet_Emmie_2_cahier_de_recette_072024_fichiers/sheet001.htm" target="_blank" class="btn btn-primary">Voir le Cahier de recette</a>
-                    </div>
+                
                 </div>
-                <div class="projet card col-lg-4 col-md-6">
-                    <iframe src="document/brichet_Emmie_1_bilan_de_campagne_de_test_072024.pdf"></iframe>
-                    <div class="card-body">
-                     <h3 class="card-title">Bilan de campagne de test 724events</h3>
-                    </div>
-                </div>
-                <div class="projet card col-lg-4 col-md-6">
-                    <iframe src="document/brichet_Emmie_3_anomalies_072024.html"></iframe>
-                    <div class="card-body">
-                        <h3 class="card-title">Tableau Jira d'anomalies 724events</h3>
-                    </div>
-                </div>
-                <div class="projet card col-lg-4 col-md-6">
-                    <iframe src="document/Brichet_Emmie_4_presentation_122024.pdf"></iframe>
-                    <div class="card-body">
-                        <h3 class="card-title">Présentation Menu Maker</h3>
-                    </div>
-                </div>
-                <div class="projet card col-lg-4 col-md-6">
-                    <iframe src="document/Bricher_EMMIE_1_specifications_techniques_122024.docxv.pdf" ></iframe>
-                    <div class="card-body">
-                        <h3 class="card-title">Spécifications techniques Menu Maker</h3>
-                    </div>
-                </div>
-                <div class="projet card col-lg-4 col-md-6">
-                    <img src="images/Capture%20d'%C3%A9cran%202025-01-14%20211648.png" alt="Print It" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">Print It</h3>
-                        <p class="card-text">Un projet pour imprimer des fichiers de manière interactive.</p><a href="https://emmiebrichet.github.io/p6-print-it/" target="_blank" class="btn btn-primary">Accéder au projet</a>
-                    </div>
-                </div>
-                <div class="projet card col-lg-4 col-md-6">
-                    <img src="images/Capture%20d'%C3%A9cran%202025-01-14%20211614.png" alt="Projet Booki" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">Booki</h3>
-                        <p class="card-text">Projet HTML et CSS pour une agence de voyage.</p><a href="https://emmiebrichet.github.io/projet-3/" target="_blank" class="btn btn-primary">Accéder au projet</a>
-                    </div>
-                </div>
-                <div class="projet card col-lg-4 col-md-6">
-                    <img src="images/Capture%20d'%C3%A9cran%202025-01-14%20211731.png" alt="Riding City" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">Riding City</h3>
-                        <p class="card-text">Projet HTML pour une plateforme de location de vélos.</p><a href="https://emmiebrichet.github.io/projet-2/" target="_blank" class="btn btn-primary">Accéder au projet</a>
-                    </div>
-                </div>
-                <div class="projet card col-lg-4 col-md-6">
-                    <div class="card-body">
-                        <h3 class="card-title">Portfolio Architecte</h3>
-                        <p class="card-text">Portfolio pour une architecte, avec gestion de projets et API.</p><a href="https://github.com/emmiebrichet/Portfolio-architecte-sophie-bluel-master" target="_blank" class="btn btn-primary">Accéder à mon code sur GitHub</a>
-                    </div>
-                </div>
-                <div class="projet card col-lg-4 col-md-6">
-                    <div class="card-body">
-                        <h3 class="card-title">Kasa</h3>
-                        <p class="card-text">Application React pour une plateforme de location d'appartements, avec gestion des routes.</p><a href="https://github.com/emmiebrichet/kasa-master" target="_blank" class="btn btn-primary">Accéder à mon code sur GitHub</a>
-                    </div>
-                </div>
+               
             </div>
-        </div>
+   
         </section>
         <section id="contact">
             <div class="container mt-3 contactContent">
@@ -223,7 +269,6 @@
                 </div>
             </div>
         </section>
-        <script src="script/script.js"></script>
         <footer>
             <p>Portfolio d'Emmie Brichet 2025</p>
         </footer>
