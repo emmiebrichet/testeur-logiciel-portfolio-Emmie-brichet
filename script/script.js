@@ -41,12 +41,6 @@ function handleNavbarCollapse() {
 }
 
 
-
-// Call the functions to execute the code
-handleNavbarVisibility();
-handleNavbarScroll();
-handleNavbarCollapse();
-
 document.addEventListener("DOMContentLoaded", () => {
     // Gestion du bouton hamburger
     const navbarToggler = document.querySelector(".navbar-toggler");
@@ -56,3 +50,9 @@ document.addEventListener("DOMContentLoaded", () => {
         navbarCollapse.classList.toggle("show");
     });
 });
+
+// Call the functions to execute the code
+handleNavbarVisibility();
+handleNavbarScroll();
+handleNavbarCollapse();
+
