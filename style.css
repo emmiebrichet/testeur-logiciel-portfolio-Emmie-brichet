@@ -4,7 +4,7 @@
 /* Par défaut : Couleur des liens de navigation */
 .nav-link {
     font-family:cursive;;
-    color: #be2361  !important; /* Forcer la couleur */
+    color: #cd95ac  !important; /* Forcer la couleur */
     transition: color 0.3s ease; /* Transition fluide */
     font-weight: bold;
 }
@@ -29,7 +29,7 @@
 /* Lien de navigation */
 .nav-link {
     font-family: cursive;
-    color: #c25a83 !important; /* Forcer la couleur */
+    color: #cd95ac !important; /* Forcer la couleur */
     transition: color 0.3s ease;
     font-weight: bold;
     
@@ -44,7 +44,7 @@
 .navbar-brand {
     font-family:cursive;
     font-style: italic;
-    color: #be2361 !important;
+    color: #cd95ac !important;
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -159,7 +159,7 @@ h3{
 }
 .highlight {
     font-weight: bold;
-    color: #c25a83; /* Une couleur verte douce */
+    color: #be2361; /* Une couleur verte douce */
 }
 
 /* skills */
