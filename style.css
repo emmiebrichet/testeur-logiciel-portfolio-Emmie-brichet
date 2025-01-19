@@ -389,8 +389,8 @@ footer {
     align-items: center; /* Centre verticalement le texte */
 }
 
-footer p {
-    color: #be2361;
+footer h2 {
+    color: #cd95ac;
     font-size: 24px;
     font-family: cursive;
     font-size: 30px;
