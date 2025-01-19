@@ -29,7 +29,7 @@
 /* Lien de navigation */
 .nav-link {
     font-family: cursive;
-    color: #cd95ac !important; /* Forcer la couleur */
+    color: #f0b7cf !important; /* Forcer la couleur */
     transition: color 0.3s ease;
     font-weight: bold;
     
@@ -44,7 +44,7 @@
 .navbar-brand {
     font-family:cursive;
     font-style: italic;
-    color: #cd95ac !important;
+    color: #f0b7cf !important;
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -72,7 +72,7 @@ body {
 
 /* Style spécifique si vous souhaitez un effet de transparence ou d'ombre */
 .navbarScroll {
-    background-color:#301520; /* Exemple d'effet de fond transparent */
+    background-color:#290c18; /* Exemple d'effet de fond transparent */
     box-shadow: 0 4px 2px -2px ;
 }
 
@@ -81,7 +81,7 @@ body {
 #portfolio,
 #contact {
     margin-top: 20px;
-    color: #6d213f;
+    color: #601c37;
 }
 
 #about h2,
@@ -146,6 +146,7 @@ header {
 h3{
     font-size: 30px;
     font-family: cursive;
+    color: #77173d;
 }
 #about p{
     font-family:system-ui, sans-serif;
@@ -155,11 +156,11 @@ h3{
 }
 .imageAboutPage {
     border-radius: 50%;
-    box-shadow: 0 0 100px #301520;
+    box-shadow: 0 0 100px #601c37;
 }
 .highlight {
     font-weight: bold;
-    color: #be2361; /* Une couleur verte douce */
+    color: #601c37; /* Une couleur verte douce */
 }
 
 /* skills */
@@ -311,7 +312,7 @@ h3{
 /* Titres des cartes */
 .card-title {
     font-size: 1.25rem;
-    color: #be2361;
+    color: #c25a83;;
     margin-bottom: 15px;
     font-family: cursive;
     font-size: 30px;
@@ -352,7 +353,8 @@ h3{
 .btn.btn-primary:focus {
     background-color: #be2361;
     border-color: #be2361;
-    transform: scale(1); /* Pas d'effet de zoom */
+    transform: scale(1); 
+    box-shadow: #be2361;
    
 }
 
