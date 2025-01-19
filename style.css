@@ -138,7 +138,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #c25a83;
+    color: #e0a3bd;
 }
 
 /* about */
@@ -390,7 +390,7 @@ footer {
 }
 
 footer h2 {
-    color: #e0a3bd;
+    color: #cd95ac;
     font-size: 24px;
     font-family: cursive;
     font-size: 30px;
