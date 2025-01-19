@@ -1,0 +1,31 @@
+# _config.yml
+
+# URL de ton site (à remplacer par ton domaine ou ton GitHub Pages URL)
+url: "https://emmiebrichet.github.io/P12-testeur-logiciel-portfolio-Emmie/"
+
+# Base URL (si ton projet est dans un sous-répertoire, sinon laisse vide)
+baseurl: "/ton-repertoire"  # Par exemple, "/mon-depot" si le site est dans un sous-dossier
+
+# Nom de ton site
+title: "porfolio Emmie"
+
+# Description de ton site
+description: "Un site statique créé avec Jekyll."
+
+# Répertoire source (par défaut, c'est le répertoire courant)
+source: "./docs"  # Utilise "docs" si ton site est dans ce répertoire
+
+# Répertoire de destination où Jekyll va générer ton site
+destination: "./docs/_site"
+
+# Permet de garder les fichiers générés localement, pour faciliter le debug
+keep_files: true
+
+# Définir des plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sass-converter
+
+# Configuration pour l'affichage des liens relatifs
+relative_links: true
