@@ -80,8 +80,7 @@ body {
 #skills,
 #portfolio,
 #contact {
-    margin-top: 4rem;
-    padding-top: 4rem;
+    margin-top: 20px;
     color: #6d213f;
 }
 
@@ -89,7 +88,7 @@ body {
 #skills h2, 
 #Projets,
 #contact h2 {
-    margin-bottom: 3rem;
+    margin-bottom: 20px;
     color: #be2361;
     font-family:cursive;
     text-align: center;
@@ -99,7 +98,7 @@ body {
     
 
 #contact {
-    padding-bottom: 4rem;
+    padding-bottom: 20px;
 }
 
 /* display background dark color on navbar scroll */
@@ -157,6 +156,10 @@ h3{
 .imageAboutPage {
     border-radius: 50%;
     box-shadow: 0 0 100px #301520;
+}
+.highlight {
+    font-weight: bold;
+    color: #c25a83; /* Une couleur verte douce */
 }
 
 /* skills */
@@ -238,9 +241,8 @@ h3{
 
 #Projets h2{
 
-    margin-bottom: 48px;
-    margin-top: 64px;
-    padding-top: 64px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     font-size: 50px;
 }
 
@@ -372,8 +374,6 @@ a{
 }
 
 /* footer */
-
-
 
 /* Si vous voulez que le footer ait un effet de fond plus foncé ou un ombrage */
 footer {
