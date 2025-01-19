@@ -1,61 +1,39 @@
 /******* GENERAL *******/
-/* spacing on all sections */
 /* Changer la couleur par défaut des liens */
-/* Par défaut : Couleur des liens de navigation */
 .nav-link {
-    font-family:cursive;;
-    color: #cd95ac  !important; /* Forcer la couleur */
-    transition: color 0.3s ease; /* Transition fluide */
+    font-family: cursive;
+    color: #f0b7cf !important; /* Forcer la couleur */
+    transition: color 0.3s ease;
     font-weight: bold;
 }
-
 
 .nav-link:hover {
     text-decoration: underline;
     font-weight: bold;
 }
-
 
 /* Navbar styles */
 .navbar {
     transition: all 0.3s ease;
 }
 
-/* Style du bouton hamburger */
 .navbar-toggler {
     border: none;
 }
 
-/* Lien de navigation */
-.nav-link {
-    font-family: cursive;
-    color: #f0b7cf !important; /* Forcer la couleur */
-    transition: color 0.3s ease;
-    font-weight: bold;
-    
-}
-
-.nav-link:hover {
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-/* Brand styles */
 .navbar-brand {
-    font-family:cursive;
+    font-family: cursive;
     font-style: italic;
     color: #f0b7cf !important;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
-/* Navbar hidden state */
 .navbar-hidden {
     transform: translateY(-100%);
     transition: transform 0.3s ease;
 }
 
-/* Menu fixe en haut */
 .navbar.fixed-top {
     position: fixed;
     top: 0;
@@ -64,74 +42,36 @@
     z-index: 1000;
 }
 
-
-/* Espace sous le menu pour éviter le chevauchement avec le contenu */
 body {
     padding-top: 0px; /* Ajustez la valeur en fonction de la hauteur de votre menu */
 }
 
-/* Style spécifique si vous souhaitez un effet de transparence ou d'ombre */
 .navbarScroll {
-    background-color:#290c18; /* Exemple d'effet de fond transparent */
+    background-color: #290c18;
     box-shadow: 0 4px 2px -2px ;
 }
 
-#about,
-#skills,
-#portfolio,
-#contact {
-    margin-top: 20px;
-    color: #601c37;
-}
-
-#about h2,
-#skills h2, 
-#Projets,
-#contact h2 {
-    margin-bottom: 20px;
-    color: #be2361;
-    font-family:cursive;
-    text-align: center;
-    font-style: italic;
-    font-size: 50px;
-}
-    
-
-#contact {
-    padding-bottom: 20px;
-}
-
-/* display background dark color on navbar scroll */
 .navbarScroll.navbarDark {
     background-color: #301520;
-    
 }
 
 /* hero background image */
 .bgimage {
-    width: 100%; /* 100% de la largeur de la fenêtre */
-    height: 500px; /* Hauteur spécifique de 500px */
+    width: 100%; 
+    height: 500px;
     background: url("images/goldengate.jpg") no-repeat center center;
-    background-size: cover; /* L'image couvre toute la zone */
+    background-size: cover;
     position: relative;
 }
 
 header {
-    width: 100%; /* Assure que le header prend toute la largeur */
-    margin: 0; /* Élimine les marges par défaut */
-    padding: 0; /* Élimine les espacements internes si besoin */
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-
-/* text css above hero image*/
-.hero_title {
-    font-size: 50px;
-}
-.hero_desc {
-    font-size: 2rem;
-}
 .hero-text {
-    font-family:fantasy;
+    font-family: fantasy;
     font-style: italic;
     text-align: center;
     position: absolute;
@@ -141,35 +81,51 @@ header {
     color: #bc658a;
 }
 
-/* about */
+#about, #skills, #portfolio, #contact {
+    margin-top: 20px;
+    color: #601c37;
+}
 
-h3{
+#about h2, #skills h2, #contact h2 {
+    margin-bottom: 20px;
+    color: #be2361;
+    font-family: cursive;
+    text-align: center;
+    font-style: italic;
+    font-size: 50px;
+}
+
+#contact {
+    padding-bottom: 20px;
+}
+
+h3 {
     font-size: 30px;
     font-family: cursive;
     color: #77173d;
 }
-#about p{
-    font-family:system-ui, sans-serif;
+
+#about p {
+    font-family: system-ui, sans-serif;
 }
+
 .imageAboutPage {
     width: 100%;
-}
-.imageAboutPage {
     border-radius: 50%;
     box-shadow: 0 0 100px #601c37;
 }
+
 .highlight {
     font-weight: bold;
-    color: #601c37; /* Une couleur verte douce */
+    color: #601c37;
 }
 
 /* skills */
-#skills{
+#skills {
     margin-left: 50px;
     margin-right: 50px;
 }
 
-/* Structure générale des compétences */
 .compétences {
     display: flex;
     flex-wrap: wrap;
@@ -182,18 +138,17 @@ h3{
     width: 30%;
 }
 
-
 .competence-item img {
-    width: 100%; /* Réduit la taille des images à 100% de la largeur du conteneur */
-    max-width: 150px; /* Limite la taille des images à une largeur de 150px */
+    width: 100%;
+    max-width: 150px;
     margin-bottom: 10px;
 }
-.js img{
+
+.js img {
     width: 20%;
     height: 120px;
-    
 }
-/* Pour les outils */
+
 /* Section "Je sais utiliser..." */
 .outils {
     text-align: center;
@@ -201,18 +156,17 @@ h3{
 }
 
 .outils img {
-    width: 200px; /* Diminue la taille des images */
+    width: 200px;
     height: auto;
-    margin: 10px; /* Ajoute un espacement entre les images */
+    margin: 10px;
 }
 
 .outils .images-container {
     display: flex;
-    flex-wrap: wrap; /* Permet aux images de passer à la ligne si elles ne tiennent pas */
-    justify-content: center; /* Centre les images horizontalement */
-    gap: 10px; /* Ajoute de l'espace entre les images */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
-
 
 /* Section "Je sais..." */
 .ecrire {
@@ -221,63 +175,57 @@ h3{
 }
 
 .ecrire img {
-    width: 80%; /* Limite la taille de l'image */
+    width: 80%;
     max-width: 500px;
     margin-bottom: 20px;
 }
 
-/* Section "Je sais..." */
 .ecrire ul {
     list-style: none;
-    padding-left: 40%; 
-       
+    padding-left: 40%;
 }
 
 .ecrire ul li {
-    
     font-family: system-ui, sans-serif;
     text-align: left;
 }
 
-
-#Projets h2{
-
+#Projets h2 {
     margin-bottom: 20px;
     margin-top: 20px;
     font-size: 50px;
 }
 
-/* Titre principal */
 .projets-title {
     margin-bottom: 3rem;
     color: #be2361;
-    font-family:cursive;
+    font-family: cursive;
     text-align: center;
     font-style: italic;
     font-size: 20px;
 }
-#Projets h3{
+
+#Projets h3 {
     font-size: 25px;
 }
-/* Conteneur général des cartes */
+
 .projets-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px; /* Espace de 20px entre les cartes */
-    justify-content: center; /* Centre les cartes horizontalement */
+    gap: 50px;
+    justify-content: center;
     margin-top: 50px;
     margin-bottom: 50px;
-    padding: 0 15px; /* Ajout d'un padding pour éviter les bords */
+    padding: 0 15px;
 }
 
-/* Cartes individuelles */
 .projet.card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 300px; /* Largeur uniforme des cartes */
-    height: 450px; /* Hauteur fixe des cartes */
+    width: 300px;
+    height: 450px;
     border: 1px solid rgba(190, 35, 97, 0.2);
     border-radius: 8px;
     box-shadow: 0 4px 8px #be2361;
@@ -287,19 +235,17 @@ h3{
 }
 
 .projet.card:hover {
-    transform: translateY(-5px); /* Animation au survol */
+    transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(190, 35, 97, 0.3);
 }
 
-/* Images dans les cartes */
 .card-img-top {
     width: 100%;
-    height: 150px; /* Hauteur fixe */
+    height: 150px;
     object-fit: cover;
     border-bottom: 1px solid #ddd;
 }
 
-/* Corps des cartes */
 .card-body {
     padding: 20px;
     text-align: center;
@@ -309,16 +255,14 @@ h3{
     flex-grow: 1;
 }
 
-/* Titres des cartes */
 .card-title {
     font-size: 1.25rem;
-    color: #c25a83;;
+    color: #c25a83;
     margin-bottom: 15px;
     font-family: cursive;
     font-size: 30px;
 }
 
-/* Texte descriptif des cartes */
 .card-text {
     font-size: 1rem;
     color: #6d213f;
@@ -326,9 +270,6 @@ h3{
     font-family: system-ui, sans-serif;
 }
 
-/* Boutons d'action */
-/* Boutons d'action - Couleur uniforme */
-/* Boutons d'action - Couleur uniforme */
 .btn.btn-primary {
     color: #fff;
     background-color: #be2361;
@@ -338,31 +279,25 @@ h3{
     border-radius: 5px;
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
-  
 }
 
-/* État au survol */
 .btn.btn-primary:hover {
     background-color: #be2361;
     border-color: #c25a83;
-    transform: scale(1.05); /* Animation au survol */
+    transform: scale(1.05);
 }
 
-/* État actif ou au focus - Sans ombre */
 .btn.btn-primary:active,
 .btn.btn-primary:focus {
     background-color: #be2361;
     border-color: #c25a83;
-    transform: scale(1); 
-    
-   
+    transform: scale(1);
 }
 
-a{
+a {
     border: #be2361;
     color: #d04a80;
 }
-
 
 /* contact */
 .contactColumn {
@@ -371,22 +306,21 @@ a{
     align-items: center;
     font-family: system-ui, sans-serif;
 }
+
 .contactColumn i {
-    color: #be2361 
+    color: #be2361;
 }
 
 /* footer */
-
-/* Si vous voulez que le footer ait un effet de fond plus foncé ou un ombrage */
 footer {
     width: 100%;
     height: 100px;
-    background-color: #301520; /* Couleur de fond */
+    background-color: #301520;
     padding: 20px 0;
     position: relative;
     display: flex;
-    justify-content: center; /* Centre horizontalement le texte */
-    align-items: center; /* Centre verticalement le texte */
+    justify-content: center;
+    align-items: center;
 }
 
 footer h2 {
@@ -396,30 +330,29 @@ footer h2 {
     font-size: 30px;
 }
 
-
-
+/* Media Queries */
 @media (max-width: 768px) {
     .hero_title {
         font-size: 30px;
     }
 
     .projet.card {
-        width: 100%; /* Les cartes prennent la largeur entière */
-        max-width: 350px; /* Limite pour une meilleure apparence */
+        width: 100%;
+        max-width: 350px;
     }
 
-    #about{
+    #about {
         margin-left: 50px;
         margin-right: 50px;
     }
-    .js img{
+
+    .js img {
         width: 50%;
         height: 120px;
-        
-    }   
+    }
+
     .ecrire ul {
         list-style: none;
-        padding-left: 10%; 
-           
-    } 
+        padding-left: 10%;
+    }
 }
