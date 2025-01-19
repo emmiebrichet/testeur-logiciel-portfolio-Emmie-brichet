@@ -332,7 +332,7 @@ h3{
 .btn.btn-primary {
     color: #fff;
     background-color: #be2361;
-    border-color: #be2361;
+    border-color: #c25a83;
     padding: 10px 15px;
     font-size: 1rem;
     border-radius: 5px;
@@ -344,7 +344,7 @@ h3{
 /* État au survol */
 .btn.btn-primary:hover {
     background-color: #be2361;
-    border-color: #be2361;
+    border-color: #c25a83;
     transform: scale(1.05); /* Animation au survol */
 }
 
@@ -352,15 +352,15 @@ h3{
 .btn.btn-primary:active,
 .btn.btn-primary:focus {
     background-color: #be2361;
-    border-color: #be2361;
+    border-color: #c25a83;
     transform: scale(1); 
-    box-shadow: #be2361;
+    
    
 }
 
 a{
-    border: #c25a83;
-    color: #c25a83;
+    border: #be2361;
+    color: #d04a80;
 }
 
 
