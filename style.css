@@ -124,12 +124,7 @@ header {
 
 
 /* text css above hero image*/
-.hero_title {
-    font-size: 50px;
-}
-.hero_desc {
-    font-size: 2rem;
-}
+
 .hero-text {
     font-family:fantasy;
     font-style: italic;
@@ -139,6 +134,8 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #e0a3bd;
+    font-size: 50px;
+    font-size: 2rem;
 }
 
 /* about */
