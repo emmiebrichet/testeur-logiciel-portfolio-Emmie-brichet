@@ -208,10 +208,20 @@ h3 {
     font-size: 20px;
 }
 
+#Projets h2 {
+    font-size: 50px;
+    margin-bottom: 3rem;
+    color: #be2361;
+    font-family: cursive;
+    text-align: center;
+    font-style: italic;
+    
+}
+
+
 #Projets h3 {
     font-size: 25px;
 }
-
 .projets-container {
     display: flex;
     flex-wrap: wrap;
