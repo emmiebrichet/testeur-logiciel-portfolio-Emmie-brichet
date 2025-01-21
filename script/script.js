@@ -1,14 +1,10 @@
 // Function to show/hide navbar based on mouse position
 function handleNavbarVisibility() {
     const navbar = document.querySelector(".navbar");
-    
-    // Add mousemove event listener
     window.addEventListener("mousemove", (event) => {
         if (event.clientY <= 50) {
-            // Si la souris est dans les 50px du haut de l'écran, afficher le menu
             navbar.classList.remove("navbar-hidden");
         } else {
-            // Sinon, masquer le menu
             navbar.classList.add("navbar-hidden");
         }
     });
@@ -18,8 +14,7 @@ function handleNavbarVisibility() {
 function handleNavbarScroll() {
     const navbar = document.querySelector(".navbar");
     window.addEventListener("scroll", () => {
-        const top = window.scrollY;
-        if (top >= 100) {
+        if (window.scrollY >= 100) {
             navbar.classList.add("navbarDark");
         } else {
             navbar.classList.remove("navbarDark");
@@ -27,32 +22,16 @@ function handleNavbarScroll() {
     });
 }
 
-// Function to handle navbar collapse on small devices after a click
-function handleNavbarCollapse() {
-    const navLinks = document.querySelectorAll(".nav-item");
-    const menuToggle = document.getElementById("navbarSupportedContent");
-
-    navLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-            const collapse = new bootstrap.Collapse(menuToggle);
-            collapse.toggle();
-        });
-    });
-}
-
-
+// Execute when DOM is fully loaded
 document.addEventListener("DOMContentLoaded", () => {
-    // Gestion du bouton hamburger
     const navbarToggler = document.querySelector(".navbar-toggler");
     const navbarCollapse = document.querySelector("#navbarSupportedContent");
 
     navbarToggler.addEventListener("click", () => {
         navbarCollapse.classList.toggle("show");
     });
+
+    // Initialize navbar visibility and scroll handling
+    handleNavbarVisibility();
+    handleNavbarScroll();
 });
-
-// Call the functions to execute the code
-handleNavbarVisibility();
-handleNavbarScroll();
-handleNavbarCollapse();
-
