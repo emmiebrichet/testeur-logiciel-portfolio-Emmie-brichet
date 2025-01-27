@@ -48,18 +48,18 @@ body {
 
 .navbarScroll {
     background-color: #290c18;
-    box-shadow: 0 4px 2px -2px ;
+    box-shadow: 0 4px 2px -2px;
 }
 
 .navbarScroll.navbarDark {
     background-color: #301520;
 }
 
-/* hero background image */
+/* Hero background image */
 .bgimage {
     width: 100%; 
-
-    background: url("images/bandeau\ acceil.webp") no-repeat center center;
+    height: 500px;
+    background: url("images/home.webp") no-repeat center center;
     background-size: cover;
     position: relative;
 }
@@ -86,13 +86,15 @@ header {
     color: #601c37;
 }
 
-#about h2, #skills h2, #contact h2 {
-    margin-bottom: 20px;
+#about h3, #skills h3, #contact h3 {
+    margin-bottom: 60px;
     color: #be2361;
     font-family: cursive;
     text-align: center;
     font-style: italic;
     font-size: 50px;
+    margin-top: 10%;
+    margin-bottom: 60px;
 }
 
 #contact {
@@ -110,7 +112,6 @@ h3 {
 }
 
 .imageAboutPage {
-    
     width: 100%;
     border-radius: 50%;
     box-shadow: 0 0 100px #601c37;
@@ -121,9 +122,7 @@ h3 {
     color: #601c37;
 }
 
-
-
-/* skills */
+/* Skills */
 #skills {
     margin-left: 50px;
     margin-right: 50px;
@@ -142,14 +141,12 @@ h3 {
 }
 
 .competence-item img {
-    
     width: 100%;
     max-width: 150px;
     margin-bottom: 10px;
 }
 
 .js img {
-    
     width: 100%;
 }
 
@@ -161,7 +158,6 @@ h3 {
 
 .outils img {
     width: 20%;
-    
     margin: 10px;
 }
 
@@ -179,7 +175,6 @@ h3 {
 }
 
 .ecrire img {
-    
     width: 80%;
     max-width: 500px;
     margin-bottom: 20px;
@@ -187,7 +182,7 @@ h3 {
 
 .ecrire ul {
     list-style: none;
-    padding-left: 40%;
+    padding-left: 10%;
 }
 
 .ecrire ul li {
@@ -195,11 +190,21 @@ h3 {
     text-align: left;
 }
 
+/* Projects */
 #Projets h2 {
-    margin-bottom: 20px;
     margin-top: 20px;
+    margin-bottom: 3rem;
     font-size: 50px;
     color: #be2361;
+    font-family: cursive;
+    text-align: center;
+    font-style: italic;
+}
+
+#Projets h3 {
+    font-size: 50px;
+    margin-top: 10%;
+    margin-bottom: 60px;
 }
 
 .projets-title {
@@ -211,27 +216,12 @@ h3 {
     font-size: 20px;
 }
 
-#Projets h2 {
-    font-size: 50px;
-    margin-bottom: 3rem;
-    color: #be2361;
-    font-family: cursive;
-    text-align: center;
-    font-style: italic; 
-}
-
-
-#Projets h3 {
-    font-size: 25px;
-}
 .projets-container {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
     justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 0 15px;
+    margin: 50px 15px;
 }
 
 .projet.card {
@@ -271,14 +261,14 @@ h3 {
 
 .card-title {
     font-size: 1.25rem;
-    color: #c25a83;
+    color: #a43662;
     margin-bottom: 15px;
     font-family: cursive;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .card-text {
-    font-size: 1rem;
+    font-size: 12px;
     color: #6d213f;
     margin-bottom: 20px;
     font-family: system-ui, sans-serif;
@@ -293,19 +283,11 @@ h3 {
     border-radius: 5px;
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
+    transition: transform 0.3s ease;
 }
 
 .btn.btn-primary:hover {
-    background-color: #be2361;
-    border-color: #c25a83;
     transform: scale(1.05);
-}
-
-.btn.btn-primary:active,
-.btn.btn-primary:focus {
-    background-color: #be2361;
-    border-color: #c25a83;
-    transform: scale(1);
 }
 
 a {
@@ -313,7 +295,7 @@ a {
     color: #d04a80;
 }
 
-/* contact */
+/* Contact */
 .contactColumn {
     display: flex;
     flex-direction: column;
@@ -325,23 +307,21 @@ a {
     color: #be2361;
 }
 
-/* footer */
+/* Footer */
 footer {
     width: 100%;
     height: 100px;
     background-color: #301520;
     padding: 20px 0;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-footer h2 {
+footer h3 {
     color: #cd95ac;
-    font-size: 24px;
-    font-family: cursive;
     font-size: 30px;
+    font-family: cursive;
 }
 
 /* Media Queries */
@@ -366,7 +346,6 @@ footer h2 {
     }
 
     .ecrire ul {
-        list-style: none;
         padding-left: 10%;
     }
 }
