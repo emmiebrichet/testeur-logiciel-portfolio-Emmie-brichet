@@ -43,7 +43,8 @@
 }
 
 body {
-    padding-top: 0px; /* Ajustez la valeur en fonction de la hauteur de votre menu */
+    padding-top: 0px;
+
 }
 
 .navbarScroll {
@@ -151,6 +152,12 @@ h3 {
 }
 
 /* Section "Je sais utiliser..." */
+
+.outils h5 {
+    font-size: 50px;
+    margin-top: 10%;
+    margin-bottom: 60px;
+}
 .outils {
     text-align: center;
     margin-top: 20px;
@@ -169,6 +176,11 @@ h3 {
 }
 
 /* Section "Je sais..." */
+.ecrire h5 {
+    font-size: 50px;
+    margin-top: 10%;
+    margin-bottom: 60px;
+}
 .ecrire {
     text-align: center;
     margin-top: 40px;
@@ -207,11 +219,7 @@ h3 {
     margin-bottom: 60px;
 }
 
- h5 {
-    font-size: 50px;
-    margin-top: 10%;
-    margin-bottom: 60px;
-}
+ 
 
 
 .projets-title {
