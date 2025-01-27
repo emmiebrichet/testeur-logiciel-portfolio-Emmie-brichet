@@ -24,13 +24,6 @@ function handleNavbarScroll() {
 
 // Execute when DOM is fully loaded
 document.addEventListener("DOMContentLoaded", () => {
-    const navbarToggler = document.querySelector(".navbar-toggler");
-    const navbarCollapse = document.querySelector("#navbarSupportedContent");
-
-    navbarToggler.addEventListener("click", () => {
-        navbarCollapse.classList.toggle("show");
-    });
-
     // Initialize navbar visibility and scroll handling
     handleNavbarVisibility();
     handleNavbarScroll();
