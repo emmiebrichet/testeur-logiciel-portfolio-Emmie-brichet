@@ -264,7 +264,7 @@ h3 {
 }
 
 .card img {
-    width: 100%;
+    width: 100%;    
     object-fit: cover;
     border-bottom: 1px solid #ddd;
 }
@@ -294,20 +294,30 @@ h3 {
 }
 
 .btn.btn-primary {
-    color: #fff;
-    background-color: #be2361;
-    border-color: #871040;
-    padding: 10px 15px;
-    font-size: 1rem;
-    border-radius: 5px;
-    text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-    transition: transform 0.3s ease;
+    background-color: #be2361; /* Couleur de fond */
+    border: 2px solid #871040; /* Couleur de la bordure */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement interne */
+    font-size: 16px; /* Taille du texte */
+    border-radius: 8px; /* Coins arrondis */
+    cursor: pointer; /* Curseur pointer au survol */
+    transition: background-color 0.4s ease, border-color 0.4s ease, transform 0.3s ease; /* Transitions fluides */
 }
 
+/* Effet au survol */
 .btn.btn-primary:hover {
-    transform: scale(1.05);
+    background-color: #871040; /* Change la couleur de fond au survol */
+    border-color: #be2361; /* Inverse les couleurs de bordure */
+    transform: scale(1.05); /* Agrandit légèrement */
 }
+
+/* Effet au clic */
+.btn.btn-primary:active {
+    transform: scale(0.95); /* Réduction légère à l'appui */
+}
+
+
+
 
 #Projets a{
     background-color: #be2361;
