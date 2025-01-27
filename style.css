@@ -113,7 +113,7 @@ h3 {
 }
 
 .imageAboutPage {
-    width: 100%;
+    width: 400px;
     border-radius: 50%;
     box-shadow: 0 0 100px #601c37;
 }
@@ -142,13 +142,12 @@ h3 {
 }
 
 .competence-item img {
-    width: 100%;
-    max-width: 150px;
+    width: 150px;
     margin-bottom: 10px;
 }
 
 .js img {
-    width: 100%;
+    width: 150px;
 }
 
 /* Section "Je sais utiliser..." */
@@ -165,7 +164,7 @@ h3 {
 
 .outils img {
     margin: 10px;
-    width: 247px;
+    width: 150px;
 
 }
 
@@ -191,7 +190,7 @@ h3 {
 }
 
 .ecrire img {
-    width: 80%;
+    width: 1000px;
     max-width: 500px;
     margin-bottom: 20px;
 }
