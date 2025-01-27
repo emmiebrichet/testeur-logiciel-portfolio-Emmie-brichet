@@ -164,8 +164,10 @@ h3 {
 }
 
 .outils img {
-    width: 20%;
+    width: 247px;
+    height: 139px;
     margin: 10px;
+
 }
 
 .outils .images-container {
@@ -173,6 +175,7 @@ h3 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    
 }
 
 /* Section "Je sais..." */
@@ -264,11 +267,6 @@ h3 {
     object-fit: cover;
     border-bottom: 1px solid #ddd;
 }
-
-.card-img{
-    width: 100%;
-}
-
 
 .card-body {
     padding: 20px;
