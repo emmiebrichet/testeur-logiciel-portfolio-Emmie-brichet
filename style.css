@@ -1,5 +1,8 @@
 /******* GENERAL *******/
 /* Changer la couleur par défaut des liens */
+body {
+    margin: 0;
+}
 .nav-link {
     font-family: cursive;
     color: #f0b7cf !important; /* Forcer la couleur */
@@ -13,8 +16,12 @@
 }
 
 /* Navbar styles */
-.navbar {
-    transition: all 0.3s ease;
+.navbar-nav {
+    margin-left: auto; /* Cela garantit que le menu est aligné à droite */
+}
+
+.navbar-nav .nav-item {
+    margin-left: 1rem; /* Ajoute un espace entre les éléments du menu */
 }
 
 .navbar-toggler {
@@ -44,7 +51,6 @@
 
 body {
     padding-top: 0px;
-
 }
 
 .navbarScroll {
@@ -58,8 +64,8 @@ body {
 
 /* Hero background image */
 .bgimage {
-    width: 100%; 
-    height: 500px;
+    width: 100%;
+    height: 300px;
     background: url("images/home.webp") no-repeat center center;
     background-size: cover;
     position: relative;
@@ -144,13 +150,13 @@ h3 {
 
 .competence-item img {
     width: auto;
-    height: 150px; 
+    height: 150px;
     margin-bottom: 10px;
 }
 
 .js img {
     width:auto;
-    height: 100%;;
+    height: 100%;
 }
 
 /* Section "Je sais utiliser..." */
@@ -160,6 +166,7 @@ h3 {
     margin-top: 10%;
     margin-bottom: 60px;
 }
+
 .outils {
     text-align: center;
     margin-top: 20px;
@@ -169,7 +176,6 @@ h3 {
     margin: 10px;
     width: 300px;
     height: 150px;
-
 }
 
 .outils .images-container {
@@ -177,8 +183,6 @@ h3 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    
-    
 }
 
 /* Section "Je sais..." */
@@ -187,8 +191,8 @@ h3 {
     margin-top: 10%;
     margin-bottom: 60px;
 }
-.ecrire {
 
+.ecrire {
     text-align: center;
     margin-top: 40px;
 }
@@ -228,12 +232,9 @@ h3 {
 
 .projet img {
     width: 340px;
-    height: 150px; /* Pour conserver les proportions de l'image */
-    object-fit: cover; /* Cela permet de recadrer l'image si nécessaire pour qu'elle couvre toute la largeur */
+    height: 150px;
+    object-fit: cover;
 }
-
- 
-
 
 .projets-title {
     margin-bottom: 3rem;
@@ -251,6 +252,7 @@ h3 {
     justify-content: center;
     margin: 50px 15px;
 }
+
 .projet.card {
     display: flex;
     flex-direction: column;
@@ -295,33 +297,30 @@ h3 {
 }
 
 .btn.btn-primary {
-    background-color: #be2361; /* Couleur de fond */
-    border: 2px solid #871040; /* Couleur de la bordure */
-    color: white; /* Couleur du texte */
-    padding: 10px 20px; /* Espacement interne */
-    font-size: 16px; /* Taille du texte */
-    border-radius: 8px; /* Coins arrondis */
-    cursor: pointer; /* Curseur pointer au survol */
-    transition: background-color 0.4s ease, border-color 0.4s ease, transform 0.3s ease; /* Transitions fluides */
+    background-color: #be2361;
+    border: 2px solid #871040;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.4s ease, border-color 0.4s ease, transform 0.3s ease;
 }
 
 .btn.btn-primary:hover {
-    background-color: #871040; /* Change la couleur de fond au survol */
-    border-color: #be2361; /* Inverse les couleurs de bordure */
-    transform: scale(1.05); /* Agrandit légèrement */
+    background-color: #871040;
+    border-color: #be2361;
+    transform: scale(1.05);
 }
 
 .btn.btn-primary:active {
-    transform: scale(0.95); /* Réduction légère à l'appui */
+    transform: scale(0.95);
 }
 
 #Projets a {
     background-color: #be2361;
     border-color: #871040;
 }
-
-
-
 
 /* Contact */
 .contactColumn {
@@ -351,7 +350,7 @@ footer {
     align-items: center;
 }
 
-footer h3 {
+footer p {
     color: #cd95ac;
     font-size: 30px;
     font-family: cursive;
