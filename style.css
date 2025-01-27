@@ -265,6 +265,11 @@ h3 {
     border-bottom: 1px solid #ddd;
 }
 
+.card-img{
+    width: 100%;
+}
+
+
 .card-body {
     padding: 20px;
     text-align: center;
