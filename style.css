@@ -164,9 +164,8 @@ h3 {
 }
 
 .outils img {
-    width: 247px;
-    height: 139px;
     margin: 10px;
+    width: 247px;
 
 }
 
@@ -175,6 +174,7 @@ h3 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    
     
 }
 
@@ -295,7 +295,7 @@ h3 {
 .btn.btn-primary {
     color: #fff;
     background-color: #be2361;
-    border-color: #c25a83;
+    border-color: #871040;
     padding: 10px 15px;
     font-size: 1rem;
     border-radius: 5px;
@@ -308,10 +308,15 @@ h3 {
     transform: scale(1.05);
 }
 
-a {
-    border: #be2361;
-    color: #d04a80;
+#Projets a{
+    background-color: #be2361;
+    border-color: #871040;
+
+
+
 }
+
+
 
 /* Contact */
 .contactColumn {
@@ -323,6 +328,11 @@ a {
 
 .contactColumn i {
     color: #be2361;
+}
+
+#contact a {
+    color: #be2361;
+    text-decoration: underline;
 }
 
 /* Footer */
