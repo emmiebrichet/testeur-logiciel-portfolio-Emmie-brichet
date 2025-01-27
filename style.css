@@ -143,14 +143,14 @@ h3 {
 }
 
 .competence-item img {
-    width: 400px;
-    height: auto;
+    width: auto;
+    height: 150px; 
     margin-bottom: 10px;
 }
 
 .js img {
-    width: 400px;
-    height: auto;
+    width:auto;
+    height: 100%;;
 }
 
 /* Section "Je sais utiliser..." */
@@ -167,8 +167,8 @@ h3 {
 
 .outils img {
     margin: 10px;
-    width: 500px;
-    height: auto;
+    width: 300px;
+    height: 150px;
 
 }
 
