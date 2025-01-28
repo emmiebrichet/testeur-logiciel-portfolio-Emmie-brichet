@@ -224,7 +224,8 @@ h4{
     margin-bottom: 10px;
 }
 
-.outils h5 {
+.outils h4 {
+    color: #77173d;
     font-size: 50px;
     margin-top: 10%;
     margin-bottom: 60px;
@@ -256,7 +257,8 @@ h4{
     align-items: center;  /* Centre le contenu horizontalement */
 }
 
-.ecrire h5 {
+.ecrire h4 {
+   color: #77173d;
     font-size: 50px;
     margin-top: 10%;
     margin-bottom: 60px;
@@ -296,7 +298,7 @@ h4{
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    margin: 50px 15px;
+    margin: 50px ;
 }
 
 .projet {
@@ -304,7 +306,7 @@ h4{
     flex-direction: column;
     align-items: center;
     width: 300px;
-    height: 450px;
+    height: 430px;
     border: 1px solid rgba(190, 35, 97, 0.2);
     border-radius: 8px;
     box-shadow: 0 4px 8px #be2361;
@@ -332,30 +334,47 @@ h4{
     height: 40%; /* Donne un peu plus d'espace pour les boutons */
 }
 .card-title{
+    margin-top: 0;
     font-size: 20px;
     color:#9a1d4f;
 
 }
-.card-text {
+.card-text   {
+    margin-bottom: 50px;
     font-size: 15px;
     color:#9a1d4f;
-    margin-bottom: 30px;
+    
    
 }
 
+.projet .card-body {
+    position: relative;
+    
+}
 
-
-.btn {
+.projet .btn {
+    align-items: center;
+    position: absolute;
+    height: 30px;
+    width: 200px;
+    bottom: 1px; /* Positionne le bouton à 20px du bas de la carte */
+    left: 50%;
    
-    margin-bottom: 10px;
+    transform: translateX(-50%); /* Centre le bouton horizontalement */
+}
+.btn {
     text-decoration: none;
-    padding: 10px 20px;
+    justify-content: center;
+    align-items: center; /* Centre le texte verticalement */
+    display: flex; /* Permet d'utiliser les propriétés align-items et justify-content */
     background-color: #be2361;
     color: white;
     font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    display: inline-block;
+    width: 200px;
+    height: 30px; /* Vous pouvez ajuster la hauteur du bouton si nécessaire */
+    text-align: center; /* Assure que le texte est centré horizontalement si le display n'est pas flex */
 }
 
 .btn:hover {
