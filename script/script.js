@@ -33,10 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
     handleNavbarScroll();
 });
 
-
 // Sélectionner les éléments
 const hamburgerBtn = document.getElementById('hamburger-btn');
 const navbarLinks = document.getElementById('navbar-links');
+const navbar = document.querySelector('.navbar'); // Sélection de la barre de navigation entière
 const navLinks = document.querySelectorAll('.navbar-links a');
 
 // Ajouter l'événement de clic sur le bouton hamburger
@@ -44,9 +44,10 @@ hamburgerBtn.addEventListener('click', () => {
     navbarLinks.classList.toggle('active'); // Ajoute ou enlève la classe 'active' pour afficher/masquer les liens
 });
 
-// Ajouter un événement de clic sur chaque lien pour fermer le menu après avoir cliqué
+// Ajouter un événement de clic sur chaque lien pour faire glisser la navbar vers le bas
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        navbarLinks.classList.remove('active'); // Masque le menu après avoir cliqué sur un lien
+        navbar.classList.add('navbar-hidden'); // Faire glisser la navbar vers le haut
     });
 });
+

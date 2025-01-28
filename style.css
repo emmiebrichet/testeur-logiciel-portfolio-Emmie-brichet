@@ -8,6 +8,18 @@ body {
 /* Navbar styles */
 /* Style de la barre de navigation */
 /* Styles de la navbar */
+/* Navbar styles */
+
+
+/* Hamburger button */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #cd95ac;
+    cursor: pointer;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -19,17 +31,7 @@ body {
     width: 100%;
     top: 0;
     z-index: 1000;
-    transition: top 0.3s;
-}
-
-/* Hamburger button */
-.hamburger {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 30px;
-    color: #cd95ac;
-    cursor: pointer;
+    transition: top 0.3s ease-in-out; /* Transition de top pour glisser la navbar */
 }
 
 /* Liste des liens de navigation */
@@ -59,10 +61,11 @@ body {
     border-radius: 5px;
 }
 
-/* Classe pour cacher la navbar */
+/* Classe pour cacher la navbar (glisse vers le haut) */
 .navbar-hidden {
-    top: -60px;
+    top: -100%; /* Déplacer la navbar complètement en dehors de l'écran */
 }
+
 
 .navbarDark {
     font-family: 'Times New Roman';
@@ -384,7 +387,7 @@ h3 {
 }
 
 .contact-item h4 {
-    color: #333;
+    color: #be2361;
     margin-bottom: 10px;
 }
 
@@ -417,7 +420,7 @@ footer p {
 
 
 
-@media (max-width: 990px) {
+@media (max-width: 768px) {
     /* Cacher les liens de navigation par défaut */
     .navbar-links {
         display: none;
@@ -448,6 +451,8 @@ footer p {
         padding: 10px;
         font-size: 18px;
     }
+
+
 
     .about-content {
         display: flex;
