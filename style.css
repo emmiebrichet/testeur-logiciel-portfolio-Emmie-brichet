@@ -31,8 +31,10 @@ body {
     width: 100%;
     top: 0;
     z-index: 1000;
-    transition: top 0.3s ease-in-out; /* Transition de top pour glisser la navbar */
+    transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Transition améliorée */
 }
+
+
 
 /* Liste des liens de navigation */
 .navbar-links {
@@ -44,6 +46,10 @@ body {
 
 .navbar-links li {
     list-style-type: none;
+}
+.navbar p{
+    font-family:cursive;
+    font-size: large;
 }
 
 .navbar-links a {
@@ -61,10 +67,12 @@ body {
     border-radius: 5px;
 }
 
-/* Classe pour cacher la navbar (glisse vers le haut) */
+/* Classe pour cacher la navbar (complètement) avec animation de glissement vers le bas */
 .navbar-hidden {
-    top: -100%; /* Déplacer la navbar complètement en dehors de l'écran */
+    transform: translateY(-100%);  /* Déplace la navbar hors de l'écran */
+   
 }
+
 
 
 .navbarDark {
@@ -420,7 +428,7 @@ footer p {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
     /* Cacher les liens de navigation par défaut */
     .navbar-links {
         display: none;
@@ -451,7 +459,6 @@ footer p {
         padding: 10px;
         font-size: 18px;
     }
-
 
 
     .about-content {

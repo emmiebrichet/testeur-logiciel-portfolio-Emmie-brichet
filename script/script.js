@@ -44,10 +44,11 @@ hamburgerBtn.addEventListener('click', () => {
     navbarLinks.classList.toggle('active'); // Ajoute ou enlève la classe 'active' pour afficher/masquer les liens
 });
 
-// Ajouter un événement de clic sur chaque lien pour faire glisser la navbar vers le bas
+// Ajouter un événement de clic sur chaque lien pour fermer le menu et cacher la barre de navigation
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        navbar.classList.add('navbar-hidden'); // Faire glisser la navbar vers le haut
+        navbar.classList.add('navbar-hidden'); // Masquer la barre de navigation avec l'animation de glissement
     });
 });
+
 
