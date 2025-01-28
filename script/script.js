@@ -1,18 +1,11 @@
 // Sélection des éléments nécessaires
-const hamburgerBtn = document.getElementById('hamburger-btn'); // Bouton hamburger
 const navbarLinks = document.getElementById('navbar-links'); // Liens de navigation
 const navbar = document.querySelector('.navbar'); // Barre de navigation entière
 const navLinks = document.querySelectorAll('.navbar-links a'); // Tous les liens de navigation
 
-// Fonction pour afficher/masquer le menu lorsqu'on clique sur le bouton hamburger
-hamburgerBtn.addEventListener('click', (event) => {
-    navbarLinks.classList.toggle('active'); // Ajoute ou retire la classe 'active' pour afficher/masquer le menu
-    event.stopPropagation(); // Empêche la propagation du clic à d'autres éléments
-});
-
 // Fonction pour masquer le menu si on clique ailleurs
 document.addEventListener('click', (event) => {
-    if (!navbar.contains(event.target)) { // Vérifie si le clic est à l'extérieur de la navbar
+    if (!navbar.contains(event.target) && !navbarLinks.contains(event.target)) {
         navbarLinks.classList.remove('active'); // Retire la classe 'active' pour masquer le menu
     }
 });
@@ -24,34 +17,54 @@ navLinks.forEach(link => {
     });
 });
 
-// Gestion de l'affichage de la navbar en fonction de la position de la souris
+// Fonction pour afficher/masquer la navbar en fonction de la position de la souris
 function handleNavbarVisibility() {
-    const navbar = document.querySelector(".navbar");
+    let navbarVisible = true; // Variable pour garder la trace de la visibilité de la navbar
 
     window.addEventListener("mousemove", (event) => {
+        // Si la souris est proche du haut de l'écran
         if (event.clientY <= 50) {
-            navbar.classList.remove("navbar-hidden"); // Affiche la navbar si la souris est en haut
+            if (!navbarVisible) { // Affiche la navbar seulement si elle est cachée
+                navbar.classList.remove("navbar-hidden");
+                navbarVisible = true;
+            }
         } else {
-            navbar.classList.add("navbar-hidden"); // Cache la navbar si la souris descend
+            if (navbarVisible) { // Cache la navbar seulement si elle est visible
+                navbar.classList.add("navbar-hidden");
+                navbarVisible = false;
+            }
         }
     });
 }
 
-// Gestion du changement de style de la navbar lors du défilement
-function handleNavbarScroll() {
-    const navbar = document.querySelector(".navbar");
+// Appel de la fonction pour gérer l'affichage de la navbar en fonction du mouvement de la souris
+handleNavbarVisibility();
 
-    window.addEventListener("scroll", () => {
-        if (window.scrollY >= 100) {
-            navbar.classList.add("navbarDark"); // Ajoute un style sombre si on défile de plus de 100px
+// Fonction pour gérer le défilement vers les sections et masquer la navbar après le clic
+navLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault(); // Empêche le comportement par défaut du lien
+
+        const targetId = link.getAttribute('href').substring(1); // Récupère l'ID de la section
+        const targetSection = document.getElementById(targetId); // Trouve la section par ID
+
+        if (targetSection) {
+            // 1. Ajouter la classe 'navbar-hidden' avant de faire défiler la page
+            navbar.classList.add('navbar-hidden');
+
+            // 2. Défilement fluide vers la section
+            targetSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+
+            // 3. Après un délai (pour le défilement), rétablir la classe de la navbar
+            setTimeout(() => {
+                navbar.classList.remove('navbar-hidden'); // Affiche la navbar après le défilement
+            }, 600); // Ajuste ce délai en fonction de la durée du défilement
         } else {
-            navbar.classList.remove("navbarDark"); // Retire le style sombre si on est en haut
+            console.error(`La section avec l'ID ${targetId} n'a pas été trouvée !`);
         }
     });
-}
-
-// Exécution lorsque le DOM est complètement chargé
-document.addEventListener("DOMContentLoaded", () => {
-    handleNavbarVisibility(); // Gestion de la visibilité de la navbar
-    handleNavbarScroll(); // Gestion du style de la navbar
 });
+
