@@ -417,7 +417,7 @@ footer p {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
     /* Cacher les liens de navigation par défaut */
     .navbar-links {
         display: none;
