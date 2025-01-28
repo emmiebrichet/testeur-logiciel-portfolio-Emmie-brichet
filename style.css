@@ -422,8 +422,8 @@ footer {
     align-items: center;
 }
 
-footer p {
-    color: white;
+footer h3 {
+    color: #cd95ac;
     font-size: 30px;
     font-family: cursive;
 }
