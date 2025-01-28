@@ -145,6 +145,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     gap: 40px;
 }
 
@@ -446,5 +447,12 @@ footer p {
     .navbar-links a {
         padding: 10px;
         font-size: 18px;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin: 50px;
     }
 }
