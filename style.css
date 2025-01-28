@@ -393,16 +393,17 @@ h3 {
 
 .contact-item i {
     color: #be2361;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    font-size: 80px;
 }
 
 .contact-item h4 {
     color: #be2361;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .contact-item p {
-    font-size: 1rem;
+    font-size: 20px;
 }
 
 #contact a {
