@@ -14,7 +14,7 @@ body {
     align-items: center;
     padding: 20px;
     background-color: #601c37;
-    color: #cd95ac;;
+    color: #cd95ac;
     position: fixed;
     width: 100%;
     top: 0;
@@ -22,12 +22,14 @@ body {
     transition: top 0.3s;
 }
 
-/* Style du logo ou de la marque */
-.navbar a.navbar-brand {
-    font-family: Verdana sans-serif;
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: #cd95ac;;
+/* Hamburger button */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #cd95ac;
+    cursor: pointer;
 }
 
 /* Liste des liens de navigation */
@@ -35,7 +37,7 @@ body {
     display: flex;
     gap: 5px;
     margin-right: 20px;
-
+    list-style-type: none;
 }
 
 .navbar-links li {
@@ -45,14 +47,12 @@ body {
 .navbar-links a {
     text-decoration: none;
     color: #cd95ac;
-    font-family: Verdana sans-serif;
+    font-family: Verdana, sans-serif;
     font-size: 20px;
     font-weight: bold;
     padding: 10px 15px;
-   
 }
 
-/* Effet de survol des liens */
 .navbar-links a:hover {
     font-style: italic;
     text-decoration: underline;
@@ -61,14 +61,16 @@ body {
 
 /* Classe pour cacher la navbar */
 .navbar-hidden {
-    top: -60px; 
+    top: -60px;
 }
 
 .navbarDark {
+    font-family: 'Times New Roman';
+    font-size: large;
+    font-weight: bold;
     background-color: #4d1322;
-    color: #ffffff;
+    color: #cd95ac;
 }
-
 
 
 
@@ -410,4 +412,39 @@ footer p {
     color: #cd95ac;
     font-size: 30px;
     font-family: cursive;
+}
+
+
+
+@media (max-width: 768px) {
+    /* Cacher les liens de navigation par défaut */
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: #601c37;
+        width: 200px;
+        border-radius: 10px;
+    }
+
+    /* Afficher le hamburger */
+    .hamburger {
+        display: block;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-links li {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-links a {
+        padding: 10px;
+        font-size: 18px;
+    }
 }
