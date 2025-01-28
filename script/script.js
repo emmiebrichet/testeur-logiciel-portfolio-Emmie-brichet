@@ -1,55 +1,57 @@
-// Fonction pour afficher/masquer la navbar en fonction de la position de la souris
+// Sélection des éléments nécessaires
+const hamburgerBtn = document.getElementById('hamburger-btn'); // Bouton hamburger
+const navbarLinks = document.getElementById('navbar-links'); // Liens de navigation
+const navbar = document.querySelector('.navbar'); // Barre de navigation entière
+const navLinks = document.querySelectorAll('.navbar-links a'); // Tous les liens de navigation
+
+// Fonction pour afficher/masquer le menu lorsqu'on clique sur le bouton hamburger
+hamburgerBtn.addEventListener('click', (event) => {
+    navbarLinks.classList.toggle('active'); // Ajoute ou retire la classe 'active' pour afficher/masquer le menu
+    event.stopPropagation(); // Empêche la propagation du clic à d'autres éléments
+});
+
+// Fonction pour masquer le menu si on clique ailleurs
+document.addEventListener('click', (event) => {
+    if (!navbar.contains(event.target)) { // Vérifie si le clic est à l'extérieur de la navbar
+        navbarLinks.classList.remove('active'); // Retire la classe 'active' pour masquer le menu
+    }
+});
+
+// Fermer le menu automatiquement lorsque l'utilisateur clique sur un lien
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navbarLinks.classList.remove('active'); // Masque le menu
+    });
+});
+
+// Gestion de l'affichage de la navbar en fonction de la position de la souris
 function handleNavbarVisibility() {
     const navbar = document.querySelector(".navbar");
-    
-    // Écouteur d'événement pour suivre le mouvement de la souris
+
     window.addEventListener("mousemove", (event) => {
         if (event.clientY <= 50) {
             navbar.classList.remove("navbar-hidden"); // Affiche la navbar si la souris est en haut
         } else {
-            navbar.classList.add("navbar-hidden"); // Cache la navbar si la souris est plus bas
+            navbar.classList.add("navbar-hidden"); // Cache la navbar si la souris descend
         }
     });
 }
 
-// Fonction pour ajouter la classe "navbarDark" à la navbar lors du défilement
+// Gestion du changement de style de la navbar lors du défilement
 function handleNavbarScroll() {
     const navbar = document.querySelector(".navbar");
-    
-    // Écouteur d'événement pour suivre le défilement de la page
+
     window.addEventListener("scroll", () => {
         if (window.scrollY >= 100) {
-            navbar.classList.add("navbarDark"); // Change l'arrière-plan de la navbar si on a défilé de plus de 100px
+            navbar.classList.add("navbarDark"); // Ajoute un style sombre si on défile de plus de 100px
         } else {
-            navbar.classList.remove("navbarDark"); // Retire la classe si on est remonté en haut
+            navbar.classList.remove("navbarDark"); // Retire le style sombre si on est en haut
         }
     });
 }
 
 // Exécution lorsque le DOM est complètement chargé
 document.addEventListener("DOMContentLoaded", () => {
-    // Initialiser les fonctions pour gérer la visibilité et le défilement de la navbar
-    handleNavbarVisibility();
-    handleNavbarScroll();
+    handleNavbarVisibility(); // Gestion de la visibilité de la navbar
+    handleNavbarScroll(); // Gestion du style de la navbar
 });
-
-// Sélectionner les éléments
-const hamburgerBtn = document.getElementById('hamburger-btn');
-const navbarLinks = document.getElementById('navbar-links');
-const navbar = document.querySelector('.navbar'); // Sélection de la barre de navigation entière
-const navLinks = document.querySelectorAll('.navbar-links a');
-
-// Ajouter l'événement de clic sur le bouton hamburger
-hamburgerBtn.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active'); // Ajoute ou enlève la classe 'active' pour afficher/masquer les liens
-});
-
-// Ajouter un événement de clic sur chaque lien pour fermer le menu et cacher la barre de navigation
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        navbar.classList.add('navbar-hidden'); // Masquer la barre de navigation avec l'animation de glissement
-    });
-});
-
-
-
