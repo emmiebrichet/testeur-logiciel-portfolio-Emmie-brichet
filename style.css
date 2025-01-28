@@ -86,7 +86,10 @@ body {
 }
 
 
+h1{
+font-size: 50px;
 
+}
 .bgimage {
     background-image: url('images/home.webp');
     background-size: cover; 
