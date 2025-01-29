@@ -603,13 +603,13 @@ footer h3 {
 
 @media (max-width: 768px) {
     .projets-container {
-        grid-template-columns: 1fr; /* 1 carte par rang pour les petits écrans */
+        grid-template-columns: 1fr; 
     }
 
     .projet {
         width: 100%;
-        max-width: 400px; /* Largeur maximale pour les écrans plus petits */
-        height: auto; /* Ajuster la hauteur pour s'adapter au contenu */
+        max-width: 400px; 
+        height: auto; 
     }
 
     .projet .btn {
