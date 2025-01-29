@@ -86,3 +86,6 @@ navLinks.forEach(link => {
 
 // Appel de la gestion de visibilité de la navbar
 handleNavbarVisibility();
+window.addEventListener('load', function () {
+    document.body.classList.add('loaded');
+});
