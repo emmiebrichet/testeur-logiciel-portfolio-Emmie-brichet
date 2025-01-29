@@ -93,10 +93,7 @@ section {
 
 
 
-h1{
-font-size: 50px;
 
-}
 .bgimage {
     background-image: url('images/home.webp');
     background-size: cover; 
@@ -539,11 +536,14 @@ footer h3 {
     .navbar {
         align-items: flex-start;
     }
-
+   
     .hero_title {
-    
-        margin-top: 100px; /* Ajoute de l'espace en haut pour positionner plus bas */
+    margin-top: 150px; /* Ajoute de l'espace en haut pour positionner plus bas */
+    font-size: 30px;
        
+    }
+    .hero_text{
+        font-size: 30px;
     }
     .about-content {
         display: flex;
