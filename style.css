@@ -5,7 +5,7 @@ body {
 }
 
 section {
-    padding-top: 60px; /* Ajustez cette valeur selon la hauteur de votre navbar */
+    padding-top: 60px; 
 }
 
 /* Style de la navbar */
@@ -20,9 +20,9 @@ section {
     width: 100%;
     height: 20px;
     top: 0;
-    left: 0; /* Assure que la navbar prend toute la largeur */
+    left: 0; 
     z-index: 1000;
-    transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Transition améliorée pour un effet fluide */
+    transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out; 
 }
 
 .hamburger {
@@ -33,7 +33,6 @@ section {
     display: none;
 }
 
-/* Liste des liens de navigation */
 .navbar-links {
     display: flex;
     gap: 10px;
@@ -56,6 +55,7 @@ section {
     font-family: Verdana, sans-serif;
     font-size: 15px;
     font-weight: bold;
+
     margin-right:  50px;
 }
 
@@ -65,22 +65,20 @@ section {
     border-radius: 5px;
 }
 
-/* Classe pour cacher la navbar (complètement) avec animation de glissement vers le bas */
+
 .navbar-hidden {
-    transform: translateY(-100%);  /* Déplace la navbar hors de l'écran */
-    opacity: 0; /* Réduit l'opacité pour un effet plus fluide */
-    pointer-events: none; /* Désactive les événements de la souris lorsqu'elle est cachée */
+    transform: translateY(-100%);  
+    opacity: 0;
+    pointer-events: none; 
 }
 
-/* Ajout d'un fond pour l'élément header et pour la section de la page */
+
 .bgimage {
-    background-image: url('path_to_image.jpg'); /* Remplacer par le chemin vers l'image */
+    background-image: url('path_to_image.jpg'); 
     background-size: cover;
     background-position: center;
-    height: 100vh; /* Hauteur de la vue du header */
+    height: 100vh; 
 }
-
-/* Style d'une autre barre de navigation ou d'un footer, si nécessaire */
 .navbarDark {
     font-family: cursive;
     font-size: large;
@@ -112,45 +110,40 @@ header {
     padding: 0;
 }
 
-/* Optimisation pour mobile */
-/* Applique un style de police fantasy et ajuste la taille */
+
 .hero_title {
-    font-size: 50px; /* Taille de la police pour un grand affichage */
+    font-size: 50px; 
     font-weight: bold;
-    color: #c55683; /* Couleur du texte */
+    color: #c55683;
     margin: 0;
-    margin-top: 200px; /* Ajoute de l'espace en haut pour positionner plus bas */
+    margin-top: 200px; 
     line-height: 1.2;
-    text-align: center; /* Centre le texte horizontalement */
-    visibility: hidden; /* Initialement caché pour un rendu plus rapide */
+    text-align: center; 
+    visibility: hidden; 
     opacity: 0;
-    transition: opacity 0.5s ease; /* Doucement dévoiler le texte */
+    transition: opacity 0.5s ease; 
     font-family: 'fantasy';
 }
 
 .hero_text {
-    font-size: 50px; /* Taille de la police pour le sous-titre */
+    font-size: 50px; 
     font-weight: bold;
-    color: #c55683; /* Couleur du texte */
+    color: #c55683; 
     margin: 0;
-    margin-top: 20px; /* Ajoute un peu d'espace entre le titre et le sous-titre */
+    margin-top: 20px; 
     line-height: 1.2;
-    text-align: center; /* Centre le texte horizontalement */
-    visibility: hidden; /* Initialement caché pour un rendu plus rapide */
+    text-align: center; 
+    visibility: hidden; 
     opacity: 0;
-    transition: opacity 0.5s ease; /* Doucement dévoiler le texte */
+    transition: opacity 0.5s ease; 
     font-family: 'fantasy';
 }
 
-/* Dès que le contenu est chargé, on le montre */
 body.loaded .hero_title,
 body.loaded .hero_text {
     visibility: visible;
     opacity: 1;
 }
-
-
-
 
 
 #about, #skills, #portfolio, #contact {
@@ -169,10 +162,17 @@ body.loaded .hero_text {
     margin-bottom: 60px;
 }
 
-#contact {
-    padding-bottom: 20px;
+h3 {
+    font-size: 30px;
+    font-family: cursive;
+    color: #77173d;
+    margin-bottom: 20px;
+}
+h4{
+    font-size: 30px;
 }
 
+/* about */
 #about {
     text-align: center;
 }
@@ -183,12 +183,6 @@ body.loaded .hero_text {
     padding: 20px;
 }
 
-h3 {
-    font-size: 30px;
-    font-family: cursive;
-    color: #77173d;
-    margin-bottom: 20px;
-}
 
 .about-content {
     display: flex;
@@ -224,9 +218,7 @@ h3 {
     
 }
 
-h4{
-    font-size: 30px;
-}
+
 
 .highlight {
     font-weight: bold;
@@ -290,7 +282,7 @@ h4{
     margin-top: 40px;
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Centre le contenu horizontalement */
+    align-items: center;  
 }
 
 .ecrire h4 {
@@ -303,13 +295,13 @@ h4{
 .ecrire img {
     width: 100%;
     height: auto;
-    margin-bottom: 20px; /* Espace entre l'image et la liste */
+    margin-bottom: 20px; 
 }
 
 .ecrire ul {
     list-style: none;
     padding-left: 10%;
-    margin-top: 20px; /* Marge entre l'image et la liste */
+    margin-top: 20px; 
 }
 
 .ecrire ul li {
@@ -322,19 +314,19 @@ h4{
 
 .projets-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 cartes par rang */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 30px;
     justify-items: center;
     margin: 50px;
 }
 
-/* Style des cartes */
+
 .projet {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%; /* Assurer que la carte occupe toute la largeur disponible */
-    max-width: 300px; /* Limite la largeur maximale des cartes */
+    width: 100%; 
+    max-width: 300px;
     height: 430px;
     border: 1px solid rgba(190, 35, 97, 0.2);
     border-radius: 8px;
@@ -406,6 +398,7 @@ h4{
     background-color: #9a1d4f;
 }
 /* Contact Section */
+
 #contact {
     font-family: system-ui, sans-serif;
     text-align: center;
@@ -417,15 +410,15 @@ h3 {
     margin-bottom: 20px;
 }
 
-/* Container pour les éléments de contact */
+
 .contact-container {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    flex-wrap: wrap; /* Permet l'adaptation responsive */
+    flex-wrap: wrap; 
 }
 
-/* Style pour chaque article de contact */
+
 .contact-item {
     flex: 1;
     max-width: 45%;
@@ -472,6 +465,7 @@ footer h3 {
     font-family: cursive;
 }
 
+/* mobile */
 @media (min-width: 980px) {
     .navbar-links {
         display: flex;
@@ -495,11 +489,11 @@ footer h3 {
     .outils  h4, .ecrire h4{
         font-size: 20px;
     }
-    /* Cacher les liens de navigation par défaut */
+    
     .navbar-links {
-        display: none; /* Cache les liens de navigation */
+        display: none; 
         position: absolute;
-        top: 60px; /* Position du menu par rapport à la navbar */
+        top: 60px; 
         right: 0;
         background-color: #601c37;
         width: 100%;
@@ -509,7 +503,7 @@ footer h3 {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
     .navbar-links.active {
-        display: flex; /* Affiche les liens de navigation quand 'active' est ajouté */
+        display: flex;
     }
     .hamburger {
         display: block;
@@ -574,26 +568,25 @@ footer h3 {
     }
    
     .projets-container {
-        grid-template-columns: 3fr; /* 1 carte par rang */
+        grid-template-columns: 3fr;
     }
-
     #contact {
         padding: 10px;
     }
 
     .contact-container {
-        flex-direction: column; /* Empile les éléments un au-dessus de l'autre */
-        align-items: center; /* Centre les éléments horizontalement */
+        flex-direction: column; 
+        align-items: center;
     }
 
     .contact-item {
-        width: 90%; /* Réduit la largeur pour les petits écrans */
-        max-width: none; /* Enlève la limite de largeur maximale */
-        margin-bottom: 20px; /* Ajoute de l'espace entre les éléments */
+        width: 90%;
+        max-width: none; 
+        margin-bottom: 20px; 
     }
 
     .contact-item i {
-        font-size: 50px; /* Augmente la taille des icônes pour les mobiles */
+        font-size: 50px;
     }
 
     .contact-item h4 {
