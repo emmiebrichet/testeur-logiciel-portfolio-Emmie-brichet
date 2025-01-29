@@ -115,16 +115,19 @@ header {
 }
 
 /* Optimisation pour mobile */
+/* Applique un style de police fantasy et ajuste la taille */
 .hero_title {
-    font-size: 2.5rem; /* Taille de la police pour mobile */
+    font-size: 50px ; /* Taille de la police pour un grand affichage */
     font-weight: bold;
-    color: #9a1d4f; /* Couleur du texte */
+    color: #c55683; /* Couleur du texte */
     margin: 0;
-    padding: 0;
+    margin-top: 200px; /* Ajoute de l'espace en haut pour positionner plus bas */
     line-height: 1.2;
+    text-align: center; /* Centre le texte horizontalement */
     visibility: hidden; /* Initialement caché pour un rendu plus rapide */
     opacity: 0;
     transition: opacity 0.5s ease; /* Doucement dévoiler le texte */
+    font-family: 'fantasy';
 }
 
 /* Dès que le contenu est chargé, on le montre */
@@ -132,6 +135,7 @@ body.loaded .hero_title {
     visibility: visible;
     opacity: 1;
 }
+
 
 
 #about, #skills, #portfolio, #contact {
@@ -516,6 +520,12 @@ footer h3 {
 
     .navbar {
         align-items: flex-start;
+    }
+
+    .hero_title {
+    
+        margin-top: 50px; /* Ajoute de l'espace en haut pour positionner plus bas */
+       
     }
     .about-content {
         display: flex;
