@@ -487,8 +487,9 @@ footer h3 {
     }
 
     .outils  h4, .ecrire h4{
-        font-size: 20px;
+        font-size: 30px;
     }
+
     
     .navbar-links {
         display: none; 
@@ -500,6 +501,7 @@ footer h3 {
         flex-direction: column;
         gap: 15px;
         padding: 10px;
+        margin: 0;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
     .navbar-links.active {
@@ -553,7 +555,7 @@ footer h3 {
 
     .outils img {
         margin: 10px;
-        width: 100%;
+        width: 50%;
         height: auto;
     }
 
@@ -567,12 +569,12 @@ footer h3 {
     .projet .btn {
 
         width: 150px;
+        height: 50px;
        
     }
 
     a.btn{
         bottom: auto;
-        width: 150px;
     
         
     }
@@ -608,7 +610,7 @@ footer h3 {
     }
     footer h3 {
        margin: 20px;
-       font-size: 15px;
+       font-size: 18px;
     }
 }
 
