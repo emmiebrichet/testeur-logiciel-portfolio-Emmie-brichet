@@ -533,11 +533,36 @@ footer h3 {
         bottom: auto;
         
     }
-    .contact-item i {
-        font-size: 40px;
-    }
+   
     .projets-container {
         grid-template-columns: 3fr; /* 1 carte par rang */
+    }
+
+    #contact {
+        padding: 10px;
+    }
+
+    .contact-container {
+        flex-direction: column; /* Empile les éléments un au-dessus de l'autre */
+        align-items: center; /* Centre les éléments horizontalement */
+    }
+
+    .contact-item {
+        width: 90%; /* Réduit la largeur pour les petits écrans */
+        max-width: none; /* Enlève la limite de largeur maximale */
+        margin-bottom: 20px; /* Ajoute de l'espace entre les éléments */
+    }
+
+    .contact-item i {
+        font-size: 50px; /* Augmente la taille des icônes pour les mobiles */
+    }
+
+    .contact-item h4 {
+        font-size: 18px;
+    }
+
+    .contact-item p {
+        font-size: 14px;
     }
     footer h3 {
        margin: 20px;
