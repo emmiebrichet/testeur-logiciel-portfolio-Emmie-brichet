@@ -18,6 +18,7 @@ section {
     color: #cd95ac;
     position: fixed;
     width: 100%;
+    height: 20px;
     top: 0;
     left: 0; /* Assure que la navbar prend toute la largeur */
     z-index: 1000;
@@ -46,13 +47,13 @@ section {
 .navbar p {
     font-family: cursive;
     font-size: large;
-}
+}   
 
 .navbar-links a {
     text-decoration: none;
     color: #cd95ac;
     font-family: Verdana, sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     padding: 10px 15px;
     margin-right: 20px;
@@ -117,7 +118,7 @@ header {
 /* Optimisation pour mobile */
 /* Applique un style de police fantasy et ajuste la taille */
 .hero_title {
-    font-size: 50px ; /* Taille de la police pour un grand affichage */
+    font-size: 50px; /* Taille de la police pour un grand affichage */
     font-weight: bold;
     color: #c55683; /* Couleur du texte */
     margin: 0;
@@ -130,11 +131,28 @@ header {
     font-family: 'fantasy';
 }
 
+.hero_text {
+    font-size: 50px; /* Taille de la police pour le sous-titre */
+    font-weight: bold;
+    color: #c55683; /* Couleur du texte */
+    margin: 0;
+    margin-top: 20px; /* Ajoute un peu d'espace entre le titre et le sous-titre */
+    line-height: 1.2;
+    text-align: center; /* Centre le texte horizontalement */
+    visibility: hidden; /* Initialement caché pour un rendu plus rapide */
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Doucement dévoiler le texte */
+    font-family: 'fantasy';
+}
+
 /* Dès que le contenu est chargé, on le montre */
-body.loaded .hero_title {
+body.loaded .hero_title,
+body.loaded .hero_text {
     visibility: visible;
     opacity: 1;
 }
+
+
 
 
 
@@ -524,7 +542,7 @@ footer h3 {
 
     .hero_title {
     
-        margin-top: 50px; /* Ajoute de l'espace en haut pour positionner plus bas */
+        margin-top: 100px; /* Ajoute de l'espace en haut pour positionner plus bas */
        
     }
     .about-content {
