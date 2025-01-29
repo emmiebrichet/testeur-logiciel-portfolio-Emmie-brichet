@@ -8,15 +8,6 @@ section {
     padding-top: 60px; /* Ajustez cette valeur selon la hauteur de votre navbar */
 }
 
-/* Navbar styles */
-/* Style de la barre de navigation */
-/* Styles de la navbar */
-/* Navbar styles */
-
-
-
-
-/* Style de la navbar */
 /* Style de la navbar */
 .navbar {
     display: flex;
@@ -31,6 +22,14 @@ section {
     left: 0; /* Assure que la navbar prend toute la largeur */
     z-index: 1000;
     transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Transition améliorée pour un effet fluide */
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
 }
 
 /* Liste des liens de navigation */
@@ -56,6 +55,7 @@ section {
     font-size: 20px;
     font-weight: bold;
     padding: 10px 15px;
+    margin-right: 20px;
 }
 
 .navbar-links a:hover {
@@ -131,7 +131,7 @@ header {
     color: #601c37;
 }
 
-#about h3, #skills h3, #contact h3 {
+#about h3, #skills h3, #contact h3, #Projets h3 {
     margin-bottom: 60px;
     color: #be2361;
     font-family: cursive;
@@ -180,7 +180,7 @@ h3 {
 
 .imageAboutPage {
     height: auto;
-    width: 400px;
+    width: 100% ;
     border-radius: 50%;
     box-shadow: 0 0 100px #601c37;
 }
@@ -274,8 +274,8 @@ h4{
 }
 
 .ecrire img {
-    width: 600px;
-    height: 300px;
+    width: 100%;
+    height: auto;
     margin-bottom: 20px; /* Espace entre l'image et la liste */
 }
 
@@ -292,29 +292,22 @@ h4{
 
 
 /* Projects */
-#Projets h3 {
-    font-size: 50px;
-    margin-top: 10%;
-    margin-bottom: 60px;
-    text-align: center;
-    color: #be2361;
-    font-family: cursive;
-    font-style: italic;
-}
 
 .projets-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cartes par rang */
     gap: 30px;
-    justify-content: center;
-    margin: 50px ;
+    justify-items: center;
+    margin: 50px;
 }
 
+/* Style des cartes */
 .projet {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
+    width: 100%; /* Assurer que la carte occupe toute la largeur disponible */
+    max-width: 300px; /* Limite la largeur maximale des cartes */
     height: 430px;
     border: 1px solid rgba(190, 35, 97, 0.2);
     border-radius: 8px;
@@ -334,31 +327,27 @@ h4{
     height: 150px;
     object-fit: cover;
 }
+
 .card-body {
     padding: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Distribue l'espace entre les éléments */
-    height: 40%; /* Donne un peu plus d'espace pour les boutons */
+    justify-content: space-between;
+    position: relative;
+    height: 100%;
 }
-.card-title{
+
+.card-title {
     margin-top: 0;
     font-size: 20px;
-    color:#9a1d4f;
-
+    color: #9a1d4f;
 }
-.card-text   {
+
+.card-text {
     margin-bottom: 50px;
     font-size: 15px;
-    color:#9a1d4f;
-    
-   
-}
-
-.projet .card-body {
-    position: relative;
-    
+    color: #9a1d4f;
 }
 
 .projet .btn {
@@ -366,30 +355,29 @@ h4{
     position: absolute;
     height: 30px;
     width: 200px;
-    bottom: 1px; /* Positionne le bouton à 20px du bas de la carte */
+    bottom: 10px;
     left: 50%;
-   
-    transform: translateX(-50%); /* Centre le bouton horizontalement */
+    transform: translateX(-50%);
 }
+
 .btn {
     text-decoration: none;
     justify-content: center;
-    align-items: center; /* Centre le texte verticalement */
-    display: flex; /* Permet d'utiliser les propriétés align-items et justify-content */
+    align-items: center;
+    display: flex;
     background-color: #be2361;
     color: white;
     font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s ease;
     width: 200px;
-    height: 30px; /* Vous pouvez ajuster la hauteur du bouton si nécessaire */
-    text-align: center; /* Assure que le texte est centré horizontalement si le display n'est pas flex */
+    height: 30px;
+    text-align: center;
 }
 
 .btn:hover {
     background-color: #9a1d4f;
 }
-
 /* Contact Section */
 #contact {
     font-family: system-ui, sans-serif;
@@ -465,9 +453,24 @@ footer h3 {
 
 
 @media (max-width: 990px) {
+
+    #about h3, #skills h3, #contact h3, #Projets h3{
+    
+        font-size: 30px;
+        
+    }
+    
+
+    h4{
+        font-size: 20px;
+    }
+
+    .outils  h4, .ecrire h4{
+        font-size: 20px;
+    }
     /* Cacher les liens de navigation par défaut */
     .navbar-links {
-        display: flex; /* Masque les liens de navigation */
+        display: none; /* Cache les liens de navigation */
         position: absolute;
         top: 60px; /* Position du menu par rapport à la navbar */
         right: 0;
@@ -478,15 +481,15 @@ footer h3 {
         padding: 10px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-
     .navbar-links.active {
         display: flex; /* Affiche les liens de navigation quand 'active' est ajouté */
     }
-    
+    .hamburger {
+        display: block;
+        color: #cd95ac;
+        margin-right: 50px;
+    }
 
-    
-
-    /* Style des liens dans le menu hamburger */
     .navbar-links li {
         padding: 10px 0;
         text-align: center;
@@ -498,12 +501,12 @@ footer h3 {
     }
 
 
-/* Masquer la navbar quand la souris n'est pas en haut de l'écran */
-.navbar-hidden {
-    display: flex;
-}
 
-.navbar {
+    .navbar-hidden {
+        display: flex;
+    }
+
+    .navbar {
         align-items: flex-start;
     }
     .about-content {
@@ -512,5 +515,49 @@ footer h3 {
         gap: 40px;
         margin: 50px;
     
+    }
+
+
+    .outils img {
+        margin: 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    
+    h4.card-title{
+        margin: 0;
+    }
+
+    a.btn{
+        bottom: auto;
+        
+    }
+    .contact-item i {
+        font-size: 40px;
+    }
+    .projets-container {
+        grid-template-columns: 3fr; /* 1 carte par rang */
+    }
+    footer h3 {
+       margin: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .projets-container {
+        grid-template-columns: 1fr; /* 1 carte par rang pour les petits écrans */
+    }
+
+    .projet {
+        width: 100%;
+        max-width: 400px; /* Largeur maximale pour les écrans plus petits */
+        height: auto; /* Ajuster la hauteur pour s'adapter au contenu */
+    }
+
+    .projet .btn {
+        position: relative;
+        bottom: auto;
+        margin-top: 20px;
     }
 }
