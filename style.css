@@ -110,34 +110,34 @@ header {
     padding: 0;
 }
 
-
 .hero_title {
-    font-size: 50px; 
+    font-size: 50px;
     font-weight: bold;
     color: #c55683;
     margin: 0;
-    margin-top: 200px; 
+    margin-top: 200px;
     line-height: 1.2;
-    text-align: center; 
-    visibility: hidden; 
-    opacity: 0;
-    transition: opacity 0.5s ease; 
+    text-align: center;
     font-family: 'fantasy';
+    visibility: visible; 
+    opacity: 1; 
+    transition: opacity 0.5s ease;
 }
 
 .hero_text {
-    font-size: 50px; 
+    font-size: 50px;
     font-weight: bold;
-    color: #c55683; 
+    color: #c55683;
     margin: 0;
-    margin-top: 20px; 
+    margin-top: 20px;
     line-height: 1.2;
-    text-align: center; 
-    visibility: hidden; 
-    opacity: 0;
-    transition: opacity 0.5s ease; 
+    text-align: center;
     font-family: 'fantasy';
+    visibility: visible; 
+    opacity: 1; 
+    transition: opacity 0.5s ease;
 }
+
 
 body.loaded .hero_title,
 body.loaded .hero_text {
