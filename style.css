@@ -1,28 +1,24 @@
-/******* GENERAL *******/
-/* spacing on all sections */
-/* Changer la couleur par défaut des liens */
-/* Par défaut : Couleur des liens de navigation */
-.nav-link {
-    font-family: Arial, Helvetica, sans-serif;;
-    color: #be2361  !important; /* Forcer la couleur */
-    transition: color 0.3s ease; /* Transition fluide */
-    font-weight: bold;
-}
+/********** GENERAL **********/
 
+/* Liens de navigation */
+.nav-link {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #be2361 !important; /* Couleur forcée */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
 
 .nav-link:hover {
     text-decoration: underline;
     font-weight: bold;
 }
 
-
-
+/* Marque dans la navbar */
 .navbar-brand {
-    font-family: 'Times New Roman', Times,sans-serif ;
+    font-family: 'Times New Roman', Times, serif;
     font-style: italic;
-    color: #be2361 !important; /* Forcer la couleur personnalisée */
+    color: #be2361 !important;
     font-weight: bold;
-    font-style: italic;
     transition: color 0.3s ease;
 }
 
@@ -32,20 +28,27 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* Assurez-vous que le menu est au-dessus du reste du contenu */
+    z-index: 1000;
+    background-color: #301520;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Espace sous le menu pour éviter le chevauchement avec le contenu */
+/* Pour éviter que le contenu soit caché sous la navbar fixe */
 body {
-    padding-top: 0px; /* Ajustez la valeur en fonction de la hauteur de votre menu */
+    padding-top: 70px; /* Ajuster selon la hauteur exacte de la navbar */
 }
 
-/* Style spécifique si vous souhaitez un effet de transparence ou d'ombre */
+/* Effet fond/ombre pour navbar au scroll */
 .navbarScroll {
-    background-color:#301520; /* Exemple d'effet de fond transparent */
-    box-shadow: 0 4px 2px -2px ;
+    background-color: #301520;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,0.5);
 }
 
+.navbarScroll.navbarDark {
+    background-color: #301520;
+}
+
+/* Sections principales avec marges */
 #about,
 #skills,
 #portfolio,
@@ -54,6 +57,7 @@ body {
     padding-top: 4rem;
     color: #6d213f;
 }
+
 #about h2,
 #skills h2,
 #portfolio h2,
@@ -61,153 +65,12 @@ body {
     margin-bottom: 3rem;
     color: #be2361;
 }
+
 #contact {
     padding-bottom: 4rem;
 }
 
-/* display background dark color on navbar scroll */
-.navbarScroll.navbarDark {
-    background-color: #301520;
-    
-}
-
-/* hero background image */
-.bgimage {
-    height: 500px;
-    max-height: 900px;
-    background: url("images/goldengate.jpg");
-    background-size: cover;
-    position: relative;
-}
-/* text css above hero image*/
-.hero_title {
-    font-size: 4.5rem;
-}
-.hero_desc {
-    font-size: 2rem;
-}
-.hero-text {
-    font-family: 'Times New Roman', Times,sans-serif ;
-    font-style: italic;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #d89fb5;
-}
-
-/* about */
-#about p{
-    font-family: 'Times New Roman', Times, serif;
-}
-.imageAboutPage {
-    width: 100%;
-}
-.imageAboutPage {
-    border-radius: 50%;
-    box-shadow: 0 0 100px #301520;
-}
-
-/* skills */
-.skillsText.card {
-    height: 350px;
-    cursor: pointer;
-}
-.skillsText img {
-    width: 100%;
-    height: 150px;
-    object-fit: contain;
-}
-#skills p {
-    text-align: center;
-}
-.skillsIcon {
-    font-size: 36px;
-    text-align: center;
-    width: 100%;
-}
-.card-title {
-    text-align: center;
-}
-.card:hover .skillsIcon {
-    color: #813554;
-}
-.skillsText:hover {
-    border: 1px solid;
-    
-}
-
-
-.compétences {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Deux colonnes de tailles égales */
-    gap: 20px; /* Espacement entre les items */
-    justify-items: center; /* Centre les éléments dans chaque colonne */
-    align-items: start; /* Aligne le contenu en haut de chaque item */
-}
-
-.competence-item {
-    display: flex;
-    flex-direction: column; /* Place le texte sous l'image */
-    align-items: center; /* Centre les éléments horizontalement */
-    text-align: center;
-    width: 100%; /* Les items prennent toute la largeur de leur colonne */
-}
-
-.competence-item img {
-    width: 300px; /* Largeur uniforme */
-    height: 300px; /* Hauteur uniforme */
-    object-fit: cover; /* Découpe l'image pour remplir les dimensions */
-    border-radius: 10px; /* Coins arrondis (facultatif) */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
-}
-
-
-.competence-item p {
-    margin-top: 10px; /* Espacement entre l'image et le texte */
-    margin-bottom: 50px;
-    font-size: 20px; /* Taille de la police */
-    color:#be2361 ;
-    font-style: italic;
-}
-
-
-.react img{
-    width: 500px; /* Largeur uniforme */
-    height: 200px; /
-
-}
-
-.html img {
-    width: 550px; /* Largeur uniforme */
-    height: 350px; /* Hauteur uniforme */
-}
-
-.js img {
-    width: 200px; /* Largeur uniforme */
-    height: 300px; /* Hauteur uniforme */
-}
-
-.outils {
-    margin: 200px;
-}
-
-.outils img {
-    width: 500px; /* Largeur uniforme */
-    height: 200px; /* Hauteur uniforme */
-}
-
-.ecrire {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-/* portfolio */
-
-/* Fichier CSS */
+/* Tableaux */
 #table-container table {
     width: 100%;
     border-collapse: collapse;
@@ -217,7 +80,8 @@ body {
     text-align: left;
 }
 
-#table-container th, #table-container td {
+#table-container th,
+#table-container td {
     padding: 12px 15px;
     border: 1px solid #ddd;
 }
@@ -227,54 +91,320 @@ body {
     color: #333;
 }
 
+/********** HERO SECTION **********/
+
+.bgimage {
+    height: 500px;
+    max-height: 900px;
+    background: url("images/goldengate.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #d89fb5;
+}
+
+.hero_title {
+    font-size: 4.5rem;
+}
+
+.hero_desc {
+    font-size: 2rem;
+}
+
+/********** ABOUT **********/
+
+#about p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.imageAboutPage {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 100px #301520;
+}
+
+.timeline {
+  max-width: 700px;
+  margin: 40px auto;
+  font-family: 'Arial', sans-serif;
+  color: #6d213f;
+}
+
+.timeline h2 {
+  text-align: center;
+  color: #be2361;
+  margin-bottom: 30px;
+}
+
+.timeline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.download-cv {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.btn-download {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #be2361;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+  background-color: #94118d;
+}
 
 
+.timeline-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Positionnement du contenu */
+.timeline-list .content {
+  position: relative;
+  padding-left: 20px;
+}
+
+
+
+
+/* Style des années (ici "--") */
+.timeline-list .year {
+  position: absolute;
+  left: -50px;
+  top: 25px;
+  font-weight: bold;
+  color: #be2361;
+}
+
+
+/********** SKILLS **********/
+
+.skillsText.card {
+    height: 350px;
+    cursor: pointer;
+}
+
+.skillsText img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+#skills p {
+    text-align: center;
+}
+
+.skillsIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card:hover .skillsIcon {
+    color: #813554;
+}
+
+.skillsText:hover {
+    border: 1px solid;
+}
+
+/* Grid compétences */
+.compétences {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: start;
+}
+
+.competence-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.competence-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.competence-item p {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: #be2361;
+    font-style: italic;
+}
+
+/* Classes spécifiques pour images compétences avec tailles fixes */
+
+.react img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.html img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+}
+
+.js img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.outils {
+    margin: 200px;
+}
+
+.outils img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.ecrire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.telechargement-section {
+  padding: 60px 20px;
+  background-color: #fef2f5;
+  text-align: center;
+}
+
+.telechargement-section h2 {
+  font-size: 2.5rem;
+  color: #be2361;
+  margin-bottom: 40px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.cours-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.cours-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.cours-card:hover {
+  transform: translateY(-5px);
+}
+
+.cours-card h3 {
+  color: #be2361;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.cours-card p {
+  color: #6d213f;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.btn-download {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #be2361;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+  background-color: #94118d;
+}
+
+/********** PORTFOLIO **********/
 
 #portfolio h4 {
     margin-top: 50px;
-
 }
-
 
 #portfolio p {
     text-align: center;
-   
 }
-/* Grille des projets */
+
+/* Grille projets */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Colonnes responsives */
-    gap: 20px; /* Espace entre les projets */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
     margin-top: 20px;
 }
 
-/* Style de chaque projet */
+/* Projet individuel */
 .project {
-    background-color: #f4f4f4; /* Couleur de fond claire */
-    padding: 20px; /* Espacement interne */
-    border-radius: 8px; /* Coins arrondis */
-    box-shadow: 0 4px 8px #6d213f; /* Ombre légère autour des projets */
-    transition: transform 0.3s ease-in-out; /* Animation de survol */
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #6d213f;
+    transition: transform 0.3s ease-in-out;
 }
 
 .project:hover {
-    transform: translateY(-5px); /* Effet d'élévation au survol */
+    transform: translateY(-5px);
 }
 
-/* Style du titre du projet */
 .project h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-/* Style de la description du projet */
 .project p {
     font-size: 1rem;
     color: #6d213f;
     margin-bottom: 15px;
 }
 
-/* Style du lien vers GitHub */
 .project a {
     color: #6d213f;
     text-decoration: none;
@@ -285,6 +415,7 @@ body {
     text-decoration: underline;
 }
 
+/* Section projets */
 #projets {
     text-align: center;
     padding: 50px 0;
@@ -334,45 +465,92 @@ body {
     margin-bottom: 20px;
 }
 
+/* Bouton primaire */
 a.btn.btn-primary {
     color: #fff;
     background-color: #be2361;
     border-color: #be2361;
 }
 
-a.btn.btn-primary :hover {
+a.btn.btn-primary:hover {
     color: #94118d;
-    
 }
 
-/* contact */
+/********** CONTACT **********/
+
+#contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .contactColumn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex: 1 1 22%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.3s ease;
 }
+
 .contactColumn i {
-    color: #be2361 
+  font-size: 3.5rem;
+  color: #94118d;
+  margin-bottom: 15px;
 }
 
-/* footer */
+.contactColumn h4 {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  color: #be2361;
+  flex-shrink: 0;
+}
+
+.contactColumn p,
+.contactColumn a {
+  font-size: 1rem;
+  color: #555;
+  text-decoration: none;
+  word-break: break-word;
+  flex-grow: 1;
+}
+
+.contactColumn a:hover {
+  color: #94118d;
+  text-decoration: underline;
+}
+
+.contactColumn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Responsive : sur petit écran, une colonne par ligne */
+@media (max-width: 991px) {
+  .contactColumn {
+    flex: 1 1 100%;
+    min-height: auto;
+  }
+}
 
 
+/********** FOOTER **********/
 
-/* Si vous voulez que le footer ait un effet de fond plus foncé ou un ombrage */
 footer {
     width: 100%;
-    height: 100px;
-    background-color: #301520; /* Couleur de fond (vous pouvez ajuster cette couleur) */
-    padding: 20px 0; /* Espacement autour du contenu */
-    position: relative;
-}
-
-
-footer p{
+    background-color: #301520;
+    padding: 20px 0;
+    text-align: center;
     color: #be2361;
-    margin-left: 650px;
-    font-size: 24px;
-
+    font-style: italic;
 }
 
+footer p {
+    font-size: 1.1rem;
+    margin: 0.3em 0;
+}
