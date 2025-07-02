@@ -91,49 +91,52 @@ body {
 
 /* Bannière principale */
 .bgimage {
-  position: relative;
-  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80'); /* exemple d'image */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 80vh;
+  
+  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80');
   background-size: cover;
   background-position: center;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   color: white;
   text-align: center;
+
   padding: 0 1rem;
+
+  position: relative;
 }
 
-/* Sombre un peu l'image pour faire ressortir le texte */
 .bgimage::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 0;
 }
 
-/* Conteneur texte */
-.hero-text {
+.bgimage > * {
   position: relative;
   z-index: 1;
-  max-width: 700px;
 }
 
-/* Titre */
-.hero-title {
+.bgimage h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
-  font-weight: 700;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+  font-weight: bold;
 }
 
-/* Description */
-.hero-desc {
+.bgimage p {
   font-size: 1.5rem;
+  margin-top: 0;
   font-weight: 300;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
 }
+
+
+
 
 /* Container général */
 .container {
