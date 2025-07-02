@@ -116,6 +116,7 @@ h2 {
 #about p {
   font-family: var(--font-serif);
   margin-top: 1rem;
+  color: #be2361
 }
 
 .imageAboutPage {
@@ -374,6 +375,9 @@ h2 {
   margin-bottom: 10px;
 }
 
+#contact a{
+  color: #be2361;
+}
 
 /* =====================
    Footer
