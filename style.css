@@ -718,45 +718,42 @@ body {
 }
 
 /* Section contact */
-#contact {
-  background-color: #f9f9f9;
-  padding: 40px 0;
+.contact-row {
+  display: flex;
+  justify-content: space-between; /* espace égal entre colonnes */
+  gap: 20px; /* espace entre colonnes */
+  flex-wrap: wrap; /* pour que ça passe en plusieurs lignes si écran trop petit */
+  margin-top: 20px;
 }
 
-.contactContent h2 {
-  font-weight: 700;
-  margin-bottom: 30px;
-  color: #1d6154;
-}
-
-.contactColumn {
+.contact-column {
+  flex: 1 1 30%; /* prend environ 30% de la largeur chacun, s'adapte */
+  min-width: 250px; /* évite que ça devienne trop petit */
+  box-sizing: border-box;
   text-align: center;
-  padding: 20px;
 }
 
-.contactColumn i {
-  font-size: 2.5rem;
+.contact-column i {
+  font-size: 2rem;
   color: #1d6154;
-  margin-bottom: 15px;
-}
-
-.contactColumn h4 {
   margin-bottom: 10px;
-  font-weight: 600;
-  color: #333;
+  display: block;
 }
 
-.contactColumn p,
-.contactColumn a {
-  font-size: 1rem;
-  color: #555;
+h2.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #1d6154;
   text-decoration: none;
 }
 
-.contactColumn a:hover {
+a:hover {
   text-decoration: underline;
-  color: #1d6154;
 }
+
 
 /* Footer */
 footer {
