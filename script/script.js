@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Function to add the "navbarDark" class to the navbar on scroll
 function handleNavbarScroll() {
     const header = document.querySelector(".navbar");
@@ -157,7 +156,6 @@ async function loadProjects() {
 }
 
 document.addEventListener('DOMContentLoaded', loadProjects);
-=======
 document.addEventListener("DOMContentLoaded", function () {
     const navbar = document.querySelector('.navbar');
     const navbarLinks = document.getElementById('navbar-links');
@@ -216,4 +214,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
->>>>>>> 235c77380162f037c0dc3912c8873357f3be17ce
