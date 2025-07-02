@@ -55,11 +55,7 @@ body {
   transition: color 0.3s ease;
 }
 
-/* Lien actif */
-.navbar-menu .nav-link.active,
-.navbar-menu .nav-link:hover {
-  color: #A4D4C9; /* Vert clair */
-}
+
 
 /* Bouton hamburger caché par défaut */
 .navbar-toggler {
