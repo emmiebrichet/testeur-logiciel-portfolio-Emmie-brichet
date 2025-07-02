@@ -1,110 +1,78 @@
-
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <title>Portfolio Emmie.B</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- linking css file -->
-    <link rel="stylesheet" href="style.css">
-    <!-- bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" async>
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-     
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio - Emmie Brichet</title>
+
+  <!-- Font Awesome pour les icônes -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <!-- Ton fichier CSS personnalisé -->
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
-        <div class="container">
-            <a class="navbar-brand" href="#">Emmie Brichet</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">A propos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Compétences</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Mes projets</a>
-                    </li>
-                    
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contactez-moi</a>
-                    </li>
-                </ul>
 
-            </div>
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="#" class="navbar-brand">Emmie Brichet</a>
+    <button class="navbar-toggler" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">&#9776;</span>
+    </button>
+    <ul class="navbar-menu">
+      <li><a href="#home" class="nav-link active">Accueil</a></li>
+      <li><a href="#about" class="nav-link">A propos</a></li>
+      <li><a href="#skills" class="nav-link">Compétences</a></li>
+      <li><a href="#portfolio" class="nav-link">Mes projets</a></li>
+      <li><a href="#contact" class="nav-link">Contactez-moi</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- main banner -->
+<section class="bgimage" id="home">
+  <div class="hero-text">
+    <h1 class="hero-title">Bienvenue sur le portfolio d'Emmie</h1>
+    <p class="hero-desc">Testeuse logiciel</p>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container mt-4 pt-4">
+    <h2 class="text-center">A propos</h2>
+    <div class="about-content">
+      <div class="about-image">
+        <img src="images/person.png" class="imageAboutPage" alt="Photo de Emmie Brichet" />
+      </div>
+      <div class="about-text">
+        <div class="about-info">
+          <h3>Qui suis-je ?</h3>
+          <ul>
+            <li>Nom : Emmie Brichet</li>
+            <li>Âge : 28 ans</li>
+            <li>Région : Île-de-France</li>
+          </ul>
         </div>
-    </nav>
-
-    <!-- main banner -->
-    <section class="bgimage" id="home">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                    <h1 class="hero_title">Bienvenue sur le portfolio d'Emmie</h1>
-                    <p class="hero_desc">Testeuse logiciel</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- about section-->
-    <section id="about">
-        <div class="container mt-4 pt-4">
-            <h2 class="text-center">A propos</h2>
-            <div class="row mt-4">
-                <div class="col-lg-4">
-                    <img src="images/person.png" class="imageAboutPage" alt="">
-                </div>
-
-                <div class="col-lg-8">
-                    <div class="row mt-3">
-                      
-                        <div class="col-md-6">
-                            <h3> Qui suis je ?</h3>
-                            <ul>
-                                <li>Nom: Emmie Brichet</li>
-                                <li>Age: 28 ans</li>
-                                <li>Région: Ile de France</li>
-                                
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <p>Je m'appelle Emmie Brichet et j'ai eu la chance de vivre 5 ans à San Francisco, une expérience qui m'a appris 
-                         l'adaptabilité et l'ouverture d'esprit. Après avoir obtenu un bac pro gestion-administration, j'ai travaillé dans
-                         divers domaines, notamment dans la restauration et comme magasinier en librairie suite à une formation de libraire.
-                         Ces expériences ont développé chez moi une forte capacité d'organisation, un sens des priorités et une grande rigueur.
-                         En 2024, j'ai décidé de me reconvertir dans l'informatique, un domaine qui m'a toujours intriguée et qui offre de nombreuses 
-                         opportunités. J'ai récemment terminé une formation de 11 mois chez OpenClassroom en tant que Testeuse logiciel, où j'ai acquis
-                         des compétences en méthodologies de test, en détection de bugs, et en réalisation de sites web. Je suis une personne efficace, 
-                         autonome et j'apprends rapidement. Mon esprit d’initiative, ma polyvalence et ma curiosité me permettent de m'adapter facilement
-                         à tout projet. Bien que je continue à renforcer mes compétences, je suis déterminée et prête à relever tous les défis pour 
-                         réussir et m'épanouir pleinement en tant que Testeuse logiciel.</p>
-                    </div>
-                </div>
-            </div>
-    </section>
-
-        <section class="timeline">
+        <p>
+          Je m'appelle Emmie Brichet et j'ai eu la chance de vivre 5 ans à San Francisco, une expérience qui m'a appris
+          l'adaptabilité et l'ouverture d'esprit. Après avoir obtenu un bac pro gestion-administration, j'ai travaillé dans
+          divers domaines, notamment dans la restauration et comme magasinier en librairie suite à une formation de libraire.
+          Ces expériences ont développé chez moi une forte capacité d'organisation, un sens des priorités et une grande rigueur.
+          En 2024, j'ai décidé de me reconvertir dans l'informatique, un domaine qui m'a toujours intriguée et qui offre de nombreuses
+          opportunités. J'ai récemment terminé une formation de 11 mois chez OpenClassroom en tant que Testeuse logiciel, où j'ai acquis
+          des compétences en méthodologies de test, en détection de bugs, et en réalisation de sites web. Je suis une personne efficace,
+          autonome et j'apprends rapidement. Mon esprit d’initiative, ma polyvalence et ma curiosité me permettent de m'adapter facilement
+          à tout projet. Bien que je continue à renforcer mes compétences, je suis déterminée et prête à relever tous les défis pour
+          réussir et m'épanouir pleinement en tant que Testeuse logiciel.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="timeline">
         <h2>Mon parcours</h2>
         <ul class="timeline-list">
         <li>
@@ -153,226 +121,181 @@
   <a href="document/CV_2025-07-01_Emmie_Brichet.pdf" download class="btn-download">Télécharger mon CV</a>
 </div>
     </section>
-
-        <section id="skills">
-  <h2 class="text-center">Compétences</h2>
-  <div class="compétences">
     
-    <!-- React -->
+    <section id="skills" class="skills">
+  <h2>Mes compétences</h2>
+  <div class="competences">
+
     <div class="competence-item">
       <div class="image-card">
-        <img src="images/react.jpg" alt="React">
+        <img src="images/react.jpg" alt="React" />
       </div>
       <p>React</p>
+      <p class="skill-text">Maîtrise des composants, hooks et gestion d’état.</p>
     </div>
 
-    <!-- HTML & CSS -->
     <div class="competence-item">
       <div class="image-card">
-        <img src="images/html-css.jpg" alt="HTML & CSS">
+        <img src="images/html-css.webp" alt="HTML & CSS" />
       </div>
       <p>HTML & CSS</p>
+      <p class="skill-text">Structuration sémantique et mise en forme responsive.</p>
     </div>
 
-    <!-- JavaScript -->
     <div class="competence-item">
       <div class="image-card">
-        <img src="images/js.jpg" alt="JavaScript">
+        <img src="images/js.webp" alt="JavaScript" />
       </div>
       <p>JavaScript</p>
+      <p class="skill-text">Programmation dynamique et interaction avec le DOM.</p>
     </div>
 
-    <!-- Tests -->
     <div class="competence-item">
       <div class="image-card">
-        <img src="images/test.png" alt="Tests">
+        <img src="images/test.webp" alt="Tests" />
       </div>
-      <p>Tests fonctionnels, exploratoires et automatisés</p>
+      <p>Tests</p>
+      <p class="skill-text">Tests fonctionnels, exploratoires et automatisés.</p>
     </div>
 
-    <!-- Optimisation & Debug -->
     <div class="competence-item">
       <div class="image-card">
-        <img src="images/optimisation-et-debug.png" alt="Optimisation et Debug">
+        <img src="images/optimisation-et-debug.webp" alt="Optimisation & Debug" />
       </div>
       <p>Optimisation & Debug</p>
+      <p class="skill-text">Amélioration des performances et correction d’erreurs.</p>
     </div>
 
-    <!-- Gestion de projet -->
     <div class="competence-item">
       <div class="image-card">
-        <img src="images/gestion-de-projet.png" alt="Gestion de projet">
+        <img src="images/gestion-de-projet.webp" alt="Gestion de projet" />
       </div>
       <p>Gestion de projet</p>
+      <p class="skill-text">Planification et suivi agile de projets.</p>
     </div>
 
   </div>
 </section>
-            <section id="outils">
+
+<section id="outils">
   <h2 class="text-center">Je sais utiliser…</h2>
-  <div class="d-flex flex-wrap justify-content-center gap-4">
+  <div class="outils-container">
     <!-- GitHub -->
     <div class="image-card">
-      <img src="images/GitHub-logo.png" alt="GitHub">
+      <img src="images/GitHub-logo.webp" alt="GitHub">
     </div>
     <!-- Docker -->
     <div class="image-card">
-      <img src="images/Docker-Logo-2017-present.jpg" alt="Docker">
+      <img src="images/Docker.webp" alt="Docker">
     </div>
     <!-- Jira -->
     <div class="image-card">
-      <img src="images/logo-jira-653x321.gif" alt="Jira">
+      <img src="images/jira.webp" alt="Jira">
     </div>
     <!-- VS Code -->
     <div class="image-card">
-      <img src="images/images.png" alt="VS Code">
+      <img src="images/vs code.webp" alt="VS Code">
     </div>
   </div>
 </section>
-
-
-            <div class="ecrire ">
-                <h2 class="text-center"> Je sais...</h2>
-                <img src="images/istockphoto-1368011030-612x612.jpg">
-                <ul>
-                    <li>Rédiger un rapport de test</li>
-                    <li>Réaliser un bilan de la campagne de tests</li>
-                    <li>Créer un tableau Kanban sur Notion ou Jira</li>
-                    <li>Remplir un cahier de recette</li>
-                    <li>Signaler les anomalies aux développeurs</li>
-                </ul>
-            </div>
-            </section>
-            <section id="telechargements" class="telechargement-section">
+<section>
+  <div class="ecrire">
+    <h2 class="text-center">Je sais...</h2>
+    <img src="images/istockphoto-1368011030-612x612.jpg" alt="Compétences illustration">
+    <ul>
+      <li>Rédiger un rapport de test</li>
+      <li>Réaliser un bilan de la campagne de tests</li>
+      <li>Créer un tableau Kanban sur Notion ou Jira</li>
+      <li>Remplir un cahier de recette</li>
+      <li>Signaler les anomalies aux développeurs</li>
+    </ul>
+  </div>
+</section>
+<section id="telechargements" class="telechargement-section">
   <h2>Télécharger mes cours</h2>
 
   <div class="cours-container">
 
     <div class="cours-card">
-      <h3>HTML et css</h3>
+      <h3>HTML et CSS</h3>
       <p>Les bases : structure, balises, titres, paragraphes, images, liens, formulaires.</p>
       <a href="document/html et css.pdf" download class="btn-download">📄 Télécharger le cours HTML</a>
-      <a href="document/ex html et css.zip" download class="btn-download">Télécharger le code dans le  cour</a>
-
+      <a href="document/ex html et css.zip" download class="btn-download">Télécharger le code dans le cours</a>
     </div>
-
-    
 
     <div class="cours-card">
       <h3>JavaScript</h3>
       <p>Initiez-vous à : variables, fonctions, événements, DOM, conditions, boucles.</p>
       <a href="document/javascript cour.pdf" download class="btn-download">📄 Télécharger le cours JS</a>
-      <a href="document/ex javascript.zip" download class="btn-download">Télécharger le code dans le cour</s></a>
+      <a href="document/ex javascript.zip" download class="btn-download">Télécharger le code dans le cours</a>
     </div>
 
   </div>
 </section>
-
-<section id="portfolio" class="py-5 bg-light">
+<section id="portfolio" class="portfolio-section">
   <div class="container">
-    <h2 class="text-center mb-5">Mes Projets</h2>
-    <div class="row g-4">
+    <h2 class="section-title">Mes Projets</h2>
+    <div class="portfolio-grid">
 
-      <!-- Cahier de recette JSE Avocats -->
-      <div class="col-sm-6 col-lg-4">
-        <div class="card h-100 shadow-sm">
-          <img src="images/Capture d'écran 2025-01-13 194521.png"
-               class="card-img-top"
-               alt="Cahier de recette JSE Avocats">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Cahier de recette JSE Avocats</h5>
-            <p class="card-text flex-grow-1">Validation fonctionnelle du site principal.</p>
-            <a href="document/Brichet_Emmie_1_cahier_de_recette_122024 _fichiers/sheet001.htm"
-               class="btn btn-primary mt-auto"
-               target="_blank">Voir le cahier</a>
-          </div>
+      <!-- Exemple de projet -->
+      <div class="portfolio-card">
+        <img src="images/Capture d'écran 2025-01-13 194521.png" alt="Cahier de recette JSE Avocats" class="portfolio-img">
+        <div class="portfolio-content">
+          <h3>Cahier de recette JSE Avocats</h3>
+          <p>Validation fonctionnelle du site principal.</p>
+          <a href="document/Brichet_Emmie_1_cahier_de_recette_122024 _fichiers/sheet001.htm" target="_blank" class="btn">Voir le cahier</a>
         </div>
       </div>
 
-      <!-- Cahier de recette 724events -->
-      <div class="col-sm-6 col-lg-4">
-        <div class="card h-100 shadow-sm">
-          <img src="images/Capture d'écran 2025-01-13 194712.png"
-               class="card-img-top"
-               alt="Cahier de recette 724events">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Cahier de recette 724events</h5>
-            <p class="card-text flex-grow-1">Scénarios de test pour l’app 724events.</p>
-            <a href="document/brichet_Emmie_2_cahier_de_recette_072024_fichiers/sheet001.htm"
-               class="btn btn-primary mt-auto"
-               target="_blank">Voir le cahier</a>
-          </div>
+      <!-- Répète pour chaque projet -->
+      <div class="portfolio-card">
+        <img src="images/Capture d'écran 2025-01-13 194712.png" alt="Cahier de recette 724events" class="portfolio-img">
+        <div class="portfolio-content">
+          <h3>Cahier de recette 724events</h3>
+          <p>Scénarios de test pour l’app 724events.</p>
+          <a href="document/brichet_Emmie_2_cahier_de_recette_072024_fichiers/sheet001.htm" target="_blank" class="btn">Voir le cahier</a>
         </div>
       </div>
 
-      <!-- Bilan de campagne de test -->
-      <div class="col-sm-6 col-lg-4">
-        <div class="card h-100 shadow-sm">
-          <iframe src="document/brichet_Emmie_1_bilan_de_campagne_de_test_072024.pdf"
-                  class="card-img-top"
-                  style="height:200px; border:none;"></iframe>
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Bilan campagne 724events</h5>
-            <p class="card-text flex-grow-1">Rapport et analyses détaillées.</p>
-            <a href="document/brichet_Emmie_1_bilan_de_campagne_de_test_072024.pdf"
-               class="btn btn-primary mt-auto"
-               target="_blank">Voir le PDF</a>
-          </div>
+      <div class="portfolio-card">
+        <iframe src="document/brichet_Emmie_1_bilan_de_campagne_de_test_072024.pdf" class="portfolio-iframe"></iframe>
+        <div class="portfolio-content">
+          <h3>Bilan campagne 724events</h3>
+          <p>Rapport et analyses détaillées.</p>
+          <a href="document/brichet_Emmie_1_bilan_de_campagne_de_test_072024.pdf" target="_blank" class="btn">Voir le PDF</a>
         </div>
       </div>
 
-      <!-- Tableau Jira d'anomalies -->
-      <div class="col-sm-6 col-lg-4">
-        <div class="card h-100 shadow-sm">
-          <iframe src="document/brichet_Emmie_3_anomalies_072024.html"
-                  class="card-img-top"
-                  style="height:200px; border:none;"></iframe>
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Tableau Jira Anomalies</h5>
-            <p class="card-text flex-grow-1">Suivi des bugs détectés.</p>
-            <a href="document/brichet_Emmie_3_anomalies_072024.html"
-               class="btn btn-primary mt-auto"
-               target="_blank">Voir le tableau</a>
-          </div>
+      <div class="portfolio-card">
+        <iframe src="document/brichet_Emmie_3_anomalies_072024.html" class="portfolio-iframe"></iframe>
+        <div class="portfolio-content">
+          <h3>Tableau Jira Anomalies</h3>
+          <p>Suivi des bugs détectés.</p>
+          <a href="document/brichet_Emmie_3_anomalies_072024.html" target="_blank" class="btn">Voir le tableau</a>
         </div>
       </div>
 
-      <!-- Présentation Menu Maker -->
-      <div class="col-sm-6 col-lg-4">
-        <div class="card h-100 shadow-sm">
-          <iframe src="document/Brichet_Emmie_4_presentation_122024.pdf"
-                  class="card-img-top"
-                  style="height:200px; border:none;"></iframe>
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Présentation Menu Maker</h5>
-            <p class="card-text flex-grow-1">Slides de présentation du projet.</p>
-            <a href="document/Brichet_Emmie_4_presentation_122024.pdf"
-               class="btn btn-primary mt-auto"
-               target="_blank">Voir le PDF</a>
-          </div>
+      <div class="portfolio-card">
+        <iframe src="document/Brichet_Emmie_4_presentation_122024.pdf" class="portfolio-iframe"></iframe>
+        <div class="portfolio-content">
+          <h3>Présentation Menu Maker</h3>
+          <p>Slides de présentation du projet.</p>
+          <a href="document/Brichet_Emmie_4_presentation_122024.pdf" target="_blank" class="btn">Voir le PDF</a>
         </div>
       </div>
 
-      <!-- Spécifications techniques -->
-      <div class="col-sm-6 col-lg-4">
-        <div class="card h-100 shadow-sm">
-          <iframe src="document/Bricher_EMMIE_1_specifications_techniques_122024.docxv.pdf"
-                  class="card-img-top"
-                  style="height:200px; border:none;"></iframe>
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Spécifications Techniques</h5>
-            <p class="card-text flex-grow-1">Détails techniques du Menu Maker.</p>
-            <a href="document/Bricher_EMMIE_1_specifications_techniques_122024.docxv.pdf"
-               class="btn btn-primary mt-auto"
-               target="_blank">Voir le doc</a>
-          </div>
+      <div class="portfolio-card">
+        <iframe src="document/Bricher_EMMIE_1_specifications_techniques_122024.docxv.pdf" class="portfolio-iframe"></iframe>
+        <div class="portfolio-content">
+          <h3>Spécifications Techniques</h3>
+          <p>Détails techniques du Menu Maker.</p>
+          <a href="document/Bricher_EMMIE_1_specifications_techniques_122024.docxv.pdf" target="_blank" class="btn">Voir le doc</a>
         </div>
       </div>
 
     </div>
   </div>
 </section>
-
 <section id="projets" class="py-5 bg-light">
   <div class="container">
     <h2 class="text-center mb-5">Mes Projets sur GitHub</h2>
@@ -462,13 +385,8 @@
 
     </div>
   </div>
-</section>
-
-
-            
-            
-            <!-- contact section-->
-    <section id="contact">
+        </Section>
+         <section id="contact">
     <div class="container mt-3 contactContent">
         <h2 class="text-center">Contactez-moi</h2>
         <div class="row">
@@ -491,15 +409,16 @@
     </div>
   </div>
 </section>
-    
+
+  
 
 </body>
 <footer>
     <p> Portfolio d'Emmie Brichet 2025</p>
 </footer>
 
-    <!-- load javascript after loading all html content -->
-    <script src="script/script.js"></script>
 
+  <!-- Ton script JS -->
+  <script src="script/java.js"></script>
 </html>
 
