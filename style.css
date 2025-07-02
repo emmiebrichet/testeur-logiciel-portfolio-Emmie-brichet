@@ -1,3 +1,45 @@
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  src: url('/fonts/fontawesome/fa-solid-900.woff2') format('woff2'),
+       url('/fonts/fontawesome/fa-solid-900.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/fontawesome/fa-brands-400.woff2') format('woff2'),
+       url('/fonts/fontawesome/fa-brands-400.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/fontawesome/fa-regular-400.woff2') format('woff2'),
+       url('/fonts/fontawesome/fa-regular-400.woff') format('woff');
+  font-display: swap;
+}
+
+.fa-solid {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+.fa-brands {
+  font-family: 'Font Awesome 5 Brands';
+}
+
+.fa-regular {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400;
+}
+
+
 /* Reset basique */
 * {
   margin: 0;
