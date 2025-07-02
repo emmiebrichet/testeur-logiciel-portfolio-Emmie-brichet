@@ -154,51 +154,82 @@
 </div>
     </section>
 
-        <!-- skills section-->
         <section id="skills">
-            <h2 class="text-center">Compétences</h2>
-            <div class="compétences">
-                <div class="react">
-                <div class="competence-item">
-                    <img src="images/react.jpg" alt="React">
-                    <p>React</p>
-                </div>
-                    </div>
-                    <div class="html">    
-                <div class="competence-item">
-                    <img src="images/html-css.jpg" alt="HTML et CSS">
-                    <p>HTML et CSS</p>
-                </div>
-            </div>
-            <div class="js">   
-                <div class="competence-item">
-                    <img src="images/js.jpg" alt="JavaScript">
-                    <p>JavaScript</p>
-                </div>
-            </div>
-                <div class="competence-item">
-                    <img src="images/test.png" alt="Tests">
-                    <p>Tests (Tests Fonctionnels, Tests Exploratoires et Automatisés)</p>
-                </div>
-                <div class="competence-item">
-                    <img src="images/optimisation-et-debug.png" alt="Optimisation et Debug">
-                    <p>Optimisation et Debug</p>
-                </div>
-                <div class="competence-item">
-                    <img src="images/gestion-de-projet.png" alt="Gestion de projet">
-                    <p>Gestion de projet</p>
-                </div>
+  <h2 class="text-center">Compétences</h2>
+  <div class="compétences">
+    
+    <!-- React -->
+    <div class="competence-item">
+      <div class="image-card">
+        <img src="images/react.jpg" alt="React">
+      </div>
+      <p>React</p>
+    </div>
 
-            </div>
+    <!-- HTML & CSS -->
+    <div class="competence-item">
+      <div class="image-card">
+        <img src="images/html-css.jpg" alt="HTML & CSS">
+      </div>
+      <p>HTML & CSS</p>
+    </div>
 
-            <div class="outils ">
-                <h2 class="text-center"> Je sais utiliser...</h2>
-                <img src="images/GitHub-logo.png"alt="GitHub">
-                <img src="images/Docker-Logo-2017-present.jpg"alt="docker">
-                <img src="images/logo-jira-653x321.gif"alt="jira">
-                <img src="images/images.png" alt="vs code">
+    <!-- JavaScript -->
+    <div class="competence-item">
+      <div class="image-card">
+        <img src="images/js.jpg" alt="JavaScript">
+      </div>
+      <p>JavaScript</p>
+    </div>
 
-            </div>
+    <!-- Tests -->
+    <div class="competence-item">
+      <div class="image-card">
+        <img src="images/test.png" alt="Tests">
+      </div>
+      <p>Tests fonctionnels, exploratoires et automatisés</p>
+    </div>
+
+    <!-- Optimisation & Debug -->
+    <div class="competence-item">
+      <div class="image-card">
+        <img src="images/optimisation-et-debug.png" alt="Optimisation et Debug">
+      </div>
+      <p>Optimisation & Debug</p>
+    </div>
+
+    <!-- Gestion de projet -->
+    <div class="competence-item">
+      <div class="image-card">
+        <img src="images/gestion-de-projet.png" alt="Gestion de projet">
+      </div>
+      <p>Gestion de projet</p>
+    </div>
+
+  </div>
+</section>
+            <section id="outils">
+  <h2 class="text-center">Je sais utiliser…</h2>
+  <div class="d-flex flex-wrap justify-content-center gap-4">
+    <!-- GitHub -->
+    <div class="image-card">
+      <img src="images/GitHub-logo.png" alt="GitHub">
+    </div>
+    <!-- Docker -->
+    <div class="image-card">
+      <img src="images/Docker-Logo-2017-present.jpg" alt="Docker">
+    </div>
+    <!-- Jira -->
+    <div class="image-card">
+      <img src="images/logo-jira-653x321.gif" alt="Jira">
+    </div>
+    <!-- VS Code -->
+    <div class="image-card">
+      <img src="images/images.png" alt="VS Code">
+    </div>
+  </div>
+</section>
+
 
             <div class="ecrire ">
                 <h2 class="text-center"> Je sais...</h2>
@@ -237,109 +268,202 @@
   </div>
 </section>
 
-<section id="portfolio">
-    <div class="container mt-3">
-        <h2 class="text-center">Mes Projets</h2>
-        <div class="row">
+<section id="portfolio" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Mes Projets</h2>
+    <div class="row g-4">
 
-            <!-- Document 1 -->
-            <div class="col-lg-6 col-md-12">
-                <h4>Cahier de recette JSE Avocats main</h4>
-                <img src="images/Capture d'écran 2025-01-13 194521.png" alt="Capture JSE Avocats" width="100%" height="400px">
-                <a href="document/Brichet_Emmie_1_cahier_de_recette_122024 _fichiers/sheet001.htm" target="_blank" class="btn btn-primary mt-2">Voir le Cahier de recette</a>
-            </div>
-
-            <div class="col-lg-6 col-md-12">
-                <h4>Cahier de recette 724events</h4>
-                <img src="images/Capture d'écran 2025-01-13 194712.png" alt="Capture 724events" width="100%" height="400px">
-                <a href="document/brichet_Emmie_2_cahier_de_recette_072024_fichiers/sheet001.htm" target="_blank" class="btn btn-primary mt-2">Voir le Cahier de recette</a>
-            </div>
-
-            <div class="col-lg-6 col-md-12">
-                <h4>Bilan de campagne de test 724events</h4>
-                <iframe src="document/brichet_Emmie_1_bilan_de_campagne_de_test_072024.pdf" width="100%" height="400px" frameborder="0"></iframe>
-            </div>
-
-            <div class="col-lg-6 col-md-12">
-                <h4>Tableau Jira d'anomalies 724events</h4>
-                <iframe src="document/brichet_Emmie_3_anomalies_072024.html" width="100%" height="400px" frameborder="0"></iframe>
-            </div>
-
-            <div class="col-lg-6 col-md-12">
-                <h4>Présentation Menu Maker</h4>
-                <iframe src="document/Brichet_Emmie_4_presentation_122024.pdf" width="100%" height="400px" frameborder="0"></iframe>
-            </div>
-
-            <div class="col-lg-6 col-md-12">
-                <h4>Spécifications techniques Menu Maker</h4>
-                <iframe src="document/Bricher_EMMIE_1_specifications_techniques_122024.docxv.pdf" width="100%" height="400px" frameborder="0"></iframe>
-            </div>
-
+      <!-- Cahier de recette JSE Avocats -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/Capture d'écran 2025-01-13 194521.png"
+               class="card-img-top"
+               alt="Cahier de recette JSE Avocats">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Cahier de recette JSE Avocats</h5>
+            <p class="card-text flex-grow-1">Validation fonctionnelle du site principal.</p>
+            <a href="document/Brichet_Emmie_1_cahier_de_recette_122024 _fichiers/sheet001.htm"
+               class="btn btn-primary mt-auto"
+               target="_blank">Voir le cahier</a>
+          </div>
         </div>
+      </div>
+
+      <!-- Cahier de recette 724events -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/Capture d'écran 2025-01-13 194712.png"
+               class="card-img-top"
+               alt="Cahier de recette 724events">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Cahier de recette 724events</h5>
+            <p class="card-text flex-grow-1">Scénarios de test pour l’app 724events.</p>
+            <a href="document/brichet_Emmie_2_cahier_de_recette_072024_fichiers/sheet001.htm"
+               class="btn btn-primary mt-auto"
+               target="_blank">Voir le cahier</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bilan de campagne de test -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <iframe src="document/brichet_Emmie_1_bilan_de_campagne_de_test_072024.pdf"
+                  class="card-img-top"
+                  style="height:200px; border:none;"></iframe>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Bilan campagne 724events</h5>
+            <p class="card-text flex-grow-1">Rapport et analyses détaillées.</p>
+            <a href="document/brichet_Emmie_1_bilan_de_campagne_de_test_072024.pdf"
+               class="btn btn-primary mt-auto"
+               target="_blank">Voir le PDF</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tableau Jira d'anomalies -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <iframe src="document/brichet_Emmie_3_anomalies_072024.html"
+                  class="card-img-top"
+                  style="height:200px; border:none;"></iframe>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Tableau Jira Anomalies</h5>
+            <p class="card-text flex-grow-1">Suivi des bugs détectés.</p>
+            <a href="document/brichet_Emmie_3_anomalies_072024.html"
+               class="btn btn-primary mt-auto"
+               target="_blank">Voir le tableau</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Présentation Menu Maker -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <iframe src="document/Brichet_Emmie_4_presentation_122024.pdf"
+                  class="card-img-top"
+                  style="height:200px; border:none;"></iframe>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Présentation Menu Maker</h5>
+            <p class="card-text flex-grow-1">Slides de présentation du projet.</p>
+            <a href="document/Brichet_Emmie_4_presentation_122024.pdf"
+               class="btn btn-primary mt-auto"
+               target="_blank">Voir le PDF</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Spécifications techniques -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <iframe src="document/Bricher_EMMIE_1_specifications_techniques_122024.docxv.pdf"
+                  class="card-img-top"
+                  style="height:200px; border:none;"></iframe>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Spécifications Techniques</h5>
+            <p class="card-text flex-grow-1">Détails techniques du Menu Maker.</p>
+            <a href="document/Bricher_EMMIE_1_specifications_techniques_122024.docxv.pdf"
+               class="btn btn-primary mt-auto"
+               target="_blank">Voir le doc</a>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </div>
 </section>
 
-<section id="projets" class="container mt-5">
-    <h2 class="text-center">Mes Projets sur GitHub</h2>
-    <div class="row">
+<section id="projets" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Mes Projets sur GitHub</h2>
+    <div class="row g-4">
 
-        <div class="col-md-4 mb-4">
-            <div class="card h-100">
-                <img src="images/Capture d'écran 2025-01-14 211648.png" alt="Print It" class="card-img-top">
-                <div class="card-body">
-                    <h3 class="card-title">Print It</h3>
-                    <p class="card-text">Un projet pour imprimer des fichiers de manière interactive.</p>
-                    <a href="https://emmiebrichet.github.io/p6-print-it/" target="_blank" class="btn btn-primary">Accéder au projet</a>
-                </div>
-            </div>
+      <!-- Print It -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/Capture d'écran 2025-01-14 211648.png"
+               class="card-img-top"
+               alt="Print It">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Print It</h5>
+            <p class="card-text flex-grow-1">Un projet pour imprimer des fichiers de manière interactive.</p>
+            <a href="https://emmiebrichet.github.io/p6-print-it/"
+               class="btn btn-primary mt-auto"
+               target="_blank">Accéder au projet</a>
+          </div>
         </div>
+      </div>
 
-        <div class="col-md-4 mb-4">
-            <div class="card h-100">
-                <img src="images/Capture d'écran 2025-01-14 211614.png" alt="Booki" class="card-img-top">
-                <div class="card-body">
-                    <h3 class="card-title">Booki</h3>
-                    <p class="card-text">Projet HTML et CSS pour une agence de voyage.</p>
-                    <a href="https://emmiebrichet.github.io/projet-3/" target="_blank" class="btn btn-primary">Accéder au projet</a>
-                </div>
-            </div>
+      <!-- Booki -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/Capture d'écran 2025-01-14 211614.png"
+               class="card-img-top"
+               alt="Booki">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Booki</h5>
+            <p class="card-text flex-grow-1">Projet HTML et CSS pour une agence de voyage.</p>
+            <a href="https://emmiebrichet.github.io/projet-3/"
+               class="btn btn-primary mt-auto"
+               target="_blank">Accéder au projet</a>
+          </div>
         </div>
+      </div>
 
-        <div class="col-md-4 mb-4">
-            <div class="card h-100">
-                <img src="images/Capture d'écran 2025-01-14 211731.png" alt="Projet 2" class="card-img-top">
-                <div class="card-body">
-                    <h3 class="card-title">Projet 2</h3>
-                    <p class="card-text">Description du projet 2.</p>
-                    <a href="https://emmiebrichet.github.io/projet-2/" target="_blank" class="btn btn-primary">Accéder au projet</a>
-                </div>
-            </div>
+      <!-- Projet 2 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/Capture d'écran 2025-01-14 211731.png"
+               class="card-img-top"
+               alt="Projet 2">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Projet 2</h5>
+            <p class="card-text flex-grow-1">Description du projet 2.</p>
+            <a href="https://emmiebrichet.github.io/projet-2/"
+               class="btn btn-primary mt-auto"
+               target="_blank">Accéder au projet</a>
+          </div>
         </div>
+      </div>
 
-        <div class="col-md-6 mb-4">
-            <div class="card h-100">
-                <img src="images/porfolio.webp" alt="Portfolio Architecte" class="card-img-top" loading="lazy">
-                <div class="card-body">
-                    <h4 class="card-title">Portfolio Architecte</h4>
-                    <p class="card-text">Je devais faire le portfolio de l'architecte Sophie Bluel avec du HTML, CSS et JavaScript, en ajoutant le login, des modales et en interagissant avec l'API pour ajouter et supprimer des projets.</p>
-                    <a href="https://github.com/emmiebrichet/Portfolio-architecte-sophie-bluel-master" target="_blank" class="btn btn-secondary">Accéder au code sur GitHub</a>
-                </div>
-            </div>
+      <!-- Portfolio Architecte -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/porfolio.webp"
+               class="card-img-top"
+               alt="Portfolio Architecte"
+               loading="lazy">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Portfolio Architecte</h5>
+            <p class="card-text flex-grow-1">Création du portfolio de l’architecte Sophie Bluel avec modales et API.</p>
+            <a href="https://github.com/emmiebrichet/Portfolio-architecte-sophie-bluel-master"
+               class="btn btn-secondary mt-auto"
+               target="_blank">Voir le code</a>
+          </div>
         </div>
+      </div>
 
-        <div class="col-md-6 mb-4">
-            <div class="card h-100">
-                <img src="images/kasa.webp" alt="Kasa" class="card-img-top" loading="lazy">
-                <div class="card-body">
-                    <h4 class="card-title">Kasa</h4>
-                    <p class="card-text">Je devais faire la page Kasa, une application de location, en utilisant React pour sa réalisation.</p>
-                    <a href="https://github.com/emmiebrichet/kasa-master" target="_blank" class="btn btn-secondary">Accéder au code sur GitHub</a>
-                </div>
-            </div>
+      <!-- Kasa -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/kasa.webp"
+               class="card-img-top"
+               alt="Kasa"
+               loading="lazy">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Kasa</h5>
+            <p class="card-text flex-grow-1">Application de location réalisée avec React.</p>
+            <a href="https://github.com/emmiebrichet/kasa-master"
+               class="btn btn-secondary mt-auto"
+               target="_blank">Voir le code</a>
+          </div>
         </div>
+      </div>
 
     </div>
+  </div>
 </section>
+
 
             
             
@@ -369,12 +493,13 @@
 </section>
     
 
-    <!-- load javascript after loading all html content -->
-    <script src="script/script.js"></script>
-
 </body>
 <footer>
     <p> Portfolio d'Emmie Brichet 2025</p>
 </footer>
+
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+
 </html>
 
